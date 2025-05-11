@@ -67,10 +67,16 @@ neoForge {
             data()
 
             // example of overriding the workingDirectory set in configureEach above, uncomment if you want to use it
-            // gameDirectory = project.file('run-data')
+            //gameDirectory = project.file('run-data')
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+
+        tasks.named('runData').configure {
+            doFirst {
+                delete file('src/generated/resources/')
+            }
         }
 
         // applies to all the run configs above
@@ -178,6 +184,10 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+tasks.named('processResources').configure {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.

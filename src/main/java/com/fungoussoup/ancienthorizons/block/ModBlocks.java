@@ -19,12 +19,33 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(AncientHorizons.MOD_ID);
 
+
+    // Ores
+
     public static final DeferredBlock<Block> TIMESTONE_ORE = registerBlock("timestone_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> DEEPSLATE_TIMESTONE_ORE = registerBlock("deepslate_timestone_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+
+
+
+
+    public static final DeferredBlock<Block> ALUMINIUM_ORE = registerBlock("aluminium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_ALUMINIUM_ORE = registerBlock("deepslate_aluminium_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+
+
+
+
 
     public static final DeferredBlock<Block> TIME_MATRIX = registerBlock("time_matrix",
             () -> new Block(BlockBehaviour.Properties.of()

@@ -23,10 +23,25 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.TIME_STONE);
                         output.accept(ModItems.RAW_TIME_STONE);
+                        output.accept(ModItems.RAW_ALUMINIUM);
                         output.accept(ModBlocks.TIME_MATRIX);
                         output.accept(ModBlocks.TIMESTONE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_TIMESTONE_ORE);
                         output.accept(ModBlocks.TIMESTONE_BLOCK);
+
+
+                        output.accept(ModBlocks.ALUMINIUM_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_ALUMINIUM_ORE);
+                        output.accept(ModItems.ALUMINIUM_INGOT);
+                        output.accept(ModItems.ALUMINIUM_NUGGET);
+                        output.accept(ModBlocks.ALUMINIUM_BLOCK);
+
+                        output.accept(ModItems.ALUMINIUM_SWORD);
+                        output.accept(ModItems.ALUMINIUM_PICKAXE);
+                        output.accept(ModItems.ALUMINIUM_AXE);
+                        output.accept(ModItems.ALUMINIUM_SHOVEL);
+                        output.accept(ModItems.ALUMINIUM_HOE);
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> EARLY_PALAEOZOIC_ERA_TAB = CREATIVE_MODE_TAB.register("early_palaeozoic_era_tab",
