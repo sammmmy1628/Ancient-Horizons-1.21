@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "time_stone",
+  "ingredient": {
+    "item": "ancienthorizons:timestone_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:time_stone"
+  }
+}

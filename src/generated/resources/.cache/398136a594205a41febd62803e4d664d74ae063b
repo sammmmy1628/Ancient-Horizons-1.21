@@ -1,0 +1,7 @@
+// 1.21.1	2025-05-11T17:32:24.8348488	Tags for minecraft:item mod id ancienthorizons
+39e1f18c49bd5098070895e463a29578bd47ad0f data/ancienthorizons/tags/item/aluminium.json
+82ed2112be55dd8c7f157d5deb005c242131cbc8 data/minecraft/tags/item/axes.json
+d63cada6f3e10eb5adc7550a6d06f747ea29ff4b data/minecraft/tags/item/hoes.json
+5b25bcdba2392c2b94664019b84859dd287bc344 data/minecraft/tags/item/pickaxes.json
+ba59a1632ee43f26a598b0cdfd647504117d7deb data/minecraft/tags/item/shovels.json
+d51fafb58bf14a96b7a48bd00557ec896611ac13 data/minecraft/tags/item/swords.json

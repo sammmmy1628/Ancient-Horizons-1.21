@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "aluminium_ingot",
+  "ingredient": {
+    "item": "ancienthorizons:aluminium_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:aluminium_ingot"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "item.ancienthorizons.time_stone": "Камінь часу",
+    "item.ancienthorizons.raw_time_stone": "Необроблений камінь часу",
+
+    "block.ancienthorizons.timestone_ore": "Кам'яночасова руда",
+    "block.ancienthorizons.deepslate_timestone_ore": "Глибосланцева кам'яночасова руда",
+    "block.ancienthorizons.time_matrix": "Часова матриця",
+    "block.ancienthorizons.timestone_block": "Блок каменю часу",
+
+    "item.ancienthorizons.raw_aluminium": "Необроблений алюміній",
+    "block.ancienthorizons.aluminium_ore": "Алюмінієва руда",
+    "block.ancienthorizons.deepslate_aluminium_ore": "Глибосланцева алюмінієва руда",
+    "item.ancienthorizons.aluminium_ingot": "Алюмінієвий злиток",
+    "item.ancienthorizons.aluminium_nugget": "Алюмінієвий самородок",
+    "block.ancienthorizons.aluminium_block": "Блок алюмінію",
+
+    "item.ancienthorizons.aluminium_sword": "Алюмінієвий меч",
+    "item.ancienthorizons.aluminium_pickaxe": "Алюмінієве кайло",
+    "item.ancienthorizons.aluminium_axe": "Алюмінієва сокира",
+    "item.ancienthorizons.aluminium_shovel": "Алюмінієва лопата",
+    "item.ancienthorizons.aluminium_hoe": "Алюмінієва мотика"
+}

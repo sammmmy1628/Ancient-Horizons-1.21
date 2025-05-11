@@ -1,0 +1,8 @@
+// 1.21.1	2025-05-11T15:35:23.1141214	Loot Tables
+45f9ec126f0185efec51d3d3c86abf6ce78465ae data/ancienthorizons/loot_table/blocks/aluminium_block.json
+7e8fb758162c373f7fade30ce89c9ed0ba9eeb94 data/ancienthorizons/loot_table/blocks/aluminium_ore.json
+30e0bd4bca199eaf3678b7bad44a40a52c340908 data/ancienthorizons/loot_table/blocks/deepslate_aluminium_ore.json
+594359d4ac79ad37d0afb2da23fb12cff024d3cb data/ancienthorizons/loot_table/blocks/deepslate_timestone_ore.json
+5d4c468f04427921dab7c89ddec9e917cd88eed6 data/ancienthorizons/loot_table/blocks/timestone_block.json
+267b4b6a4b83f7ff0a5d4b6c299d04bb36d09d4d data/ancienthorizons/loot_table/blocks/timestone_ore.json
+9d8ef4ab2be57f67914e64c888ad243d7d4baf19 data/ancienthorizons/loot_table/blocks/time_matrix.json

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "T": {
+      "item": "ancienthorizons:time_stone"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "TNT",
+    "OOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:time_matrix"
+  }
+}
