@@ -23,5 +23,42 @@
   "item.ancienthorizons.aluminium_pickaxe": "Aluminium Pickaxe",
   "item.ancienthorizons.aluminium_axe": "Aluminium Axe",
   "item.ancienthorizons.aluminium_shovel": "Aluminium Shovel",
-  "item.ancienthorizons.aluminium_hoe": "Aluminium Hoe"
+  "item.ancienthorizons.aluminium_hoe": "Aluminium Hoe",
+  "item.ancienthorizons.aluminium_hammer": "Aluminium Hammer",
+
+  "item.ancienthorizons.aluminium_helmet": "Aluminium Helmet",
+  "item.ancienthorizons.aluminium_chestplate": "Aluminium Chestplate",
+  "item.ancienthorizons.aluminium_leggings": "Aluminium Leggings",
+  "item.ancienthorizons.aluminium_boots": "Aluminium Boots",
+
+  "block.ancienthorizons.tin_ore": "Tin Ore",
+  "block.ancienthorizons.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.ancienthorizons.raw_tin_block": "Raw Tin Block",
+  "block.ancienthorizons.tin_block": "Tin Block",
+  "item.ancienthorizons.raw_tin": "Raw Tin",
+  "item.ancienthorizons.tin_ingot": "Tin Ingot",
+  "item.ancienthorizons.tin_nugget": "Tin Nugget",
+
+  "block.ancienthorizons.chiseled_tin": "Chiseled Tin",
+  "block.ancienthorizons.tin_grate": "Tin Grate",
+  "block.ancienthorizons.cut_tin": "Cut Tin",
+  "block.ancienthorizons.cut_tin_stairs": "Cut Tin Stairs",
+  "block.ancienthorizons.cut_tin_slab": "Cut Tin Slab",
+  "block.ancienthorizons.tin_door": "Tin Door",
+  "block.ancienthorizons.tin_trapdoor": "Tin Trapdoor",
+
+  "block.ancienthorizons.bronze_block": "Bronze Block",
+  "item.ancienthorizons.bronze_alloy": "Bronze Alloy",
+  "item.ancienthorizons.bronze_nugget": "Bronze Nugget",
+
+  "item.ancienthorizons.bronze_sword": "Bronze Sword",
+  "item.ancienthorizons.bronze_pickaxe": "Bronze Pickaxe",
+  "item.ancienthorizons.bronze_axe": "Bronze Axe",
+  "item.ancienthorizons.bronze_shovel": "Bronze Shovel",
+  "item.ancienthorizons.bronze_hoe": "Bronze Hoe",
+
+  "item.ancienthorizons.bronze_helmet": "Bronze Helmet",
+  "item.ancienthorizons.bronze_chestplate": "Bronze Chestplate",
+  "item.ancienthorizons.bronze_leggings": "Bronze Leggings",
+  "item.ancienthorizons.bronze_boots": "Bronze Boots"
 }

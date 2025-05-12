@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TIMESTONE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_TIMESTONE_ORE);
                         output.accept(ModBlocks.TIMESTONE_BLOCK);
+                        output.accept(ModBlocks.RAW_TIMESTONE_BLOCK);
 
 
                         output.accept(ModBlocks.ALUMINIUM_ORE);
@@ -35,12 +36,51 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALUMINIUM_INGOT);
                         output.accept(ModItems.ALUMINIUM_NUGGET);
                         output.accept(ModBlocks.ALUMINIUM_BLOCK);
+                        output.accept(ModBlocks.RAW_ALUMINIUM_BLOCK);
 
                         output.accept(ModItems.ALUMINIUM_SWORD);
                         output.accept(ModItems.ALUMINIUM_PICKAXE);
                         output.accept(ModItems.ALUMINIUM_AXE);
                         output.accept(ModItems.ALUMINIUM_SHOVEL);
                         output.accept(ModItems.ALUMINIUM_HOE);
+                        output.accept(ModItems.ALUMINIUM_HAMMER);
+
+                        output.accept(ModItems.ALUMINIUM_HELMET);
+                        output.accept(ModItems.ALUMINIUM_CHESTPLATE);
+                        output.accept(ModItems.ALUMINIUM_LEGGINGS);
+                        output.accept(ModItems.ALUMINIUM_BOOTS);
+
+
+                        output.accept(ModBlocks.TIN_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_TIN_ORE);
+                        output.accept(ModBlocks.RAW_TIN_BLOCK);
+                        output.accept(ModBlocks.TIN_BLOCK);
+                        output.accept(ModItems.TIN_INGOT);
+                        output.accept(ModItems.TIN_NUGGET);
+                        output.accept(ModItems.RAW_TIN);
+
+                        output.accept(ModBlocks.CHISELED_TIN);
+                        output.accept(ModBlocks.TIN_GRATE);
+                        output.accept(ModBlocks.CUT_TIN);
+                        output.accept(ModBlocks.CUT_TIN_STAIRS);
+                        output.accept(ModBlocks.CUT_TIN_SLAB);
+                        output.accept(ModBlocks.TIN_DOOR);
+                        output.accept(ModBlocks.TIN_TRAPDOOR);
+
+                        output.accept(ModItems.BRONZE_ALLOY);
+                        output.accept(ModItems.BRONZE_NUGGET);
+                        output.accept(ModBlocks.BRONZE_BLOCK);
+
+                        output.accept(ModItems.BRONZE_SWORD);
+                        output.accept(ModItems.BRONZE_PICKAXE);
+                        output.accept(ModItems.BRONZE_AXE);
+                        output.accept(ModItems.BRONZE_SHOVEL);
+                        output.accept(ModItems.BRONZE_HOE);
+
+                        output.accept(ModItems.BRONZE_HELMET);
+                        output.accept(ModItems.BRONZE_CHESTPLATE);
+                        output.accept(ModItems.BRONZE_LEGGINGS);
+                        output.accept(ModItems.BRONZE_BOOTS);
 
                     }).build());
 

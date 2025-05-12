@@ -22,25 +22,39 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ALUMINIUM_BLOCK.get())
+                .add(ModBlocks.RAW_ALUMINIUM_BLOCK.get())
                 .add(ModBlocks.ALUMINIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_TIMESTONE_ORE.get())
                 .add(ModBlocks.TIMESTONE_ORE.get())
                 .add(ModBlocks.TIMESTONE_BLOCK.get())
-                .add(ModBlocks.TIME_MATRIX.get());
+                .add(ModBlocks.TIME_MATRIX.get())
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(ModBlocks.RAW_TIN_BLOCK.get())
+                .add(ModBlocks.TIN_BLOCK.get())
+                .add(ModBlocks.BRONZE_BLOCK.get())
+                .add(ModBlocks.RAW_TIMESTONE_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TIME_MATRIX.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.ALUMINIUM_BLOCK.get())
+                .add(ModBlocks.RAW_ALUMINIUM_BLOCK.get())
                 .add(ModBlocks.ALUMINIUM_ORE.get())
-                .add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get());
+                .add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get())
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(ModBlocks.RAW_TIN_BLOCK.get())
+                .add(ModBlocks.TIN_BLOCK.get())
+                .add(ModBlocks.BRONZE_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TIMESTONE_BLOCK.get())
                 .add(ModBlocks.TIMESTONE_ORE.get())
-                .add(ModBlocks.DEEPSLATE_TIMESTONE_ORE.get());
+                .add(ModBlocks.DEEPSLATE_TIMESTONE_ORE.get())
+                .add(ModBlocks.RAW_TIMESTONE_BLOCK.get());
 
         tag(ModTags.Blocks.ALUMINIUM_ORES)
                 .add(ModBlocks.ALUMINIUM_ORE.get())

@@ -28,8 +28,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.ALUMINIUM_BLOCK.get());
+        dropSelf(ModBlocks.RAW_ALUMINIUM_BLOCK.get());
         dropSelf(ModBlocks.TIME_MATRIX.get());
         dropSelf(ModBlocks.TIMESTONE_BLOCK.get());
+        dropSelf(ModBlocks.RAW_TIMESTONE_BLOCK.get());
+
+        dropSelf(ModBlocks.RAW_TIN_BLOCK.get());
+        dropSelf(ModBlocks.TIN_BLOCK.get());
+
+        dropSelf(ModBlocks.CUT_TIN_STAIRS.get());
+        add(ModBlocks.CUT_TIN_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CUT_TIN_SLAB.get()));
+        dropSelf(ModBlocks.CUT_TIN.get());
+        dropSelf(ModBlocks.CHISELED_TIN.get());
+        dropSelf(ModBlocks.TIN_GRATE.get());
+        dropSelf(ModBlocks.TIN_TRAPDOOR.get());
+
+        dropSelf(ModBlocks.BRONZE_BLOCK.get());
 
         add(ModBlocks.TIMESTONE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.TIMESTONE_ORE.get(), ModItems.RAW_TIME_STONE.get(), 0,3));
@@ -40,6 +55,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.ALUMINIUM_ORE.get(), ModItems.RAW_ALUMINIUM.get()));
         add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(), ModItems.RAW_ALUMINIUM.get()));
+
+        add(ModBlocks.TIN_ORE.get(),
+                block -> createOreDrop(ModBlocks.TIN_ORE.get(), ModItems.RAW_TIN.get()));
+        add(ModBlocks.DEEPSLATE_TIN_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_TIN_ORE.get(), ModItems.RAW_TIN.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

@@ -27,14 +27,29 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ALUMINIUM_NUGGET.get());
 
         tag(ItemTags.SWORDS)
-                .add(ModItems.ALUMINIUM_SWORD.get());
+                .add(ModItems.ALUMINIUM_SWORD.get())
+                .add(ModItems.BRONZE_SWORD.get());
         tag(ItemTags.PICKAXES)
-                .add(ModItems.ALUMINIUM_PICKAXE.get());
+                .add(ModItems.ALUMINIUM_PICKAXE.get())
+                .add(ModItems.BRONZE_PICKAXE.get());
         tag(ItemTags.AXES)
-                .add(ModItems.ALUMINIUM_AXE.get());
+                .add(ModItems.ALUMINIUM_AXE.get())
+                .add(ModItems.BRONZE_AXE.get());
         tag(ItemTags.SHOVELS)
-                .add(ModItems.ALUMINIUM_SHOVEL.get());
+                .add(ModItems.ALUMINIUM_SHOVEL.get())
+                .add(ModItems.BRONZE_SHOVEL.get());
         tag(ItemTags.HOES)
-                .add(ModItems.ALUMINIUM_HOE.get());
+                .add(ModItems.ALUMINIUM_HOE.get())
+                .add(ModItems.BRONZE_HOE.get());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ALUMINIUM_HELMET.get())
+                .add(ModItems.ALUMINIUM_CHESTPLATE.get())
+                .add(ModItems.ALUMINIUM_LEGGINGS.get())
+                .add(ModItems.ALUMINIUM_BOOTS.get())
+                .add(ModItems.BRONZE_HELMET.get())
+                .add(ModItems.BRONZE_CHESTPLATE.get())
+                .add(ModItems.BRONZE_LEGGINGS.get())
+                .add(ModItems.BRONZE_BOOTS.get());
     }
 }

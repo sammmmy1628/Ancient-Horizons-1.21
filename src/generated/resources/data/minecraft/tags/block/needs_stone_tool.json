@@ -1,7 +1,13 @@
 {
   "values": [
     "ancienthorizons:aluminium_block",
+    "ancienthorizons:raw_aluminium_block",
     "ancienthorizons:aluminium_ore",
-    "ancienthorizons:deepslate_aluminium_ore"
+    "ancienthorizons:deepslate_aluminium_ore",
+    "ancienthorizons:tin_ore",
+    "ancienthorizons:deepslate_tin_ore",
+    "ancienthorizons:raw_tin_block",
+    "ancienthorizons:tin_block",
+    "ancienthorizons:bronze_block"
   ]
 }
