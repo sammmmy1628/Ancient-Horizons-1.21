@@ -1,18 +1,30 @@
 {
   "values": [
+    "ancienthorizons:timestone_ore",
+    "ancienthorizons:deepslate_timestone_ore",
+    "ancienthorizons:deepslate_tin_ore",
+    "ancienthorizons:raw_timestone_block",
+    "ancienthorizons:timestone_block",
+    "ancienthorizons:time_matrix",
     "ancienthorizons:aluminium_block",
     "ancienthorizons:raw_aluminium_block",
     "ancienthorizons:aluminium_ore",
     "ancienthorizons:deepslate_aluminium_ore",
-    "ancienthorizons:deepslate_timestone_ore",
-    "ancienthorizons:timestone_ore",
-    "ancienthorizons:timestone_block",
-    "ancienthorizons:time_matrix",
     "ancienthorizons:tin_ore",
     "ancienthorizons:deepslate_tin_ore",
     "ancienthorizons:raw_tin_block",
     "ancienthorizons:tin_block",
+    "ancienthorizons:chiseled_tin",
+    "ancienthorizons:tin_grate",
+    "ancienthorizons:cut_tin",
+    "ancienthorizons:cut_tin_stairs",
+    "ancienthorizons:cut_tin_slab",
+    "ancienthorizons:tin_door",
+    "ancienthorizons:tin_trapdoor",
     "ancienthorizons:bronze_block",
-    "ancienthorizons:raw_timestone_block"
+    "ancienthorizons:silver_ore",
+    "ancienthorizons:deepslate_silver_ore",
+    "ancienthorizons:raw_silver_block",
+    "ancienthorizons:silver_block"
   ]
 }

@@ -21,34 +21,76 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                // TIMESTONE
+                .add(ModBlocks.TIMESTONE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIMESTONE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(ModBlocks.RAW_TIMESTONE_BLOCK.get())
+                .add(ModBlocks.TIMESTONE_BLOCK.get())
+                .add(ModBlocks.TIME_MATRIX.get())
+
+                // ALUMINIUM
                 .add(ModBlocks.ALUMINIUM_BLOCK.get())
                 .add(ModBlocks.RAW_ALUMINIUM_BLOCK.get())
                 .add(ModBlocks.ALUMINIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get())
-                .add(ModBlocks.DEEPSLATE_TIMESTONE_ORE.get())
-                .add(ModBlocks.TIMESTONE_ORE.get())
-                .add(ModBlocks.TIMESTONE_BLOCK.get())
-                .add(ModBlocks.TIME_MATRIX.get())
+
+                // TIN
                 .add(ModBlocks.TIN_ORE.get())
                 .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(ModBlocks.RAW_TIN_BLOCK.get())
                 .add(ModBlocks.TIN_BLOCK.get())
+
+                .add(ModBlocks.CHISELED_TIN.get())
+                .add(ModBlocks.TIN_GRATE.get())
+                .add(ModBlocks.CUT_TIN.get())
+                .add(ModBlocks.CUT_TIN_STAIRS.get())
+                .add(ModBlocks.CUT_TIN_SLAB.get())
+                .add(ModBlocks.TIN_DOOR.get())
+                .add(ModBlocks.TIN_TRAPDOOR.get())
+
+                // BRONZE
                 .add(ModBlocks.BRONZE_BLOCK.get())
-                .add(ModBlocks.RAW_TIMESTONE_BLOCK.get());
+
+                // SILVER
+                .add(ModBlocks.SILVER_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SILVER_ORE.get())
+                .add(ModBlocks.RAW_SILVER_BLOCK.get())
+                .add(ModBlocks.SILVER_BLOCK.get());
+
+
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TIME_MATRIX.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
+                // ALUMINIUM
                 .add(ModBlocks.ALUMINIUM_BLOCK.get())
                 .add(ModBlocks.RAW_ALUMINIUM_BLOCK.get())
                 .add(ModBlocks.ALUMINIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get())
+                // TIN
                 .add(ModBlocks.TIN_ORE.get())
                 .add(ModBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(ModBlocks.RAW_TIN_BLOCK.get())
                 .add(ModBlocks.TIN_BLOCK.get())
-                .add(ModBlocks.BRONZE_BLOCK.get());
+
+                .add(ModBlocks.CHISELED_TIN.get())
+                .add(ModBlocks.TIN_GRATE.get())
+                .add(ModBlocks.CUT_TIN.get())
+                .add(ModBlocks.CUT_TIN_STAIRS.get())
+                .add(ModBlocks.CUT_TIN_SLAB.get())
+                .add(ModBlocks.TIN_DOOR.get())
+                .add(ModBlocks.TIN_TRAPDOOR.get())
+
+                // BRONZE
+                .add(ModBlocks.BRONZE_BLOCK.get())
+
+                // SILVER
+                .add(ModBlocks.SILVER_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SILVER_ORE.get())
+                .add(ModBlocks.RAW_SILVER_BLOCK.get())
+                .add(ModBlocks.SILVER_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TIMESTONE_BLOCK.get())
@@ -66,5 +108,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_ALUMINIUM_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_ALUMINIUM_TOOL);
+
+
     }
 }

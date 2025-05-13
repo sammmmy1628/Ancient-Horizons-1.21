@@ -27,6 +27,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModBlocks.ALUMINIUM_ORE, ModBlocks.DEEPSLATE_ALUMINIUM_ORE);
         List<ItemLike> TIN_SMELTABLES = List.of(ModItems.RAW_TIN,
                 ModBlocks.TIN_ORE, ModBlocks.DEEPSLATE_TIN_ORE);
+        List<ItemLike> SILVER_SMELTABLES = List.of(ModItems.RAW_SILVER,
+                ModBlocks.SILVER_ORE, ModBlocks.DEEPSLATE_SILVER_ORE);
 
         // TIMESTONE
 
@@ -239,6 +241,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', ModItems.TIN_INGOT.get())
                 .unlockedBy("has_tin_ingot", has(ModItems.TIN_INGOT)).save(recipeOutput);
 
+        // decorational
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CUT_TIN.get())
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.TIN_BLOCK.get())
+                .unlockedBy("has_tin_block", has(ModBlocks.TIN_BLOCK)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_TIN.get())
+                .pattern("X")
+                .pattern("X")
+                .define('X', ModBlocks.CUT_TIN_SLAB.get())
+                .unlockedBy("has_cut_tin_slab", has(ModBlocks.CUT_TIN_SLAB)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TIN_GRATE.get())
+                .pattern(" X ")
+                .pattern("X X")
+                .pattern(" X ")
+                .define('X', ModBlocks.TIN_BLOCK.get())
+                .unlockedBy("has_tin_block", has(ModBlocks.TIN_BLOCK)).save(recipeOutput);
+
+        stairBuilder(ModBlocks.CUT_TIN_STAIRS.get(), Ingredient.of(ModBlocks.CUT_TIN)).group("cut_tin")
+                .unlockedBy("has_cut_tin",has(ModBlocks.CUT_TIN)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.CUT_TIN_SLAB.get(),ModBlocks.CUT_TIN.get());
+        doorBuilder(ModBlocks.TIN_DOOR.get(), Ingredient.of(ModBlocks.CUT_TIN.get())).group("cut_tin")
+                        .unlockedBy("has_cut_tin",has(ModBlocks.CUT_TIN.get())).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.TIN_TRAPDOOR.get(), Ingredient.of(ModBlocks.CUT_TIN.get())).group("cut_tin")
+                        .unlockedBy("has_cut_tin",has(ModBlocks.CUT_TIN.get())).save(recipeOutput);
 
         // BRONZE
 
@@ -294,7 +321,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', ModItems.BRONZE_ALLOY.get())
                 .unlockedBy("has_bronze_ingot", has(ModItems.BRONZE_ALLOY)).save(recipeOutput);
 
-        // aluminium tools
+        // bronze tools
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BRONZE_SWORD.get())
                 .pattern("X")
                 .pattern("X")
@@ -345,6 +372,117 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('/', Items.STICK)
                 .unlockedBy("has_bronze_ingot", has(ModItems.BRONZE_ALLOY)).save(recipeOutput,"bronze_hoe_left");
 
+
+        // SILVER
+
+        // silver ingot
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 9)
+                .requires(ModBlocks.SILVER_BLOCK)
+                .unlockedBy("has_silver_block", has(ModBlocks.SILVER_BLOCK.get())).save(recipeOutput,"silver_from_block");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_INGOT.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.SILVER_NUGGET.get())
+                .unlockedBy("has_silver_nugget", has(ModItems.SILVER_NUGGET)).save(recipeOutput,"silver_from_nugget");
+
+        // silver block
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SILVER_BLOCK.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+
+        // silver nugget
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_NUGGET.get(), 9)
+                .requires(ModItems.SILVER_INGOT)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT.get())).save(recipeOutput);
+
+        // silver armour
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_HELMET.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_CHESTPLATE.get())
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_LEGGINGS.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_BOOTS.get())
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+
+        // bronze tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_SWORD.get())
+                .pattern("X")
+                .pattern("X")
+                .pattern("/")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_PICKAXE.get())
+                .pattern("XXX")
+                .pattern(" / ")
+                .pattern(" / ")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_AXE.get())
+                .pattern("XX")
+                .pattern("X/")
+                .pattern(" /")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_AXE.get())
+                .pattern("XX")
+                .pattern("/X")
+                .pattern("/ ")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput, "silver_axe_alt");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_SHOVEL.get())
+                .pattern("X")
+                .pattern("/")
+                .pattern("/")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_HOE.get())
+                .pattern("XX")
+                .pattern("/ ")
+                .pattern("/ ")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_HOE.get())
+                .pattern("XX")
+                .pattern(" /")
+                .pattern(" /")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput, "silver_hoe_alt");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_KATANA.get())
+                .pattern("  X")
+                .pattern(" X ")
+                .pattern("/  ")
+                .define('X', ModItems.SILVER_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
+
+        oreSmelting(recipeOutput, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.25f,200,"silver_ingot");
+        oreBlasting(recipeOutput, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.25f,100,"silver_ingot");
 
 
 

@@ -1,6 +1,7 @@
 package com.fungoussoup.ancienthorizons.datagen;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
+import com.fungoussoup.ancienthorizons.block.ModBlocks;
 import com.fungoussoup.ancienthorizons.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -43,6 +44,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        // TIMESTONE
+        basicItem(ModItems.RAW_TIME_STONE.get());
+        basicItem(ModItems.TIME_STONE.get());
+
+        // ALUMINIUM
         basicItem(ModItems.RAW_ALUMINIUM.get());
         basicItem(ModItems.ALUMINIUM_INGOT.get());
         basicItem(ModItems.ALUMINIUM_NUGGET.get());
@@ -54,32 +60,56 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ALUMINIUM_HOE.get());
         handheldItem(ModItems.ALUMINIUM_HAMMER.get());
 
+        trimmedArmorItem(ModItems.ALUMINIUM_HELMET);
+        trimmedArmorItem(ModItems.ALUMINIUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.ALUMINIUM_LEGGINGS);
+        trimmedArmorItem(ModItems.ALUMINIUM_BOOTS);
+
+        // TIN
+        basicItem(ModItems.TIN_INGOT.get());
+        basicItem(ModItems.TIN_NUGGET.get());
+        basicItem(ModItems.RAW_TIN.get());
+
+        basicItem(ModBlocks.TIN_DOOR.asItem());
+
+        // BRONZE
+        basicItem(ModItems.BRONZE_ALLOY.get());
+        basicItem(ModItems.BRONZE_NUGGET.get());
+
         handheldItem(ModItems.BRONZE_SWORD.get());
         handheldItem(ModItems.BRONZE_PICKAXE.get());
         handheldItem(ModItems.BRONZE_AXE.get());
         handheldItem(ModItems.BRONZE_SHOVEL.get());
         handheldItem(ModItems.BRONZE_HOE.get());
 
-        trimmedArmorItem(ModItems.ALUMINIUM_HELMET);
-        trimmedArmorItem(ModItems.ALUMINIUM_CHESTPLATE);
-        trimmedArmorItem(ModItems.ALUMINIUM_LEGGINGS);
-        trimmedArmorItem(ModItems.ALUMINIUM_BOOTS);
-
         trimmedArmorItem(ModItems.BRONZE_HELMET);
         trimmedArmorItem(ModItems.BRONZE_CHESTPLATE);
         trimmedArmorItem(ModItems.BRONZE_LEGGINGS);
         trimmedArmorItem(ModItems.BRONZE_BOOTS);
 
+        // SILVER
+        basicItem(ModItems.SILVER_INGOT.get());
+        basicItem(ModItems.SILVER_NUGGET.get());
+        basicItem(ModItems.RAW_SILVER.get());
 
-        basicItem(ModItems.TIN_INGOT.get());
-        basicItem(ModItems.TIN_NUGGET.get());
-        basicItem(ModItems.RAW_TIN.get());
-        basicItem(ModItems.BRONZE_ALLOY.get());
-        basicItem(ModItems.BRONZE_NUGGET.get());
+        handheldItem(ModItems.SILVER_SWORD.get());
+        handheldItem(ModItems.SILVER_PICKAXE.get());
+        handheldItem(ModItems.SILVER_AXE.get());
+        handheldItem(ModItems.SILVER_SHOVEL.get());
+        handheldItem(ModItems.SILVER_HOE.get());
+        handheldItem(ModItems.SILVER_KATANA.get());
+
+        trimmedArmorItem(ModItems.SILVER_HELMET);
+        trimmedArmorItem(ModItems.SILVER_CHESTPLATE);
+        trimmedArmorItem(ModItems.SILVER_LEGGINGS);
+        trimmedArmorItem(ModItems.SILVER_BOOTS);
 
 
-        basicItem(ModItems.RAW_TIME_STONE.get());
-        basicItem(ModItems.TIME_STONE.get());
+
+
+
+
+
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

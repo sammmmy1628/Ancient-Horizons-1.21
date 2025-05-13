@@ -33,6 +33,12 @@ public class ModItems {
     public static final DeferredItem<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> RAW_SILVER = ITEMS.register("raw_silver",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
+            () -> new Item(new Item.Properties()));
 
 
     public static final DeferredItem<SwordItem> ALUMINIUM_SWORD = ITEMS.register("aluminium_sword",
@@ -95,6 +101,40 @@ public class ModItems {
     public static final DeferredItem<ArmorItem> BRONZE_BOOTS = ITEMS.register("bronze_boots",
             () -> new ArmorItem(ModArmourMaterials.BRONZE_ARMOUR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(17))));
+
+
+    public static final DeferredItem<SwordItem> SILVER_SWORD = ITEMS.register("silver_sword",
+            () -> new SwordItem(ModToolTiers.SILVER, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SILVER,3.0f,-2.4f))));
+    public static final DeferredItem<PickaxeItem> SILVER_PICKAXE = ITEMS.register("silver_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.SILVER, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.SILVER,1.0f,-2.8f))));
+    public static final DeferredItem<ShovelItem> SILVER_SHOVEL = ITEMS.register("silver_shovel",
+            () -> new ShovelItem(ModToolTiers.SILVER, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.SILVER,1.5f,-3.0f))));
+    public static final DeferredItem<AxeItem> SILVER_AXE = ITEMS.register("silver_axe",
+            () -> new AxeItem(ModToolTiers.SILVER, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.SILVER,5.0f,-3f))));
+    public static final DeferredItem<HoeItem> SILVER_HOE = ITEMS.register("silver_hoe",
+            () -> new HoeItem(ModToolTiers.SILVER, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.SILVER,-3f,-0f))));
+    public static final DeferredItem<SwordItem> SILVER_KATANA = ITEMS.register("silver_katana",
+            () -> new SwordItem(ModToolTiers.SILVER, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.SILVER,2.3f,-4f))));
+
+    public static final DeferredItem<ArmorItem> SILVER_HELMET = ITEMS.register("silver_helmet",
+            () -> new ArmorItem(ModArmourMaterials.SILVER_ARMOUR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18))));
+    public static final DeferredItem<ArmorItem> SILVER_CHESTPLATE = ITEMS.register("silver_chestplate",
+            () -> new ArmorItem(ModArmourMaterials.SILVER_ARMOUR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(18))));
+    public static final DeferredItem<ArmorItem> SILVER_LEGGINGS = ITEMS.register("silver_leggings",
+            () -> new ArmorItem(ModArmourMaterials.SILVER_ARMOUR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(18))));
+    public static final DeferredItem<ArmorItem> SILVER_BOOTS = ITEMS.register("silver_boots",
+            () -> new ArmorItem(ModArmourMaterials.SILVER_ARMOUR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18))));
+
 
 
     public static void register(IEventBus eventBus) {

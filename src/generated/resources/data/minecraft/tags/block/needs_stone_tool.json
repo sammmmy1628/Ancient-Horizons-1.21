@@ -8,6 +8,17 @@
     "ancienthorizons:deepslate_tin_ore",
     "ancienthorizons:raw_tin_block",
     "ancienthorizons:tin_block",
-    "ancienthorizons:bronze_block"
+    "ancienthorizons:chiseled_tin",
+    "ancienthorizons:tin_grate",
+    "ancienthorizons:cut_tin",
+    "ancienthorizons:cut_tin_stairs",
+    "ancienthorizons:cut_tin_slab",
+    "ancienthorizons:tin_door",
+    "ancienthorizons:tin_trapdoor",
+    "ancienthorizons:bronze_block",
+    "ancienthorizons:silver_ore",
+    "ancienthorizons:deepslate_silver_ore",
+    "ancienthorizons:raw_silver_block",
+    "ancienthorizons:silver_block"
   ]
 }
