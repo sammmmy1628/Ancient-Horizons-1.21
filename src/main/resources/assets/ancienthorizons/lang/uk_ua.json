@@ -18,5 +18,41 @@
     "item.ancienthorizons.aluminium_pickaxe": "Алюмінієве кайло",
     "item.ancienthorizons.aluminium_axe": "Алюмінієва сокира",
     "item.ancienthorizons.aluminium_shovel": "Алюмінієва лопата",
-    "item.ancienthorizons.aluminium_hoe": "Алюмінієва мотика"
+    "item.ancienthorizons.aluminium_hoe": "Алюмінієва мотика",
+
+    "item.ancienthorizons.aluminium_helmet": "Алюмінієвий шолом",
+    "item.ancienthorizons.aluminium_chestplate": "Алюмінієвий нагрудник",
+    "item.ancienthorizons.aluminium_leggings": "Алюмінієві наголіннки",
+    "item.ancienthorizons.aluminium_boots": "Алюмінієві чоботи",
+
+    "block.ancienthorizons.tin_ore": "Олов'яна руда",
+    "block.ancienthorizons.deepslate_tin_ore": "Глибосланцева олов'яна руда",
+    "block.ancienthorizons.raw_tin_block": "Блок необробленого олова",
+    "block.ancienthorizons.tin_block": "Блок олова",
+    "item.ancienthorizons.raw_tin": "Необроблене олово",
+    "item.ancienthorizons.tin_ingot": "Олов'яний злиток",
+    "item.ancienthorizons.tin_nugget": "Олов'яний самородок",
+
+    "block.ancienthorizons.chiseled_tin": "Різьблене олово",
+    "block.ancienthorizons.tin_grate": "Олов'яна решітка",
+    "block.ancienthorizons.cut_tin": "Тесане олово",
+    "block.ancienthorizons.cut_tin_stairs": "Тесані олов'яні сходи",
+    "block.ancienthorizons.cut_tin_slab": "Тесана олов'яна плита",
+    "block.ancienthorizons.tin_door": "Олов'яні двері",
+    "block.ancienthorizons.tin_trapdoor": "Олов'яний люк",
+
+    "block.ancienthorizons.bronze_block": "Блок бронзи",
+    "item.ancienthorizons.bronze_alloy": "Бронзовий сплав",
+    "item.ancienthorizons.bronze_nugget": "Бронзовий самородок",
+
+    "item.ancienthorizons.bronze_sword": "Бронзовий меч",
+    "item.ancienthorizons.bronze_pickaxe": "Бронзове кайло",
+    "item.ancienthorizons.bronze_axe": "Бронзова сокира",
+    "item.ancienthorizons.bronze_shovel": "Бронзова лопата",
+    "item.ancienthorizons.bronze_hoe": "Бронзова мотика",
+
+    "item.ancienthorizons.bronze_helmet": "Бронзовий шолом",
+    "item.ancienthorizons.bronze_chestplate": "Бронзовий нагрудник",
+    "item.ancienthorizons.bronze_leggings": "Бронзові наголіннки",
+    "item.ancienthorizons.bronze_boots": "Бронзові чоботи"
 }
