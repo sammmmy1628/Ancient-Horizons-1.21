@@ -54,5 +54,26 @@
     "item.ancienthorizons.bronze_helmet": "Бронзовий шолом",
     "item.ancienthorizons.bronze_chestplate": "Бронзовий нагрудник",
     "item.ancienthorizons.bronze_leggings": "Бронзові наголіннки",
-    "item.ancienthorizons.bronze_boots": "Бронзові чоботи"
+    "item.ancienthorizons.bronze_boots": "Бронзові чоботи",
+
+  "block.ancienthorizons.silver_ore": "Срібна руда",
+  "block.ancienthorizons.deepslate_silver_ore": "Глибосланцева срібна руда",
+  "block.ancienthorizons.raw_silver_block": "Блок необробленого срібла",
+  "block.ancienthorizons.silver_block": "Блок срібла",
+
+  "item.ancienthorizons.raw_silver": "Необроблене срібло",
+  "item.ancienthorizons.silver_ingot": "Срібний злиток",
+  "item.ancienthorizons.silver_nugget": "Срібний самородок",
+
+  "item.ancienthorizons.silver_sword": "Срібний меч",
+  "item.ancienthorizons.silver_pickaxe": "Срібне кайло",
+  "item.ancienthorizons.silver_axe": "Срібна сокира",
+  "item.ancienthorizons.silver_shovel": "Срібна лопата",
+  "item.ancienthorizons.silver_hoe": "Срібна мотика",
+  "item.ancienthorizons.silver_katana": "Катана",
+
+  "item.ancienthorizons.silver_helmet": "Срібний шолом",
+  "item.ancienthorizons.silver_chestplate": "Срібний нагрудник",
+  "item.ancienthorizons.silver_leggings": "Срібні наголінники",
+  "item.ancienthorizons.silver_boots": "Срібні чоботи"
 }
