@@ -1,0 +1,85 @@
+{
+  "item.ancienthorizons.time_stone": "Kamień Czasu",
+  "item.ancienthorizons.raw_time_stone": "Surowy Kamień Czasu",
+
+  "block.ancienthorizons.timestone_ore": "Ruda Kamieni Czasu",
+  "block.ancienthorizons.deepslate_timestone_ore": "Łupkowa Ruda Kamieni Czasu",
+
+  "block.ancienthorizons.time_matrix": "Matriks Czasu",
+  "block.ancienthorizons.timestone_block": "Blok Kamieni Czasu",
+
+  "creativetab.ancienthorizons.ancient_horizons_minerals": "Ancient Horizons: Minerały",
+  "creativetab.ancienthorizons.ancient_horizons_building_blocks": "Ancient Horizons: Bloki Budownicze",
+  "creativetab.ancienthorizons.ancient_horizons_tools_and_armour": "Ancient Horizons: Narzędzia i Zbroje",
+
+  "item.ancienthorizons.raw_aluminium": "Surowe Aluminium",
+  "block.ancienthorizons.aluminium_ore": "Ruda Aluminium",
+  "block.ancienthorizons.deepslate_aluminium_ore": "Łupkowa Ruda Aluminium",
+  "item.ancienthorizons.aluminium_ingot": "Sztabka Aluminium",
+  "item.ancienthorizons.aluminium_nugget": "Samorodek Aluminium",
+  "block.ancienthorizons.aluminium_block": "Blok Aluminium",
+
+  "item.ancienthorizons.aluminium_sword": "Miecz z Aluminium",
+  "item.ancienthorizons.aluminium_pickaxe": "Kilof z Aluminium",
+  "item.ancienthorizons.aluminium_axe": "Siekiera z Aluminium",
+  "item.ancienthorizons.aluminium_shovel": "Łopata z Aluminium",
+  "item.ancienthorizons.aluminium_hoe": "Motyka z Aluminium",
+  "item.ancienthorizons.aluminium_hammer": "Młot z Aluminium",
+
+  "item.ancienthorizons.aluminium_helmet": "Hełm z Aluminium",
+  "item.ancienthorizons.aluminium_chestplate": "Napierśnik z Aluminium",
+  "item.ancienthorizons.aluminium_leggings": "Spodnie z Aluminium",
+  "item.ancienthorizons.aluminium_boots": "Buty z Aluminium",
+
+  "block.ancienthorizons.tin_ore": "Ruda Cyny",
+  "block.ancienthorizons.deepslate_tin_ore": "Łupkowa Ruda Cyny",
+  "block.ancienthorizons.raw_tin_block": "Blok Surowej Cyny",
+  "block.ancienthorizons.tin_block": "Blok Cyny",
+  "item.ancienthorizons.raw_tin": "Surowa Cyna",
+  "item.ancienthorizons.tin_ingot": "Sztabka Cyny",
+  "item.ancienthorizons.tin_nugget": "Samorodek Cyny",
+
+  "block.ancienthorizons.chiseled_tin": "Rzeźbiona Cyna",
+  "block.ancienthorizons.tin_grate": "Kratka z Cyny",
+  "block.ancienthorizons.cut_tin": "Cięta Cyna",
+  "block.ancienthorizons.cut_tin_stairs": "Schody z Ciętej Cyny",
+  "block.ancienthorizons.cut_tin_slab": "Płyta z Ciętej Cyny",
+  "block.ancienthorizons.tin_door": "Drzwi Cynowe",
+  "block.ancienthorizons.tin_trapdoor": "Właz Cynowy",
+
+  "block.ancienthorizons.bronze_block": "Blok Brązu",
+  "item.ancienthorizons.bronze_alloy": "Stop Brązu",
+  "item.ancienthorizons.bronze_nugget": "Samorodek Brązu",
+
+  "item.ancienthorizons.bronze_sword": "Miecz z Brązu",
+  "item.ancienthorizons.bronze_pickaxe": "Kilof z Brązu",
+  "item.ancienthorizons.bronze_axe": "Siekiera z Brązu",
+  "item.ancienthorizons.bronze_shovel": "Łopata z Brązu",
+  "item.ancienthorizons.bronze_hoe": "Motyka z Brązu",
+
+  "item.ancienthorizons.bronze_helmet": "Hełm z Brązu",
+  "item.ancienthorizons.bronze_chestplate": "Napierśnik z Brązu",
+  "item.ancienthorizons.bronze_leggings": "Spodnie z Brązu",
+  "item.ancienthorizons.bronze_boots": "Buty z Brązu",
+
+  "block.ancienthorizons.silver_ore": "Ruda Srebra",
+  "block.ancienthorizons.deepslate_silver_ore": "Łupkowa Ruda Srebra",
+  "block.ancienthorizons.raw_silver_block": "Blok Surowego Srebra",
+  "block.ancienthorizons.silver_block": "Blok Srebra",
+
+  "item.ancienthorizons.raw_silver": "Surowe Srebro",
+  "item.ancienthorizons.silver_ingot": "Sztabka Srebra",
+  "item.ancienthorizons.silver_nugget": "Samorodek Srebra",
+
+  "item.ancienthorizons.silver_sword": "Miecz ze Srebra",
+  "item.ancienthorizons.silver_pickaxe": "Kilof ze Srebra",
+  "item.ancienthorizons.silver_axe": "Siekiera ze Srebra",
+  "item.ancienthorizons.silver_shovel": "Łopata ze Srebra",
+  "item.ancienthorizons.silver_hoe": "Motyka ze Srebra",
+  "item.ancienthorizons.silver_katana": "Katana ze Srebra",
+
+  "item.ancienthorizons.silver_helmet": "Hełm ze Srebra",
+  "item.ancienthorizons.silver_chestplate": "Napierśnik ze Srebra",
+  "item.ancienthorizons.silver_leggings": "Spodnie ze Srebra",
+  "item.ancienthorizons.silver_boots": "Buty ze Srebra"
+}
