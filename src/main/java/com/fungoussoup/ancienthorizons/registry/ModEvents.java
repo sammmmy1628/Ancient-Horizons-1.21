@@ -1,7 +1,7 @@
-package com.fungoussoup.ancienthorizons.event;
+package com.fungoussoup.ancienthorizons.registry;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
-import com.fungoussoup.ancienthorizons.item.custom.HammerItem;
+import com.fungoussoup.ancienthorizons.item.HammerItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;

@@ -1,4 +1,4 @@
-package com.fungoussoup.ancienthorizons.util;
+package com.fungoussoup.ancienthorizons.registry;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
 import net.minecraft.resources.ResourceLocation;

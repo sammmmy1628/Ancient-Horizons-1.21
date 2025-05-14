@@ -1,7 +1,6 @@
-package com.fungoussoup.ancienthorizons.block;
+package com.fungoussoup.ancienthorizons.registry;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
-import com.fungoussoup.ancienthorizons.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -13,6 +12,9 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
+
+import static com.fungoussoup.ancienthorizons.AncientHorizons.LOGGER;
+import static com.fungoussoup.ancienthorizons.AncientHorizons.NAME;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
@@ -115,7 +117,7 @@ public class ModBlocks {
 
 
 
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
+    public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
@@ -127,5 +129,6 @@ public class ModBlocks {
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
+        LOGGER.info("Loaded {} mod blocks", NAME);
     }
 }

@@ -1,11 +1,14 @@
-package com.fungoussoup.ancienthorizons.item;
+package com.fungoussoup.ancienthorizons.registry;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
-import com.fungoussoup.ancienthorizons.item.custom.HammerItem;
+import com.fungoussoup.ancienthorizons.item.HammerItem;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import static com.fungoussoup.ancienthorizons.AncientHorizons.LOGGER;
+import static com.fungoussoup.ancienthorizons.AncientHorizons.NAME;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(AncientHorizons.MOD_ID);
@@ -139,5 +142,6 @@ public class ModItems {
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
+        LOGGER.info("Loaded {} mod items", NAME);
     }
 }

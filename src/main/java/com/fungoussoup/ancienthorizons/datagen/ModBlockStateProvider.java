@@ -1,7 +1,7 @@
 package com.fungoussoup.ancienthorizons.datagen;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
-import com.fungoussoup.ancienthorizons.block.ModBlocks;
+import com.fungoussoup.ancienthorizons.registry.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;

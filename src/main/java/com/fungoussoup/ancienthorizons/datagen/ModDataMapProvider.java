@@ -1,6 +1,6 @@
 package com.fungoussoup.ancienthorizons.datagen;
 
-import com.fungoussoup.ancienthorizons.item.ModItems;
+import com.fungoussoup.ancienthorizons.registry.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DataMapProvider;

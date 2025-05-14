@@ -1,12 +1,11 @@
 package com.fungoussoup.ancienthorizons.datagen;
 
-import com.fungoussoup.ancienthorizons.block.ModBlocks;
-import com.fungoussoup.ancienthorizons.item.ModItems;
+import com.fungoussoup.ancienthorizons.registry.ModBlocks;
+import com.fungoussoup.ancienthorizons.registry.ModItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;

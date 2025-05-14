@@ -1,6 +1,5 @@
-package com.fungoussoup.ancienthorizons.item;
+package com.fungoussoup.ancienthorizons.registry;
 
-import com.fungoussoup.ancienthorizons.util.ModTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.SimpleTier;
