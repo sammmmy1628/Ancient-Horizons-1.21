@@ -7,6 +7,10 @@
     "block.ancienthorizons.time_matrix": "Часова матриця",
     "block.ancienthorizons.timestone_block": "Блок каменю часу",
 
+    "creativetab.ancienthorizons.ancient_horizons_minerals": "Стародавні горизонти: Мінерали",
+    "creativetab.ancienthorizons.ancient_horizons_building_blocks": "Стародавні горизонти: Будівельні блоки",
+    "creativetab.ancienthorizons.ancient_horizons_tools_and_armour": "Стародавні горизонти: Інструменти & Обладунки",
+
     "item.ancienthorizons.raw_aluminium": "Необроблений алюміній",
     "block.ancienthorizons.aluminium_ore": "Алюмінієва руда",
     "block.ancienthorizons.deepslate_aluminium_ore": "Глибосланцева алюмінієва руда",
@@ -19,6 +23,7 @@
     "item.ancienthorizons.aluminium_axe": "Алюмінієва сокира",
     "item.ancienthorizons.aluminium_shovel": "Алюмінієва лопата",
     "item.ancienthorizons.aluminium_hoe": "Алюмінієва мотика",
+    "item.ancienthorizons.aluminium_hammer": "Молот",
 
     "item.ancienthorizons.aluminium_helmet": "Алюмінієвий шолом",
     "item.ancienthorizons.aluminium_chestplate": "Алюмінієвий нагрудник",
