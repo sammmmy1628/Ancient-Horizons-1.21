@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "ancienthorizons:cobalt_ingot"
+    }
+  },
+  "pattern": [
+    "X",
+    "/",
+    "/"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:cobalt_shovel"
+  }
+}

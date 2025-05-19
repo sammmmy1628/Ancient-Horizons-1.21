@@ -27,24 +27,41 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.SWORDS)
                 .add(ModItems.ALUMINIUM_SWORD.get())
                 .add(ModItems.BRONZE_SWORD.get())
-                .add(ModItems.BRONZE_SWORD.get())
+                .add(ModItems.SILVER_SWORD.get())
+                .add(ModItems.PLATINUM_SWORD.get())
+                .add(ModItems.COBALT_SWORD.get())
+                .add(ModItems.TUNGSTEN_SWORD.get())
+
+                .add(ModItems.TUNGSTEN_FLAIL.get())
                 .add(ModItems.SILVER_KATANA.get());
         tag(ItemTags.PICKAXES)
                 .add(ModItems.ALUMINIUM_PICKAXE.get())
                 .add(ModItems.BRONZE_PICKAXE.get())
-                .add(ModItems.SILVER_PICKAXE.get());
+                .add(ModItems.SILVER_PICKAXE.get())
+                .add(ModItems.PLATINUM_PICKAXE.get())
+                .add(ModItems.COBALT_PICKAXE.get())
+                .add(ModItems.TUNGSTEN_PICKAXE.get());
         tag(ItemTags.AXES)
                 .add(ModItems.ALUMINIUM_AXE.get())
                 .add(ModItems.BRONZE_AXE.get())
-                .add(ModItems.SILVER_AXE.get());
+                .add(ModItems.SILVER_AXE.get())
+                .add(ModItems.PLATINUM_AXE.get())
+                .add(ModItems.COBALT_AXE.get())
+                .add(ModItems.TUNGSTEN_AXE.get());
         tag(ItemTags.SHOVELS)
                 .add(ModItems.ALUMINIUM_SHOVEL.get())
                 .add(ModItems.BRONZE_SHOVEL.get())
-                .add(ModItems.SILVER_SHOVEL.get());
+                .add(ModItems.SILVER_SHOVEL.get())
+                .add(ModItems.PLATINUM_SHOVEL.get())
+                .add(ModItems.COBALT_SHOVEL.get())
+                .add(ModItems.TUNGSTEN_SHOVEL.get());
         tag(ItemTags.HOES)
                 .add(ModItems.ALUMINIUM_HOE.get())
                 .add(ModItems.BRONZE_HOE.get())
-                .add(ModItems.SILVER_HOE.get());
+                .add(ModItems.SILVER_HOE.get())
+                .add(ModItems.PLATINUM_HOE.get())
+                .add(ModItems.COBALT_HOE.get())
+                .add(ModItems.TUNGSTEN_HOE.get());
 
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ALUMINIUM_HELMET.get())
@@ -60,7 +77,22 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.SILVER_HELMET.get())
                 .add(ModItems.SILVER_CHESTPLATE.get())
                 .add(ModItems.SILVER_LEGGINGS.get())
-                .add(ModItems.SILVER_BOOTS.get());
+                .add(ModItems.SILVER_BOOTS.get())
+
+                .add(ModItems.PLATINUM_HELMET.get())
+                .add(ModItems.PLATINUM_CHESTPLATE.get())
+                .add(ModItems.PLATINUM_LEGGINGS.get())
+                .add(ModItems.PLATINUM_BOOTS.get())
+
+                .add(ModItems.COBALT_HELMET.get())
+                .add(ModItems.COBALT_CHESTPLATE.get())
+                .add(ModItems.COBALT_LEGGINGS.get())
+                .add(ModItems.COBALT_BOOTS.get())
+
+                .add(ModItems.TUNGSTEN_HELMET.get())
+                .add(ModItems.TUNGSTEN_CHESTPLATE.get())
+                .add(ModItems.TUNGSTEN_LEGGINGS.get())
+                .add(ModItems.TUNGSTEN_BOOTS.get());
 
     }
 }

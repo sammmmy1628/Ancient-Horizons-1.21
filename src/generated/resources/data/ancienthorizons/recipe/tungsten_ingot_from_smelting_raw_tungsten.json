@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "tungsten_ingot",
+  "ingredient": {
+    "item": "ancienthorizons:raw_tungsten"
+  },
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:tungsten_ingot"
+  }
+}

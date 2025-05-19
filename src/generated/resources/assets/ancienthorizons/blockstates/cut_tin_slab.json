@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/cut_tin_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/cut_tin"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/cut_tin_slab_top"
+    }
+  }
+}

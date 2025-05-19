@@ -16,6 +16,9 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_SILVER_TOOL = createTag("needs_silver_tool");
         public static final TagKey<Block> INCORRECT_FOR_SILVER_TOOL = createTag("incorrect_for_silver_tool");
 
+        public static final TagKey<Block> NEEDS_PLATINUM_TOOL = createTag("needs_platinum_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PLATINUM_TOOL = createTag("incorrect_for_platinum_tool");
+
 
         public static final TagKey<Block> ALUMINIUM_ORES = createTag("aluminium_ores");
 

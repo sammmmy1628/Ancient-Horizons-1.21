@@ -1,8 +1,8 @@
-// 1.21.1	2025-05-13T17:16:13.9714447	Tags for minecraft:item mod id ancienthorizons
+// 1.21.1	2025-05-19T20:14:20.5240072	Tags for minecraft:item mod id ancienthorizons
 39e1f18c49bd5098070895e463a29578bd47ad0f data/ancienthorizons/tags/item/aluminium.json
-47a29e2451ebc21090c70836d69f647a75599206 data/minecraft/tags/item/axes.json
-68aa266c58999c9fd6934fe3fcd8a635b066f9b5 data/minecraft/tags/item/hoes.json
-3328ff3148d24f4bcd005eca5dced03000d0682b data/minecraft/tags/item/pickaxes.json
-50afbe65037d512ae58e348d51c1696cb88f49cf data/minecraft/tags/item/shovels.json
-3384f7af0ddfcbce1eb53a8d49b3ec123b090cf9 data/minecraft/tags/item/swords.json
-c50f9290a6a05dd4dd33d619b54e6dec62b1fd92 data/minecraft/tags/item/trimmable_armor.json
+4dd2f2769196acda1f96eebbc89abf2ef2b8f91c data/minecraft/tags/item/axes.json
+c7cca38be8d0968dfa425ac826e894d8ba6209ee data/minecraft/tags/item/hoes.json
+41dfdf34eae97ea7d112d15edff1a4cc97fa248b data/minecraft/tags/item/pickaxes.json
+843cd02893ff9505377f8c5aecb518f35f7c96f5 data/minecraft/tags/item/shovels.json
+fcf1bc3ba99db65bb856c78e4f193d927986b861 data/minecraft/tags/item/swords.json
+55e9a37f1fe7a58a8148839f0cfa91f36b414d24 data/minecraft/tags/item/trimmable_armor.json

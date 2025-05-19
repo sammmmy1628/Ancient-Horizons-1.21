@@ -2,7 +2,11 @@
   "values": [
     "ancienthorizons:aluminium_sword",
     "ancienthorizons:bronze_sword",
-    "ancienthorizons:bronze_sword",
+    "ancienthorizons:silver_sword",
+    "ancienthorizons:platinum_sword",
+    "ancienthorizons:cobalt_sword",
+    "ancienthorizons:tungsten_sword",
+    "ancienthorizons:tungsten_flail",
     "ancienthorizons:silver_katana"
   ]
 }

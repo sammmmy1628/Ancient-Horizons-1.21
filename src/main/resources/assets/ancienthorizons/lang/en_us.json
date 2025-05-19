@@ -8,6 +8,7 @@
 
   "block.ancienthorizons.time_matrix": "Time Matrix",
   "block.ancienthorizons.timestone_block": "Timestone Block",
+  "block.ancienthorizons.raw_timestone_block": "Raw Timestone Block",
 
   "creativetab.ancienthorizons.ancient_horizons_minerals": "Ancient Horizons: Minerals",
   "creativetab.ancienthorizons.ancient_horizons_building_blocks": "Ancient Horizons: Building Blocks",
@@ -19,6 +20,7 @@
   "item.ancienthorizons.aluminium_ingot": "Aluminium Ingot",
   "item.ancienthorizons.aluminium_nugget": "Aluminium Nugget",
   "block.ancienthorizons.aluminium_block": "Block of Aluminium",
+  "block.ancienthorizons.raw_aluminium_block": "Raw Aluminium Block",
 
   "item.ancienthorizons.aluminium_sword": "Aluminium Sword",
   "item.ancienthorizons.aluminium_pickaxe": "Aluminium Pickaxe",
@@ -82,5 +84,81 @@
   "item.ancienthorizons.silver_helmet": "Silver Helmet",
   "item.ancienthorizons.silver_chestplate": "Silver Chestplate",
   "item.ancienthorizons.silver_leggings": "Silver Leggings",
-  "item.ancienthorizons.silver_boots": "Silver Boots"
+  "item.ancienthorizons.silver_boots": "Silver Boots",
+
+  "block.ancienthorizons.platinum_ore": "Platinum Ore",
+  "block.ancienthorizons.deepslate_platinum_ore": "Deepslate Platinum Ore",
+  "block.ancienthorizons.raw_platinum_block": "Raw Platinum Block",
+  "block.ancienthorizons.platinum_block": "Platinum Block",
+
+  "item.ancienthorizons.raw_platinum": "Raw Platinum",
+  "item.ancienthorizons.platinum_ingot": "Platinum Ingot",
+  "item.ancienthorizons.platinum_nugget": "Platinum Nugget",
+
+  "item.ancienthorizons.platinum_sword": "Platinum Sword",
+  "item.ancienthorizons.platinum_pickaxe": "Platinum Pickaxe",
+  "item.ancienthorizons.platinum_axe": "Platinum Axe",
+  "item.ancienthorizons.platinum_shovel": "Platinum Shovel",
+  "item.ancienthorizons.platinum_hoe": "Platinum Hoe",
+
+  "item.ancienthorizons.platinum_helmet": "Platinum Helmet",
+  "item.ancienthorizons.platinum_chestplate": "Platinum Chestplate",
+  "item.ancienthorizons.platinum_leggings": "Platinum Leggings",
+  "item.ancienthorizons.platinum_boots": "Platinum Boots",
+
+  "block.ancienthorizons.cobalt_ore": "Cobalt Ore",
+  "block.ancienthorizons.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
+  "block.ancienthorizons.raw_cobalt_block": "Raw Cobalt Block",
+  "block.ancienthorizons.cobalt_block": "Cobalt Block",
+
+  "item.ancienthorizons.raw_cobalt": "Raw Cobalt",
+  "item.ancienthorizons.cobalt_ingot": "Cobalt Ingot",
+  "item.ancienthorizons.cobalt_nugget": "Cobalt Nugget",
+
+  "item.ancienthorizons.cobalt_sword": "Cobalt Sword",
+  "item.ancienthorizons.cobalt_pickaxe": "Cobalt Pickaxe",
+  "item.ancienthorizons.cobalt_axe": "Cobalt Axe",
+  "item.ancienthorizons.cobalt_shovel": "Cobalt Shovel",
+  "item.ancienthorizons.cobalt_hoe": "Cobalt Hoe",
+
+  "item.ancienthorizons.cobalt_helmet": "Cobalt Helmet",
+  "item.ancienthorizons.cobalt_chestplate": "Cobalt Chestplate",
+  "item.ancienthorizons.cobalt_leggings": "Cobalt Leggings",
+  "item.ancienthorizons.cobalt_boots": "Cobalt Boots",
+
+  "block.ancienthorizons.tungsten_ore": "Tungsten Ore",
+  "block.ancienthorizons.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+  "block.ancienthorizons.raw_tungsten_block": "Raw Tungsten Block",
+  "block.ancienthorizons.tungsten_block": "Tungsten Block",
+
+  "item.ancienthorizons.raw_tungsten": "Raw Tungsten",
+  "item.ancienthorizons.tungsten_ingot": "Tungsten Ingot",
+  "item.ancienthorizons.tungsten_nugget": "Tungsten Nugget",
+
+  "item.ancienthorizons.tungsten_sword": "Tungsten Sword",
+  "item.ancienthorizons.tungsten_pickaxe": "Tungsten Pickaxe",
+  "item.ancienthorizons.tungsten_axe": "Tungsten Axe",
+  "item.ancienthorizons.tungsten_shovel": "Tungsten Shovel",
+  "item.ancienthorizons.tungsten_hoe": "Tungsten Hoe",
+
+  "item.ancienthorizons.tungsten_helmet": "Tungsten Helmet",
+  "item.ancienthorizons.tungsten_chestplate": "Tungsten Chestplate",
+  "item.ancienthorizons.tungsten_leggings": "Tungsten Leggings",
+  "item.ancienthorizons.tungsten_boots": "Tungsten Boots",
+
+  "block.ancienthorizons.chiseled_tungsten": "Chiseled Tungsten",
+  "block.ancienthorizons.tungsten_grate": "Tungsten Grate",
+  "block.ancienthorizons.cut_tungsten": "Cut Tungsten",
+  "block.ancienthorizons.cut_tungsten_stairs": "Cut Tungsten Stairs",
+  "block.ancienthorizons.cut_tungsten_slab": "Cut Tungsten Slab",
+  "block.ancienthorizons.tungsten_door": "Tungsten Door",
+  "block.ancienthorizons.tungsten_trapdoor": "Tungsten Trapdoor",
+
+  "block.ancienthorizons.zircon_block": "Zircon Block",
+  "block.ancienthorizons.zircon_ore": "Zircon Ore",
+  "block.ancienthorizons.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "item.ancienthorizons.zircon": "Zircon",
+
+  "block.ancienthorizons.obsidian_shard": "Obsidian Shard",
+  "block.ancienthorizons.spiked_heavy_core": "Spiked Heavy Core"
 }

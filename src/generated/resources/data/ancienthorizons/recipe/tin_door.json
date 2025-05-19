@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "cut_tin",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:cut_tin"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ancienthorizons:tin_door"
+  }
+}

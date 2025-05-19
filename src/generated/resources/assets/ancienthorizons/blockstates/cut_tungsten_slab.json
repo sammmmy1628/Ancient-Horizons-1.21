@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/cut_tungsten_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/cut_tungsten"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/cut_tungsten_slab_top"
+    }
+  }
+}

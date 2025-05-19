@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "/": {
+      "item": "ancienthorizons:tungsten_ingot"
+    },
+    "O": {
+      "item": "ancienthorizons:spiked_heavy_core"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "  /",
+    " /S",
+    "/ O"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:tungsten_flail"
+  }
+}

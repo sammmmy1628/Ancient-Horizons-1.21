@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:heavy_core"
+    },
+    "X": {
+      "item": "ancienthorizons:obsidian_shard"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XOX",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:spiked_heavy_core"
+  }
+}

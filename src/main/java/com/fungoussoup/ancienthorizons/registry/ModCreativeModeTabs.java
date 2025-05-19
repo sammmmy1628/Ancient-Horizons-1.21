@@ -27,12 +27,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALUMINIUM_ORE);
                         output.accept(ModBlocks.TIN_ORE);
                         output.accept(ModBlocks.SILVER_ORE);
+                        output.accept(ModBlocks.PLATINUM_ORE);
+                        output.accept(ModBlocks.COBALT_ORE);
+                        output.accept(ModBlocks.TUNGSTEN_ORE);
+                        output.accept(ModBlocks.ZIRCON_ORE);
 
                         // DEEPSLATE ORES
                         output.accept(ModBlocks.DEEPSLATE_TIMESTONE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_ALUMINIUM_ORE);
                         output.accept(ModBlocks.DEEPSLATE_TIN_ORE);
                         output.accept(ModBlocks.DEEPSLATE_SILVER_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_COBALT_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE);
 
                         // RAW ORES
                         output.accept(ModItems.RAW_TIME_STONE);
@@ -46,6 +54,16 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.RAW_SILVER);
                         output.accept(ModBlocks.RAW_SILVER_BLOCK);
+
+                        output.accept(ModItems.RAW_PLATINUM);
+                        output.accept(ModBlocks.RAW_PLATINUM_BLOCK);
+
+                        output.accept(ModItems.RAW_COBALT);
+                        output.accept(ModBlocks.RAW_COBALT_BLOCK);
+
+                        output.accept(ModItems.RAW_TUNGSTEN);
+                        output.accept(ModBlocks.RAW_TUNGSTEN_BLOCK);
+
 
                         // PROCESSED ORES
                         output.accept(ModItems.TIME_STONE);
@@ -66,6 +84,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SILVER_NUGGET);
                         output.accept(ModItems.SILVER_INGOT);
                         output.accept(ModBlocks.SILVER_BLOCK);
+
+                        output.accept(ModItems.PLATINUM_NUGGET);
+                        output.accept(ModItems.PLATINUM_INGOT);
+                        output.accept(ModBlocks.PLATINUM_BLOCK);
+
+                        output.accept(ModItems.COBALT_NUGGET);
+                        output.accept(ModItems.COBALT_INGOT);
+                        output.accept(ModBlocks.COBALT_BLOCK);
+
+                        output.accept(ModItems.TUNGSTEN_NUGGET);
+                        output.accept(ModItems.TUNGSTEN_INGOT);
+                        output.accept(ModBlocks.TUNGSTEN_BLOCK);
+
+                        output.accept(ModItems.ZIRCON);
+                        output.accept(ModBlocks.ZIRCON_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> ANCIENT_HORIZONS_TAB_BUILDING_BLOCKS = CREATIVE_MODE_TAB.register("ancient_horizons_tab_building_blocks",
@@ -80,6 +113,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CUT_TIN_SLAB);
                         output.accept(ModBlocks.TIN_DOOR);
                         output.accept(ModBlocks.TIN_TRAPDOOR);
+
+                        output.accept(ModBlocks.CHISELED_TUNGSTEN);
+                        output.accept(ModBlocks.TUNGSTEN_GRATE);
+                        output.accept(ModBlocks.CUT_TUNGSTEN);
+                        output.accept(ModBlocks.CUT_TUNGSTEN_STAIRS);
+                        output.accept(ModBlocks.CUT_TUNGSTEN_SLAB);
+                        output.accept(ModBlocks.TUNGSTEN_DOOR);
+                        output.accept(ModBlocks.TUNGSTEN_TRAPDOOR);
 
                         output.accept(ModBlocks.TIME_MATRIX);
                     }).build());

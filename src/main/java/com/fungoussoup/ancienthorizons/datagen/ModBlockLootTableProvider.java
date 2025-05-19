@@ -82,6 +82,56 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DEEPSLATE_SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
 
 
+        // PLATINUM
+        dropSelf(ModBlocks.RAW_PLATINUM_BLOCK.get());
+        dropSelf(ModBlocks.PLATINUM_BLOCK.get());
+
+
+        add(ModBlocks.PLATINUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get()));
+        add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), ModItems.RAW_PLATINUM.get()));
+
+
+        // COBALT
+        dropSelf(ModBlocks.RAW_COBALT_BLOCK.get());
+        dropSelf(ModBlocks.COBALT_BLOCK.get());
+
+        add(ModBlocks.COBALT_ORE.get(),
+                block -> createOreDrop(ModBlocks.COBALT_ORE.get(), ModItems.RAW_COBALT.get()));
+        add(ModBlocks.DEEPSLATE_COBALT_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_COBALT_ORE.get(), ModItems.RAW_COBALT.get()));
+
+
+        // TUNGSTEN
+        dropSelf(ModBlocks.RAW_TUNGSTEN_BLOCK.get());
+        dropSelf(ModBlocks.TUNGSTEN_BLOCK.get());
+
+        dropSelf(ModBlocks.CUT_TUNGSTEN_STAIRS.get());
+        add(ModBlocks.CUT_TUNGSTEN_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CUT_TUNGSTEN_SLAB.get()));
+        dropSelf(ModBlocks.CUT_TUNGSTEN.get());
+        dropSelf(ModBlocks.CHISELED_TUNGSTEN.get());
+        dropSelf(ModBlocks.TUNGSTEN_GRATE.get());
+        dropSelf(ModBlocks.TUNGSTEN_TRAPDOOR.get());
+        add(ModBlocks.TUNGSTEN_DOOR.get(),
+                block -> createDoorTable(ModBlocks.TUNGSTEN_DOOR.get()));
+
+        add(ModBlocks.TUNGSTEN_ORE.get(),
+                block -> createOreDrop(ModBlocks.TUNGSTEN_ORE.get(), ModItems.RAW_TUNGSTEN.get()));
+        add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.get(), ModItems.RAW_TUNGSTEN.get()));
+
+
+        // ZIRCON
+        dropSelf(ModBlocks.ZIRCON_BLOCK.get());
+
+        add(ModBlocks.ZIRCON_ORE.get(),
+                block -> createOreDrop(ModBlocks.ZIRCON_ORE.get(), ModItems.ZIRCON.get()));
+        add(ModBlocks.DEEPSLATE_ZIRCON_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_ZIRCON_ORE.get(), ModItems.ZIRCON.get()));
+
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

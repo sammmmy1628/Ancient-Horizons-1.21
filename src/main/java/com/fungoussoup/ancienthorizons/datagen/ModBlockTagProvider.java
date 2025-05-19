@@ -6,6 +6,8 @@ import com.fungoussoup.ancienthorizons.registry.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -55,7 +57,40 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SILVER_ORE.get())
                 .add(ModBlocks.DEEPSLATE_SILVER_ORE.get())
                 .add(ModBlocks.RAW_SILVER_BLOCK.get())
-                .add(ModBlocks.SILVER_BLOCK.get());
+                .add(ModBlocks.SILVER_BLOCK.get())
+
+                // PLATINUM
+                .add(ModBlocks.PLATINUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get())
+                .add(ModBlocks.RAW_PLATINUM_BLOCK.get())
+                .add(ModBlocks.PLATINUM_BLOCK.get())
+
+                // COBALT
+                .add(ModBlocks.COBALT_ORE.get())
+                .add(ModBlocks.DEEPSLATE_COBALT_ORE.get())
+                .add(ModBlocks.RAW_COBALT_BLOCK.get())
+                .add(ModBlocks.COBALT_BLOCK.get())
+
+                // TUNGSTEN
+                .add(ModBlocks.TUNGSTEN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.get())
+                .add(ModBlocks.RAW_TUNGSTEN_BLOCK.get())
+                .add(ModBlocks.TUNGSTEN_BLOCK.get())
+
+                .add(ModBlocks.CHISELED_TUNGSTEN.get())
+                .add(ModBlocks.TUNGSTEN_GRATE.get())
+                .add(ModBlocks.CUT_TUNGSTEN.get())
+                .add(ModBlocks.CUT_TUNGSTEN_STAIRS.get())
+                .add(ModBlocks.CUT_TUNGSTEN_SLAB.get())
+                .add(ModBlocks.TUNGSTEN_DOOR.get())
+                .add(ModBlocks.TUNGSTEN_TRAPDOOR.get())
+
+                // ZIRCON
+                .add(ModBlocks.ZIRCON_ORE.get())
+                .add(ModBlocks.DEEPSLATE_ZIRCON_ORE.get())
+                .add(ModBlocks.ZIRCON_BLOCK.get());
+
+
 
 
 
@@ -89,7 +124,41 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SILVER_ORE.get())
                 .add(ModBlocks.DEEPSLATE_SILVER_ORE.get())
                 .add(ModBlocks.RAW_SILVER_BLOCK.get())
-                .add(ModBlocks.SILVER_BLOCK.get());
+                .add(ModBlocks.SILVER_BLOCK.get())
+
+                // PLATINUM
+                .add(ModBlocks.PLATINUM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get())
+                .add(ModBlocks.RAW_PLATINUM_BLOCK.get())
+                .add(ModBlocks.PLATINUM_BLOCK.get())
+
+                // COBALT
+                .add(ModBlocks.COBALT_ORE.get())
+                .add(ModBlocks.DEEPSLATE_COBALT_ORE.get())
+                .add(ModBlocks.RAW_COBALT_BLOCK.get())
+                .add(ModBlocks.COBALT_BLOCK.get())
+
+                // TUNGSTEN
+                .add(ModBlocks.TUNGSTEN_ORE.get())
+                .add(ModBlocks.DEEPSLATE_TUNGSTEN_ORE.get())
+                .add(ModBlocks.RAW_TUNGSTEN_BLOCK.get())
+                .add(ModBlocks.TUNGSTEN_BLOCK.get())
+
+                .add(ModBlocks.CHISELED_TUNGSTEN.get())
+                .add(ModBlocks.TUNGSTEN_GRATE.get())
+                .add(ModBlocks.CUT_TUNGSTEN.get())
+                .add(ModBlocks.CUT_TUNGSTEN_STAIRS.get())
+                .add(ModBlocks.CUT_TUNGSTEN_SLAB.get())
+                .add(ModBlocks.TUNGSTEN_DOOR.get())
+                .add(ModBlocks.TUNGSTEN_TRAPDOOR.get())
+
+                // ZIRCON
+                .add(ModBlocks.ZIRCON_ORE.get())
+                .add(ModBlocks.DEEPSLATE_ZIRCON_ORE.get())
+                .add(ModBlocks.ZIRCON_BLOCK.get());
+
+        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .add(Blocks.DIAMOND_ORE);
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.TIMESTONE_BLOCK.get())
@@ -107,6 +176,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_ALUMINIUM_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_ALUMINIUM_TOOL);
+
+        tag(ModTags.Blocks.NEEDS_SILVER_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL)
+                .add(Blocks.DIAMOND_ORE);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_SILVER_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_SILVER_TOOL);
 
 
     }

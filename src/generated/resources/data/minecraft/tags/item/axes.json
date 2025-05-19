@@ -2,6 +2,9 @@
   "values": [
     "ancienthorizons:aluminium_axe",
     "ancienthorizons:bronze_axe",
-    "ancienthorizons:silver_axe"
+    "ancienthorizons:silver_axe",
+    "ancienthorizons:platinum_axe",
+    "ancienthorizons:cobalt_axe",
+    "ancienthorizons:tungsten_axe"
   ]
 }

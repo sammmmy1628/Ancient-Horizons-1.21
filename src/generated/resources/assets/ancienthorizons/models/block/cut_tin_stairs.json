@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ancienthorizons:block/cut_tin",
+    "side": "ancienthorizons:block/cut_tin",
+    "top": "ancienthorizons:block/cut_tin"
+  }
+}

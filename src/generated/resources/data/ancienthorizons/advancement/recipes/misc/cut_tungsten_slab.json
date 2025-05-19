@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cut_tungsten": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:cut_tungsten"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ancienthorizons:cut_tungsten_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cut_tungsten"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancienthorizons:cut_tungsten_slab"
+    ]
+  }
+}

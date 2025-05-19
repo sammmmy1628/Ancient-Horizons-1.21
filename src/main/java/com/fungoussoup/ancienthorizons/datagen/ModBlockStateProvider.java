@@ -23,8 +23,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.TIMESTONE_BLOCK);
         blockWithItem(ModBlocks.TIME_MATRIX);
 
-
-
         // ALUMINIUM
         blockWithItem(ModBlocks.ALUMINIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_ALUMINIUM_BLOCK);
@@ -65,6 +63,47 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SILVER_BLOCK);
         blockWithItem(ModBlocks.SILVER_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_SILVER_ORE);
+
+        // PLATINUM
+        blockWithItem(ModBlocks.RAW_PLATINUM_BLOCK);
+        blockWithItem(ModBlocks.PLATINUM_BLOCK);
+        blockWithItem(ModBlocks.PLATINUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_PLATINUM_ORE);
+
+        // COBALT
+        blockWithItem(ModBlocks.RAW_COBALT_BLOCK);
+        blockWithItem(ModBlocks.COBALT_BLOCK);
+        blockWithItem(ModBlocks.COBALT_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_COBALT_ORE);
+
+        // TUNGSTEN
+        blockWithItem(ModBlocks.RAW_TUNGSTEN_BLOCK);
+        blockWithItem(ModBlocks.TUNGSTEN_BLOCK);
+        blockWithItem(ModBlocks.TUNGSTEN_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+
+        blockWithItem(ModBlocks.CHISELED_TUNGSTEN);
+        blockWithItem(ModBlocks.TUNGSTEN_GRATE);
+        blockWithItem(ModBlocks.CUT_TUNGSTEN);
+
+        stairsBlock(ModBlocks.CUT_TUNGSTEN_STAIRS.get(), blockTexture(ModBlocks.CUT_TUNGSTEN.get()));
+        slabBlock(ModBlocks.CUT_TUNGSTEN_SLAB.get(), blockTexture(ModBlocks.CUT_TUNGSTEN.get()), blockTexture(ModBlocks.CUT_TUNGSTEN.get()));
+
+        doorBlockWithRenderType(ModBlocks.TUNGSTEN_DOOR.get(), modLoc("block/tungsten_door_bottom"), modLoc("block/tungsten_door_top"), "cutout");
+        trapdoorBlockWithRenderType(ModBlocks.TUNGSTEN_TRAPDOOR.get(), modLoc("block/tungsten_trapdoor"), true, "cutout");
+
+
+        itemModels().withExistingParent(ModBlocks.CUT_TUNGSTEN_STAIRS.getId().getPath(),
+                modLoc("block/" + ModBlocks.CUT_TUNGSTEN_STAIRS.getId().getPath()));
+
+        itemModels().withExistingParent(ModBlocks.CUT_TUNGSTEN_SLAB.getId().getPath(),
+                modLoc("block/" + ModBlocks.CUT_TUNGSTEN_SLAB.getId().getPath()));
+        blockItem(ModBlocks.TUNGSTEN_TRAPDOOR, "_bottom");
+
+        // ZIRCON
+        blockWithItem(ModBlocks.ZIRCON_BLOCK);
+        blockWithItem(ModBlocks.ZIRCON_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_ZIRCON_ORE);
 
 
     }

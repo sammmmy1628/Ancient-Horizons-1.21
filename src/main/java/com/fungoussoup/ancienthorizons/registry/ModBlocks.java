@@ -75,7 +75,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> TIN_GRATE = registerBlock("tin_grate",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> CUT_TIN = registerBlock("cut_tin",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -109,6 +109,84 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> SILVER_BLOCK = registerBlock("silver_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+
+    // PLATINUM
+    public static final DeferredBlock<Block> PLATINUM_ORE = registerBlock("platinum_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> RAW_PLATINUM_BLOCK = registerBlock("raw_platinum_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> PLATINUM_BLOCK = registerBlock("platinum_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+
+    // COBALT
+    public static final DeferredBlock<Block> COBALT_ORE = registerBlock("cobalt_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_COBALT_ORE = registerBlock("deepslate_cobalt_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> COBALT_BLOCK = registerBlock("cobalt_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+
+    // TUNGSTEN
+    public static final DeferredBlock<Block> TUNGSTEN_ORE = registerBlock("tungsten_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_TUNGSTEN_ORE = registerBlock("deepslate_tungsten_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> RAW_TUNGSTEN_BLOCK = registerBlock("raw_tungsten_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> TUNGSTEN_BLOCK = registerBlock("tungsten_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> CHISELED_TUNGSTEN = registerBlock("chiseled_tungsten",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> TUNGSTEN_GRATE = registerBlock("tungsten_grate",
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> CUT_TUNGSTEN = registerBlock("cut_tungsten",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+    public static final DeferredBlock<StairBlock> CUT_TUNGSTEN_STAIRS = registerBlock("cut_tungsten_stairs",
+            () -> new StairBlock(ModBlocks.CUT_TUNGSTEN.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<SlabBlock> CUT_TUNGSTEN_SLAB = registerBlock("cut_tungsten_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final DeferredBlock<DoorBlock> TUNGSTEN_DOOR = registerBlock("tungsten_door",
+            () -> new DoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.METAL)));
+    public static final DeferredBlock<TrapDoorBlock> TUNGSTEN_TRAPDOOR = registerBlock("tungsten_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.COPPER, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.METAL)));
+
+
+
+    // ZIRCON
+    public static final DeferredBlock<Block> ZIRCON_ORE = registerBlock("zircon_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_ZIRCON_ORE = registerBlock("deepslate_zircon_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,0),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 

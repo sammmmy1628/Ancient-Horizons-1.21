@@ -104,9 +104,63 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SILVER_LEGGINGS);
         trimmedArmorItem(ModItems.SILVER_BOOTS);
 
+        // PLATINUM
+        basicItem(ModItems.PLATINUM_INGOT.get());
+        basicItem(ModItems.PLATINUM_NUGGET.get());
+        basicItem(ModItems.RAW_PLATINUM.get());
 
+        handheldItem(ModItems.PLATINUM_SWORD.get());
+        handheldItem(ModItems.PLATINUM_PICKAXE.get());
+        handheldItem(ModItems.PLATINUM_AXE.get());
+        handheldItem(ModItems.PLATINUM_SHOVEL.get());
+        handheldItem(ModItems.PLATINUM_HOE.get());
 
+        trimmedArmorItem(ModItems.PLATINUM_HELMET);
+        trimmedArmorItem(ModItems.PLATINUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.PLATINUM_LEGGINGS);
+        trimmedArmorItem(ModItems.PLATINUM_BOOTS);
 
+        // COBALT
+        basicItem(ModItems.COBALT_INGOT.get());
+        basicItem(ModItems.COBALT_NUGGET.get());
+        basicItem(ModItems.RAW_COBALT.get());
+
+        handheldItem(ModItems.COBALT_SWORD.get());
+        handheldItem(ModItems.COBALT_PICKAXE.get());
+        handheldItem(ModItems.COBALT_AXE.get());
+        handheldItem(ModItems.COBALT_SHOVEL.get());
+        handheldItem(ModItems.COBALT_HOE.get());
+
+        trimmedArmorItem(ModItems.COBALT_HELMET);
+        trimmedArmorItem(ModItems.COBALT_CHESTPLATE);
+        trimmedArmorItem(ModItems.COBALT_LEGGINGS);
+        trimmedArmorItem(ModItems.COBALT_BOOTS);
+
+        // TUNGSTEN
+        basicItem(ModItems.TUNGSTEN_INGOT.get());
+        basicItem(ModItems.TUNGSTEN_NUGGET.get());
+        basicItem(ModItems.RAW_TUNGSTEN.get());
+
+        handheldItem(ModItems.TUNGSTEN_SWORD.get());
+        handheldItem(ModItems.TUNGSTEN_PICKAXE.get());
+        handheldItem(ModItems.TUNGSTEN_AXE.get());
+        handheldItem(ModItems.TUNGSTEN_SHOVEL.get());
+        handheldItem(ModItems.TUNGSTEN_HOE.get());
+        handheldItem(ModItems.TUNGSTEN_FLAIL.get());
+
+        trimmedArmorItem(ModItems.TUNGSTEN_HELMET);
+        trimmedArmorItem(ModItems.TUNGSTEN_CHESTPLATE);
+        trimmedArmorItem(ModItems.TUNGSTEN_LEGGINGS);
+        trimmedArmorItem(ModItems.TUNGSTEN_BOOTS);
+
+        basicItem(ModBlocks.TUNGSTEN_DOOR.asItem());
+
+        // ZIRCON
+        basicItem(ModItems.ZIRCON.get());
+
+        // MISC
+        basicItem(ModItems.SPIKED_HEAVY_CORE.get());
+        basicItem(ModItems.OBSIDIAN_SHARD.get());
 
 
 

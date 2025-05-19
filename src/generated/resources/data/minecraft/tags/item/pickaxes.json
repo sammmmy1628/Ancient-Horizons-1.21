@@ -2,6 +2,9 @@
   "values": [
     "ancienthorizons:aluminium_pickaxe",
     "ancienthorizons:bronze_pickaxe",
-    "ancienthorizons:silver_pickaxe"
+    "ancienthorizons:silver_pickaxe",
+    "ancienthorizons:platinum_pickaxe",
+    "ancienthorizons:cobalt_pickaxe",
+    "ancienthorizons:tungsten_pickaxe"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:raw_timestone_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ancienthorizons:raw_time_stone"
+  }
+}

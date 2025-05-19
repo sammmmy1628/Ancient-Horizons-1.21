@@ -2,6 +2,9 @@
   "values": [
     "ancienthorizons:aluminium_hoe",
     "ancienthorizons:bronze_hoe",
-    "ancienthorizons:silver_hoe"
+    "ancienthorizons:silver_hoe",
+    "ancienthorizons:platinum_hoe",
+    "ancienthorizons:cobalt_hoe",
+    "ancienthorizons:tungsten_hoe"
   ]
 }

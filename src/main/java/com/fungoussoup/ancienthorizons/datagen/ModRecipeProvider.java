@@ -9,6 +9,9 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -29,6 +32,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModBlocks.TIN_ORE, ModBlocks.DEEPSLATE_TIN_ORE);
         List<ItemLike> SILVER_SMELTABLES = List.of(ModItems.RAW_SILVER,
                 ModBlocks.SILVER_ORE, ModBlocks.DEEPSLATE_SILVER_ORE);
+        List<ItemLike> PLATINUM_SMELTABLES = List.of(ModItems.RAW_PLATINUM,
+                ModBlocks.PLATINUM_ORE, ModBlocks.DEEPSLATE_PLATINUM_ORE);
+        List<ItemLike> COBALT_SMELTABLES = List.of(ModItems.RAW_COBALT,
+                ModBlocks.COBALT_ORE, ModBlocks.DEEPSLATE_COBALT_ORE);
+        List<ItemLike> TUNGSTEN_SMELTABLES = List.of(ModItems.RAW_TUNGSTEN,
+                ModBlocks.TUNGSTEN_ORE, ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
 
         // TIMESTONE
 
@@ -423,7 +432,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', ModItems.SILVER_INGOT.get())
                 .unlockedBy("has_silver", has(ModItems.SILVER_INGOT)).save(recipeOutput);
 
-        // bronze tools
+        // silver tools
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SILVER_SWORD.get())
                 .pattern("X")
                 .pattern("X")
@@ -484,6 +493,384 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(recipeOutput, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.25f,200,"silver_ingot");
         oreBlasting(recipeOutput, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.25f,100,"silver_ingot");
 
+        // PLATINUM
+
+        // platinum ingot
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 9)
+                .requires(ModBlocks.PLATINUM_BLOCK)
+                .unlockedBy("has_platinum_block", has(ModBlocks.PLATINUM_BLOCK.get())).save(recipeOutput,"platinum_from_block");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.PLATINUM_NUGGET.get())
+                .unlockedBy("has_platinum_nugget", has(ModItems.PLATINUM_NUGGET)).save(recipeOutput,"platinum_from_nugget");
+
+        // platinum block
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLATINUM_BLOCK.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+
+        // platinum nugget
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLATINUM_NUGGET.get(), 9)
+                .requires(ModItems.PLATINUM_INGOT)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+
+        // platinum armour
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_HELMET.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_CHESTPLATE.get())
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_LEGGINGS.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_BOOTS.get())
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+
+        // platinum tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_SWORD.get())
+                .pattern("X")
+                .pattern("X")
+                .pattern("/")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_PICKAXE.get())
+                .pattern("XXX")
+                .pattern(" / ")
+                .pattern(" / ")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_AXE.get())
+                .pattern("XX")
+                .pattern("X/")
+                .pattern(" /")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_AXE.get())
+                .pattern("XX")
+                .pattern("/X")
+                .pattern("/ ")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput, "platinum_axe_alt");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_SHOVEL.get())
+                .pattern("X")
+                .pattern("/")
+                .pattern("/")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_HOE.get())
+                .pattern("XX")
+                .pattern("/ ")
+                .pattern("/ ")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLATINUM_HOE.get())
+                .pattern("XX")
+                .pattern(" /")
+                .pattern(" /")
+                .define('X', ModItems.PLATINUM_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_platinum", has(ModItems.PLATINUM_INGOT)).save(recipeOutput, "platinum_hoe_alt");
+
+        // COBALT
+
+        // cobalt ingot
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COBALT_INGOT.get(), 9)
+                .requires(ModBlocks.COBALT_BLOCK)
+                .unlockedBy("has_cobalt_block", has(ModBlocks.COBALT_BLOCK.get())).save(recipeOutput,"cobalt_from_block");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_INGOT.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.COBALT_NUGGET.get())
+                .unlockedBy("has_cobalt_nugget", has(ModItems.COBALT_NUGGET)).save(recipeOutput,"cobalt_from_nugget");
+
+        // cobalt block
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.COBALT_BLOCK.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+
+        // cobalt nugget
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.COBALT_NUGGET.get(), 9)
+                .requires(ModItems.COBALT_INGOT)
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+
+        // cobalt armour
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_HELMET.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_CHESTPLATE.get())
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_LEGGINGS.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_BOOTS.get())
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+
+        // cobalt tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_SWORD.get())
+                .pattern("X")
+                .pattern("X")
+                .pattern("/")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_PICKAXE.get())
+                .pattern("XXX")
+                .pattern(" / ")
+                .pattern(" / ")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_AXE.get())
+                .pattern("XX")
+                .pattern("X/")
+                .pattern(" /")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_AXE.get())
+                .pattern("XX")
+                .pattern("/X")
+                .pattern("/ ")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput, "cobalt_axe_alt");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_SHOVEL.get())
+                .pattern("X")
+                .pattern("/")
+                .pattern("/")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_HOE.get())
+                .pattern("XX")
+                .pattern("/ ")
+                .pattern("/ ")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COBALT_HOE.get())
+                .pattern("XX")
+                .pattern(" /")
+                .pattern(" /")
+                .define('X', ModItems.COBALT_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_cobalt", has(ModItems.COBALT_INGOT)).save(recipeOutput, "cobalt_hoe_alt");
+
+        oreSmelting(recipeOutput, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.25f,200,"platinum_ingot");
+        oreBlasting(recipeOutput, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 0.25f,100,"platinum_ingot");
+
+        // TUNGSTEN
+
+        // tungsten ingot
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT.get(), 9)
+                .requires(ModBlocks.TUNGSTEN_BLOCK)
+                .unlockedBy("has_tungsten_block", has(ModBlocks.TUNGSTEN_BLOCK.get())).save(recipeOutput,"tungsten_from_block");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.TUNGSTEN_NUGGET.get())
+                .unlockedBy("has_tungsten_nugget", has(ModItems.TUNGSTEN_NUGGET)).save(recipeOutput,"tungsten_from_nugget");
+
+        // tungsten block
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TUNGSTEN_BLOCK.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+
+        // tungsten nugget
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TUNGSTEN_NUGGET.get(), 9)
+                .requires(ModItems.TUNGSTEN_INGOT)
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+
+        // tungsten armour
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_HELMET.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_CHESTPLATE.get())
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_LEGGINGS.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_BOOTS.get())
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+
+        // tungsten tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_SWORD.get())
+                .pattern("X")
+                .pattern("X")
+                .pattern("/")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_PICKAXE.get())
+                .pattern("XXX")
+                .pattern(" / ")
+                .pattern(" / ")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_AXE.get())
+                .pattern("XX")
+                .pattern("X/")
+                .pattern(" /")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_AXE.get())
+                .pattern("XX")
+                .pattern("/X")
+                .pattern("/ ")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput, "tungsten_axe_alt");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_SHOVEL.get())
+                .pattern("X")
+                .pattern("/")
+                .pattern("/")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_HOE.get())
+                .pattern("XX")
+                .pattern("/ ")
+                .pattern("/ ")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_HOE.get())
+                .pattern("XX")
+                .pattern(" /")
+                .pattern(" /")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .define('/', Items.STICK)
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput, "tungsten_hoe_alt");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TUNGSTEN_FLAIL.get())
+                .pattern("  /")
+                .pattern(" /S")
+                .pattern("/ O")
+                .define('/', ModItems.TUNGSTEN_INGOT.get())
+                .define('O', ModItems.SPIKED_HEAVY_CORE.get())
+                .define('S', Items.STRING)
+                .unlockedBy("has_spiked_heavy_core", has(ModItems.SPIKED_HEAVY_CORE)).save(recipeOutput);
+
+        // decorational
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CUT_TUNGSTEN.get())
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.TUNGSTEN_BLOCK.get())
+                .unlockedBy("has_tungsten_block", has(ModBlocks.TUNGSTEN_BLOCK)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_TUNGSTEN.get())
+                .pattern("X")
+                .pattern("X")
+                .define('X', ModBlocks.CUT_TUNGSTEN_SLAB.get())
+                .unlockedBy("has_cut_tungsten_slab", has(ModBlocks.CUT_TUNGSTEN_SLAB)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TUNGSTEN_GRATE.get())
+                .pattern(" X ")
+                .pattern("X X")
+                .pattern(" X ")
+                .define('X', ModBlocks.TUNGSTEN_BLOCK.get())
+                .unlockedBy("has_tungsten_block", has(ModBlocks.TUNGSTEN_BLOCK)).save(recipeOutput);
+
+        stairBuilder(ModBlocks.CUT_TUNGSTEN_STAIRS.get(), Ingredient.of(ModBlocks.CUT_TUNGSTEN)).group("cut_tungsten")
+                .unlockedBy("has_cut_tungsten",has(ModBlocks.CUT_TUNGSTEN)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.CUT_TUNGSTEN_SLAB.get(),ModBlocks.CUT_TUNGSTEN.get());
+        doorBuilder(ModBlocks.TUNGSTEN_DOOR.get(), Ingredient.of(ModBlocks.CUT_TUNGSTEN.get())).group("cut_tungsten")
+                .unlockedBy("has_cut_tungsten",has(ModBlocks.CUT_TUNGSTEN.get())).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.TUNGSTEN_TRAPDOOR.get(), Ingredient.of(ModBlocks.CUT_TUNGSTEN.get())).group("cut_tungsten")
+                .unlockedBy("has_cut_tungsten",has(ModBlocks.CUT_TUNGSTEN.get())).save(recipeOutput);
+
+        oreSmelting(recipeOutput, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT.get(), 0.25f,200,"tungsten_ingot");
+        oreBlasting(recipeOutput, TUNGSTEN_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT.get(), 0.25f,100,"tungsten_ingot");
+
+        // ZIRCON
+
+        // zircon block
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_BLOCK.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.ZIRCON.get())
+                .unlockedBy("has_zircon", has(ModItems.ZIRCON)).save(recipeOutput);
+
+        // zircon
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZIRCON.get(), 9)
+                .requires(ModBlocks.ZIRCON_BLOCK)
+                .unlockedBy("has_zircon_block", has(ModBlocks.ZIRCON_BLOCK)).save(recipeOutput);
+
+        // misc
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.HEAVY_CORE)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModItems.TUNGSTEN_INGOT.get())
+                .unlockedBy("has_tungsten", has(ModItems.TUNGSTEN_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OBSIDIAN_SHARD)
+                .pattern(" X")
+                .pattern("X ")
+                .define('X', Items.OBSIDIAN)
+                .unlockedBy("has_obsidian", has(Items.OBSIDIAN)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPIKED_HEAVY_CORE)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .define('X', ModItems.OBSIDIAN_SHARD)
+                .define('O', Blocks.HEAVY_CORE)
+                .unlockedBy("has_obsidian", has(Items.OBSIDIAN)).save(recipeOutput);
 
 
 

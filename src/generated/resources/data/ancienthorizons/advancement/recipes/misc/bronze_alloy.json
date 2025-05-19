@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ancienthorizons:bronze_alloy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:tin_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tin"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancienthorizons:bronze_alloy"
+    ]
+  }
+}

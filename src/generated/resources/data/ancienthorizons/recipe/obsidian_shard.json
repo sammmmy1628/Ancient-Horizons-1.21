@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    " X",
+    "X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:obsidian_shard"
+  }
+}
