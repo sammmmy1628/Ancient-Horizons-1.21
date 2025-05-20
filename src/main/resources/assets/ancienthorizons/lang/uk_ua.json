@@ -6,6 +6,7 @@
     "block.ancienthorizons.deepslate_timestone_ore": "Глибосланцева кам'яночасова руда",
     "block.ancienthorizons.time_matrix": "Часова матриця",
     "block.ancienthorizons.timestone_block": "Блок каменю часу",
+    "block.ancienthorizons.raw_timestone_block": "Блок необробленого каменю часу",
 
     "creativetab.ancienthorizons.ancient_horizons_minerals": "Стародавні горизонти: Мінерали",
     "creativetab.ancienthorizons.ancient_horizons_building_blocks": "Стародавні горизонти: Будівельні блоки",
@@ -17,6 +18,7 @@
     "item.ancienthorizons.aluminium_ingot": "Алюмінієвий злиток",
     "item.ancienthorizons.aluminium_nugget": "Алюмінієвий самородок",
     "block.ancienthorizons.aluminium_block": "Блок алюмінію",
+    "block.ancienthorizons.raw_aluminium_block": "Блок необробленого алюмінію",
 
     "item.ancienthorizons.aluminium_sword": "Алюмінієвий меч",
     "item.ancienthorizons.aluminium_pickaxe": "Алюмінієве кайло",
@@ -80,5 +82,81 @@
   "item.ancienthorizons.silver_helmet": "Срібний шолом",
   "item.ancienthorizons.silver_chestplate": "Срібний нагрудник",
   "item.ancienthorizons.silver_leggings": "Срібні наголінники",
-  "item.ancienthorizons.silver_boots": "Срібні чоботи"
+  "item.ancienthorizons.silver_boots": "Срібні чоботи",
+
+  "block.ancienthorizons.platinum_ore": "Платинова руда",
+  "block.ancienthorizons.deepslate_platinum_ore": "Глибосланцева платинова руда",
+  "block.ancienthorizons.raw_platinum_block": "Блок необробленої платини",
+  "block.ancienthorizons.platinum_block": "Блок платини",
+
+  "item.ancienthorizons.raw_platinum": "Необроблена платина",
+  "item.ancienthorizons.platinum_ingot": "Платиновий злиток",
+  "item.ancienthorizons.platinum_nugget": "Платиновий самородок",
+
+  "item.ancienthorizons.platinum_sword": "Платиновий меч",
+  "item.ancienthorizons.platinum_pickaxe": "Платинове кайло",
+  "item.ancienthorizons.platinum_axe": "Платинова сокира",
+  "item.ancienthorizons.platinum_shovel": "Платинова лопата",
+  "item.ancienthorizons.platinum_hoe": "Платинова мотика",
+
+  "item.ancienthorizons.platinum_helmet": "Платиновий шолом",
+  "item.ancienthorizons.platinum_chestplate": "Платиновий нагрудник",
+  "item.ancienthorizons.platinum_leggings": "Платинові наголінники",
+  "item.ancienthorizons.platinum_boots": "Платинові чоботи",
+
+  "block.ancienthorizons.cobalt_ore": "Кобальтова руда",
+  "block.ancienthorizons.deepslate_cobalt_ore": "Глибосланцева кобальтова руда",
+  "block.ancienthorizons.raw_cobalt_block": "Блок небробленого кобальту",
+  "block.ancienthorizons.cobalt_block": "Блок кобальту",
+
+  "item.ancienthorizons.raw_cobalt": "Неброблений кобальт",
+  "item.ancienthorizons.cobalt_ingot": "Кобальтовий злиток",
+  "item.ancienthorizons.cobalt_nugget": "Кобальтовий самородок",
+
+  "item.ancienthorizons.cobalt_sword": "Кобальтовий меч",
+  "item.ancienthorizons.cobalt_pickaxe": "Кобальтове кайло",
+  "item.ancienthorizons.cobalt_axe": "Кобальтова сокира",
+  "item.ancienthorizons.cobalt_shovel": "Кобальтова лопата",
+  "item.ancienthorizons.cobalt_hoe": "Кобальтова мотика",
+
+  "item.ancienthorizons.cobalt_helmet": "Кобальтовий шолом",
+  "item.ancienthorizons.cobalt_chestplate": "Кобальтовий нагрудник",
+  "item.ancienthorizons.cobalt_leggings": "Кобальтові наголінники",
+  "item.ancienthorizons.cobalt_boots": "Кобальтові чоботм",
+
+  "block.ancienthorizons.tungsten_ore": "Вольфрамова руда",
+  "block.ancienthorizons.deepslate_tungsten_ore": "Глибосланцева вольфрамова руда",
+  "block.ancienthorizons.raw_tungsten_block": "Блок необробленого вольфраму",
+  "block.ancienthorizons.tungsten_block": "Блок вольфраму",
+
+  "item.ancienthorizons.raw_tungsten": "Необроблений вольфрам",
+  "item.ancienthorizons.tungsten_ingot": "Вольфрамовий злиток",
+  "item.ancienthorizons.tungsten_nugget": "Вольфрамовий самородок",
+
+  "item.ancienthorizons.tungsten_sword": "Вольфрамовий меч",
+  "item.ancienthorizons.tungsten_pickaxe": "Вольфрамове кайло",
+  "item.ancienthorizons.tungsten_axe": "Вольфрамова сокира",
+  "item.ancienthorizons.tungsten_shovel": "Вольфрамова лопата",
+  "item.ancienthorizons.tungsten_hoe": "Вольфрамова мотика",
+
+  "item.ancienthorizons.tungsten_helmet": "Вольфрамовий шолом",
+  "item.ancienthorizons.tungsten_chestplate": "Вольфрамовий нагрудник",
+  "item.ancienthorizons.tungsten_leggings": "Вольфрамові наголінники",
+  "item.ancienthorizons.tungsten_boots": "Вольфрамові чоботи",
+
+  "block.ancienthorizons.chiseled_tungsten": "Різьблений вольфрам",
+  "block.ancienthorizons.tungsten_grate": "Вольфрамова решітка",
+  "block.ancienthorizons.cut_tungsten": "Тесаний вольфрам",
+  "block.ancienthorizons.cut_tungsten_stairs": "Тесані вольфрамові сходи",
+  "block.ancienthorizons.cut_tungsten_slab": "Тесана вольфрамова плита",
+  "block.ancienthorizons.tungsten_door": "Вольфрамові двері",
+  "block.ancienthorizons.tungsten_trapdoor": "Вольфрамовий люк",
+
+  "block.ancienthorizons.zircon_block": "Блок цирконіту",
+  "block.ancienthorizons.zircon_ore": "Цирконітова руда",
+  "block.ancienthorizons.deepslate_zircon_ore": "Глибосланцева цирконітова руда",
+  "item.ancienthorizons.zircon": "Цирконіт",
+
+  "block.ancienthorizons.obsidian_shard": "Осколок обсидіану",
+  "block.ancienthorizons.spiked_heavy_core": "Шипасте важке ядро"
 }
