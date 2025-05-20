@@ -158,5 +158,13 @@
   "item.ancienthorizons.zircon": "Цирконіт",
 
   "block.ancienthorizons.obsidian_shard": "Осколок обсидіану",
-  "block.ancienthorizons.spiked_heavy_core": "Шипасте важке ядро"
+  "block.ancienthorizons.spiked_heavy_core": "Шипасте важке ядро",
+
+  "block.ancienthorizons.willow_log": "Вербова колода",
+  "block.ancienthorizons.willow_wood": "Вербова деревина",
+  "block.ancienthorizons.stripped_willow_log": "Обтесана вербова колода",
+  "block.ancienthorizons.stripped_willow_wood": "Обтесана вербова деревина",
+  "block.ancienthorizons.willow_planks": "Вербові дошки",
+  "block.ancienthorizons.willow_leaves": "Вербове листя",
+  "block.ancienthorizons.willow_sapling": "Паросток верби"
 }
