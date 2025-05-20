@@ -123,6 +123,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TUNGSTEN_TRAPDOOR);
 
                         output.accept(ModBlocks.TIME_MATRIX);
+
+                        output.accept(ModBlocks.WILLOW_LOG);
+                        output.accept(ModBlocks.WILLOW_WOOD);
+                        output.accept(ModBlocks.STRIPPED_WILLOW_LOG);
+                        output.accept(ModBlocks.STRIPPED_WILLOW_WOOD);
+                        output.accept(ModBlocks.WILLOW_PLANKS);
+                        output.accept(ModBlocks.WILLOW_LEAVES);
+                        output.accept(ModBlocks.WILLOW_SAPLING);
                     }).build());
 
     public static final Supplier<CreativeModeTab> ANCIENT_HORIZONS_TAB_TOOLS_AND_ARMOUR = CREATIVE_MODE_TAB.register("ancient_horizons_tab_tools_and_armour",
@@ -165,10 +173,47 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SILVER_CHESTPLATE);
                         output.accept(ModItems.SILVER_LEGGINGS);
                         output.accept(ModItems.SILVER_BOOTS);
+                        
+                        // PLATINUM
+                        output.accept(ModItems.PLATINUM_SWORD);
+                        output.accept(ModItems.PLATINUM_PICKAXE);
+                        output.accept(ModItems.PLATINUM_AXE);
+                        output.accept(ModItems.PLATINUM_SHOVEL);
+                        output.accept(ModItems.PLATINUM_HOE);
+
+                        output.accept(ModItems.PLATINUM_HELMET);
+                        output.accept(ModItems.PLATINUM_CHESTPLATE);
+                        output.accept(ModItems.PLATINUM_LEGGINGS);
+                        output.accept(ModItems.PLATINUM_BOOTS);
+                        
+                        // COBALT
+                        output.accept(ModItems.COBALT_SWORD);
+                        output.accept(ModItems.COBALT_PICKAXE);
+                        output.accept(ModItems.COBALT_AXE);
+                        output.accept(ModItems.COBALT_SHOVEL);
+                        output.accept(ModItems.COBALT_HOE);
+
+                        output.accept(ModItems.COBALT_HELMET);
+                        output.accept(ModItems.COBALT_CHESTPLATE);
+                        output.accept(ModItems.COBALT_LEGGINGS);
+                        output.accept(ModItems.COBALT_BOOTS);
+                        
+                        // TUNGSTEN
+                        output.accept(ModItems.TUNGSTEN_SWORD);
+                        output.accept(ModItems.TUNGSTEN_PICKAXE);
+                        output.accept(ModItems.TUNGSTEN_AXE);
+                        output.accept(ModItems.TUNGSTEN_SHOVEL);
+                        output.accept(ModItems.TUNGSTEN_HOE);
+
+                        output.accept(ModItems.TUNGSTEN_HELMET);
+                        output.accept(ModItems.TUNGSTEN_CHESTPLATE);
+                        output.accept(ModItems.TUNGSTEN_LEGGINGS);
+                        output.accept(ModItems.TUNGSTEN_BOOTS);
 
                         // SPECIAL
                         output.accept(ModItems.ALUMINIUM_HAMMER);
                         output.accept(ModItems.SILVER_KATANA);
+                        output.accept(ModItems.TUNGSTEN_FLAIL);
 
                     }).build());
 

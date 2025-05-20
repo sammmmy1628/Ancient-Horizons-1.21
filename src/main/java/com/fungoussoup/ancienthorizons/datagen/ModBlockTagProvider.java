@@ -185,6 +185,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_SILVER_TOOL);
 
-
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.WILLOW_LOG.get())
+                .add(ModBlocks.STRIPPED_WILLOW_LOG.get())
+                .add(ModBlocks.WILLOW_WOOD.get())
+                .add(ModBlocks.STRIPPED_WILLOW_WOOD.get());
     }
 }

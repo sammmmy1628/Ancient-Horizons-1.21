@@ -158,12 +158,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         // ZIRCON
         basicItem(ModItems.ZIRCON.get());
 
+        // WILLOW
+        saplingItem(ModBlocks.WILLOW_SAPLING);
+
         // MISC
         basicItem(ModItems.SPIKED_HEAVY_CORE.get());
         basicItem(ModItems.OBSIDIAN_SHARD.get());
 
 
 
+
+    }
+    private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(AncientHorizons.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

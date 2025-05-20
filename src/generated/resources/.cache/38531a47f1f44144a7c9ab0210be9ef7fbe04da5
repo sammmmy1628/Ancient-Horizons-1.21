@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-19T20:14:20.5164912	Item Models: ancienthorizons
+// 1.21.1	2025-05-20T19:46:49.5932215	Item Models: ancienthorizons
 4a7d442bf9bc9643287ae12937f9ecc707338104 assets/ancienthorizons/models/item/aluminium_axe.json
 7e20877ad055f7c56064c0bf852f5258ceb15124 assets/ancienthorizons/models/item/aluminium_boots.json
 4c9bc5e1f2a0d40483e927327653582e7d523e25 assets/ancienthorizons/models/item/aluminium_boots_amethyst_trim.json
@@ -322,4 +322,5 @@ e8ba1d6fc20b235078b9e223e2548dbf8fa515be assets/ancienthorizons/models/item/tung
 685e9835e77a2d605550fe3ebaa43af9dec763ce assets/ancienthorizons/models/item/tungsten_pickaxe.json
 d29a1ba225be64734bbc761bc6a396b2c268fd31 assets/ancienthorizons/models/item/tungsten_shovel.json
 679ad97e13d789949d6db32350f6ff9601bd2480 assets/ancienthorizons/models/item/tungsten_sword.json
+fd21bb2f84e507692032062ab4408d132e2c8f70 assets/ancienthorizons/models/item/willow_sapling.json
 a56fc9de02095fde26279e72e57994f2368626b2 assets/ancienthorizons/models/item/zircon.json

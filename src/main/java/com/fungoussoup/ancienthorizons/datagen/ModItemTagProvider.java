@@ -1,11 +1,13 @@
 package com.fungoussoup.ancienthorizons.datagen;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
+import com.fungoussoup.ancienthorizons.registry.ModBlocks;
 import com.fungoussoup.ancienthorizons.registry.ModItems;
 import com.fungoussoup.ancienthorizons.registry.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -94,5 +96,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.TUNGSTEN_LEGGINGS.get())
                 .add(ModItems.TUNGSTEN_BOOTS.get());
 
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.WILLOW_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_WILLOW_LOG.get().asItem())
+                .add(ModBlocks.WILLOW_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.WILLOW_PLANKS.asItem());
     }
 }

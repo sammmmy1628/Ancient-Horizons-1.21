@@ -159,6 +159,14 @@
   "block.ancienthorizons.deepslate_zircon_ore": "Deepslate Zircon Ore",
   "item.ancienthorizons.zircon": "Zircon",
 
-  "block.ancienthorizons.obsidian_shard": "Obsidian Shard",
-  "block.ancienthorizons.spiked_heavy_core": "Spiked Heavy Core"
+  "item.ancienthorizons.obsidian_shard": "Obsidian Shard",
+  "item.ancienthorizons.spiked_heavy_core": "Spiked Heavy Core",
+
+  "block.ancienthorizons.willow_log": "Willow Log",
+  "block.ancienthorizons.willow_wood": "Willow Wood",
+  "block.ancienthorizons.stripped_willow_log": "Stripped Willow Log",
+  "block.ancienthorizons.stripped_willow_wood": "Stripped Willow Wood",
+  "block.ancienthorizons.willow_planks": "Willow Planks",
+  "block.ancienthorizons.willow_leaves": "Willow Leaves",
+  "block.ancienthorizons.willow_sapling": "Willow Sapling"
 }

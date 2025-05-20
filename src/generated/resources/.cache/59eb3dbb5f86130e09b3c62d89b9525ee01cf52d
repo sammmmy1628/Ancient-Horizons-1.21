@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-19T20:14:20.5194916	Loot Tables
+// 1.21.1	2025-05-20T19:40:49.3578445	Loot Tables
 45f9ec126f0185efec51d3d3c86abf6ce78465ae data/ancienthorizons/loot_table/blocks/aluminium_block.json
 7e8fb758162c373f7fade30ce89c9ed0ba9eeb94 data/ancienthorizons/loot_table/blocks/aluminium_ore.json
 5570289bc354adf3457d26976d129e3c80cf5ae1 data/ancienthorizons/loot_table/blocks/bronze_block.json
@@ -31,6 +31,8 @@ f747458f686f5749439ee7bceb86cabd614f6d5d data/ancienthorizons/loot_table/blocks/
 c0813c71abf8da941cb9a62656f8ceae2ec2f160 data/ancienthorizons/loot_table/blocks/raw_tungsten_block.json
 e35195da94017c83fd40e4bde8e039a43adbe8d4 data/ancienthorizons/loot_table/blocks/silver_block.json
 ad715891bb92b8eabb3ab9b98437c8005eb91276 data/ancienthorizons/loot_table/blocks/silver_ore.json
+78b1923c852d72648c5f0f982c946518dd3a211a data/ancienthorizons/loot_table/blocks/stripped_willow_log.json
+e33d15400c8340d6c04c356b64edbec07fb36067 data/ancienthorizons/loot_table/blocks/stripped_willow_wood.json
 5d4c468f04427921dab7c89ddec9e917cd88eed6 data/ancienthorizons/loot_table/blocks/timestone_block.json
 267b4b6a4b83f7ff0a5d4b6c299d04bb36d09d4d data/ancienthorizons/loot_table/blocks/timestone_ore.json
 9d8ef4ab2be57f67914e64c888ad243d7d4baf19 data/ancienthorizons/loot_table/blocks/time_matrix.json
@@ -44,5 +46,10 @@ e8e85dc03ba686c4873d211398ab8882b67ecbdd data/ancienthorizons/loot_table/blocks/
 8accb65a0b63cfe404088b9e2585c53db80bcb1f data/ancienthorizons/loot_table/blocks/tungsten_grate.json
 65f2b2e3e3925c7e1cdd1273085cf080be4563fb data/ancienthorizons/loot_table/blocks/tungsten_ore.json
 83f3cfe43f9dd731854d89b918fff0ccff28c370 data/ancienthorizons/loot_table/blocks/tungsten_trapdoor.json
+a1879c7ad51070555150da196f0b42c4c6305e64 data/ancienthorizons/loot_table/blocks/willow_leaves.json
+d7f5460106bfc75c70fe62e00347d788d3afdd60 data/ancienthorizons/loot_table/blocks/willow_log.json
+e19a2bc2025a1f94cec4c473786574a199506306 data/ancienthorizons/loot_table/blocks/willow_planks.json
+c336cec71b0afda1007547f7db509c51af2e517e data/ancienthorizons/loot_table/blocks/willow_sapling.json
+0ae2c056eaf1e8d791e087015d786e8f5f507b65 data/ancienthorizons/loot_table/blocks/willow_wood.json
 5c2840feb0cdd7ddd81e0ac97f615a4d3d14b4fd data/ancienthorizons/loot_table/blocks/zircon_block.json
 907f6a6c1a2feb2f059016b8085d8e7c31f17659 data/ancienthorizons/loot_table/blocks/zircon_ore.json

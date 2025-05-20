@@ -1,10 +1,11 @@
-// 1.21.1	2025-05-19T20:14:20.5240072	Tags for minecraft:block mod id ancienthorizons
+// 1.21.1	2025-05-20T19:40:49.3598455	Tags for minecraft:block mod id ancienthorizons
 b5cd6ca9f37bce19bb4a7aaf83a694ba931229e5 data/ancienthorizons/tags/block/aluminium_ores.json
 960b1fc3e805f0893ad232cb068da8f1c3aa0f9a data/ancienthorizons/tags/block/incorrect_for_aluminium_tool.json
 67b40b91a21bed12e0ccf862f06527b635fa004d data/ancienthorizons/tags/block/incorrect_for_silver_tool.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data/ancienthorizons/tags/block/needs_aluminium_tool.json
 ea172bb63e029f8e3e1e5e1e0c4628e08eecc260 data/ancienthorizons/tags/block/needs_silver_tool.json
 6a5bace01235d3ed61e233e19ffcdfab1f2e7b9e data/minecraft/tags/block/incorrect_for_iron_tool.json
+e058e41df9d6891f63f181b05f7dd1e23b58a896 data/minecraft/tags/block/logs_that_burn.json
 7e16663b5c5d093951af95fa3541bba041c5ab8f data/minecraft/tags/block/mineable/pickaxe.json
 f05729e4622c1f0fd7d2ef43f7ab4d16a3d4c2ba data/minecraft/tags/block/needs_diamond_tool.json
 032e7b0c73de9c5c717cfd3dbbfcd1d5e08879cb data/minecraft/tags/block/needs_iron_tool.json

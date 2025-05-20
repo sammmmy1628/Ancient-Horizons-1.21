@@ -1,8 +1,13 @@
 package com.fungoussoup.ancienthorizons.datagen;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
+import com.fungoussoup.ancienthorizons.block.custom.ModFlammableRotatedPillarBlock;
 import com.fungoussoup.ancienthorizons.registry.ModBlocks;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -46,11 +51,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(ModBlocks.TIN_TRAPDOOR.get(), modLoc("block/tin_trapdoor"), true, "cutout");
 
 
-        itemModels().withExistingParent(ModBlocks.CUT_TIN_STAIRS.getId().getPath(),
-                modLoc("block/" + ModBlocks.CUT_TIN_STAIRS.getId().getPath()));
-
-        itemModels().withExistingParent(ModBlocks.CUT_TIN_SLAB.getId().getPath(),
-                modLoc("block/" + ModBlocks.CUT_TIN_SLAB.getId().getPath()));
+        blockItem(ModBlocks.CUT_TIN_STAIRS);
+        blockItem(ModBlocks.CUT_TIN_SLAB);
         blockItem(ModBlocks.TIN_TRAPDOOR, "_bottom");
 
 
@@ -93,11 +95,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(ModBlocks.TUNGSTEN_TRAPDOOR.get(), modLoc("block/tungsten_trapdoor"), true, "cutout");
 
 
-        itemModels().withExistingParent(ModBlocks.CUT_TUNGSTEN_STAIRS.getId().getPath(),
-                modLoc("block/" + ModBlocks.CUT_TUNGSTEN_STAIRS.getId().getPath()));
-
-        itemModels().withExistingParent(ModBlocks.CUT_TUNGSTEN_SLAB.getId().getPath(),
-                modLoc("block/" + ModBlocks.CUT_TUNGSTEN_SLAB.getId().getPath()));
+        blockItem(ModBlocks.CUT_TUNGSTEN_STAIRS);
+        blockItem(ModBlocks.CUT_TUNGSTEN_SLAB);
         blockItem(ModBlocks.TUNGSTEN_TRAPDOOR, "_bottom");
 
         // ZIRCON
@@ -105,7 +104,33 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ZIRCON_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ZIRCON_ORE);
 
+        // WILLOW
+        logBlock(((RotatedPillarBlock) ModBlocks.WILLOW_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.WILLOW_WOOD.get()), blockTexture(ModBlocks.WILLOW_LOG.get()), blockTexture(ModBlocks.WILLOW_LOG.get()));
 
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_WILLOW_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_WILLOW_WOOD.get()), blockTexture(ModBlocks.STRIPPED_WILLOW_LOG.get()), blockTexture(ModBlocks.STRIPPED_WILLOW_LOG.get()));
+
+        blockItem(ModBlocks.WILLOW_LOG);
+        blockItem(ModBlocks.STRIPPED_WILLOW_LOG);
+        blockItem(ModBlocks.WILLOW_WOOD);
+        blockItem(ModBlocks.STRIPPED_WILLOW_WOOD);
+
+        blockWithItem(ModBlocks.WILLOW_PLANKS);
+
+        leavesBlock(ModBlocks.WILLOW_LEAVES);
+        saplingBlock(ModBlocks.WILLOW_SAPLING);
+    }
+
+    private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void leavesBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
@@ -113,7 +138,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock) {
-        simpleBlockWithItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("ancienthorizons:block/" + deferredBlock.getId().getPath()));
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("ancienthorizons:block/" + deferredBlock.getId().getPath()));
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {

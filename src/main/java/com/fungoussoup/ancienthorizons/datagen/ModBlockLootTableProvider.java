@@ -132,6 +132,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DEEPSLATE_ZIRCON_ORE.get(), ModItems.ZIRCON.get()));
 
 
+        // WILLOW
+        dropSelf(ModBlocks.WILLOW_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_WILLOW_LOG.get());
+        dropSelf(ModBlocks.WILLOW_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_WILLOW_WOOD.get());
+        dropSelf(ModBlocks.WILLOW_PLANKS.get());
+        dropSelf(ModBlocks.WILLOW_SAPLING.get());
+
+        add(ModBlocks.WILLOW_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
