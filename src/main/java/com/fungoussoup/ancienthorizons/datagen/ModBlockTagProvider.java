@@ -194,14 +194,21 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.HORNBEAM_LOG.get())
                 .add(ModBlocks.STRIPPED_HORNBEAM_LOG.get())
                 .add(ModBlocks.HORNBEAM_WOOD.get())
-                .add(ModBlocks.STRIPPED_HORNBEAM_WOOD.get());
+                .add(ModBlocks.STRIPPED_HORNBEAM_WOOD.get())
+        
+                .add(ModBlocks.LINDEN_LOG.get())
+                .add(ModBlocks.STRIPPED_LINDEN_LOG.get())
+                .add(ModBlocks.LINDEN_WOOD.get())
+                .add(ModBlocks.STRIPPED_LINDEN_WOOD.get());
 
         tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.WILLOW_FENCE.get())
-                .add(ModBlocks.HORNBEAM_FENCE.get());
+                .add(ModBlocks.HORNBEAM_FENCE.get())
+                .add(ModBlocks.LINDEN_FENCE.get());
 
         tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.WILLOW_FENCE_GATE.get())
-                .add(ModBlocks.HORNBEAM_FENCE_GATE.get());
+                .add(ModBlocks.HORNBEAM_FENCE_GATE.get())
+                .add(ModBlocks.LINDEN_FENCE_GATE.get());
     }
 }

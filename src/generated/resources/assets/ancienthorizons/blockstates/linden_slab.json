@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/linden_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/linden_planks"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/linden_slab_top"
+    }
+  }
+}

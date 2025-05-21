@@ -194,5 +194,22 @@
   "block.ancienthorizons.hornbeam_fence": "Hornbeam Fence",
   "block.ancienthorizons.hornbeam_fence_gate": "Hornbeam Fence Gate",
   "block.ancienthorizons.hornbeam_door": "Hornbeam Door",
-  "block.ancienthorizons.hornbeam_trapdoor": "Hornbeam Trapdoor"
+  "block.ancienthorizons.hornbeam_trapdoor": "Hornbeam Trapdoor",
+
+  "block.ancienthorizons.linden_log": "Linden Log",
+  "block.ancienthorizons.linden_wood": "Linden Wood",
+  "block.ancienthorizons.stripped_linden_log": "Stripped Linden Log",
+  "block.ancienthorizons.stripped_linden_wood": "Stripped Linden Wood",
+  "block.ancienthorizons.linden_planks": "Linden Planks",
+  "block.ancienthorizons.linden_leaves": "Linden Leaves",
+  "block.ancienthorizons.linden_sapling": "Linden Sapling",
+
+  "block.ancienthorizons.linden_stairs": "Linden Stairs",
+  "block.ancienthorizons.linden_slab": "Linden Slab",
+  "block.ancienthorizons.linden_pressure_plate": "Linden Pressure Plate",
+  "block.ancienthorizons.linden_button": "Linden Button",
+  "block.ancienthorizons.linden_fence": "Linden Fence",
+  "block.ancienthorizons.linden_fence_gate": "Linden Fence Gate",
+  "block.ancienthorizons.linden_door": "Linden Door",
+  "block.ancienthorizons.linden_trapdoor": "Linden Trapdoor"
 }

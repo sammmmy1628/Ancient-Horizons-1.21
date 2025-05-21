@@ -159,6 +159,24 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.HORNBEAM_FENCE_GATE);
                         output.accept(ModBlocks.HORNBEAM_DOOR);
                         output.accept(ModBlocks.HORNBEAM_TRAPDOOR);
+
+                        // LINDEN
+                        output.accept(ModBlocks.LINDEN_LOG);
+                        output.accept(ModBlocks.LINDEN_WOOD);
+                        output.accept(ModBlocks.STRIPPED_LINDEN_LOG);
+                        output.accept(ModBlocks.STRIPPED_LINDEN_WOOD);
+                        output.accept(ModBlocks.LINDEN_PLANKS);
+                        output.accept(ModBlocks.LINDEN_LEAVES);
+                        output.accept(ModBlocks.LINDEN_SAPLING);
+
+                        output.accept(ModBlocks.LINDEN_STAIRS);
+                        output.accept(ModBlocks.LINDEN_SLAB);
+                        output.accept(ModBlocks.LINDEN_PRESSURE_PLATE);
+                        output.accept(ModBlocks.LINDEN_BUTTON);
+                        output.accept(ModBlocks.LINDEN_FENCE);
+                        output.accept(ModBlocks.LINDEN_FENCE_GATE);
+                        output.accept(ModBlocks.LINDEN_DOOR);
+                        output.accept(ModBlocks.LINDEN_TRAPDOOR);
                     }).build());
 
     public static final Supplier<CreativeModeTab> ANCIENT_HORIZONS_TAB_TOOLS_AND_ARMOUR = CREATIVE_MODE_TAB.register("ancient_horizons_tab_tools_and_armour",

@@ -103,6 +103,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.WILLOW_PLANKS.asItem());
+                .add(ModBlocks.WILLOW_PLANKS.asItem())
+                .add(ModBlocks.HORNBEAM_PLANKS.asItem())
+                .add(ModBlocks.LINDEN_PLANKS.asItem());
     }
 }

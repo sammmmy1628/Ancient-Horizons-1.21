@@ -169,6 +169,39 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.HORNBEAM_PRESSURE_PLATE);
         blockItem(ModBlocks.HORNBEAM_FENCE_GATE);
         blockItem(ModBlocks.HORNBEAM_TRAPDOOR,"_bottom");
+
+        // LINDEN
+        logBlock(((RotatedPillarBlock) ModBlocks.LINDEN_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.LINDEN_WOOD.get()), blockTexture(ModBlocks.LINDEN_LOG.get()), blockTexture(ModBlocks.LINDEN_LOG.get()));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_LINDEN_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_LINDEN_WOOD.get()), blockTexture(ModBlocks.STRIPPED_LINDEN_LOG.get()), blockTexture(ModBlocks.STRIPPED_LINDEN_LOG.get()));
+
+        blockItem(ModBlocks.LINDEN_LOG);
+        blockItem(ModBlocks.STRIPPED_LINDEN_LOG);
+        blockItem(ModBlocks.LINDEN_WOOD);
+        blockItem(ModBlocks.STRIPPED_LINDEN_WOOD);
+
+        blockWithItem(ModBlocks.LINDEN_PLANKS);
+
+        leavesBlock(ModBlocks.LINDEN_LEAVES);
+        saplingBlock(ModBlocks.LINDEN_SAPLING);
+
+        stairsBlock(ModBlocks.LINDEN_STAIRS.get(), blockTexture(ModBlocks.LINDEN_PLANKS.get()));
+        slabBlock(ModBlocks.LINDEN_SLAB.get(), blockTexture(ModBlocks.LINDEN_PLANKS.get()), blockTexture(ModBlocks.LINDEN_PLANKS.get()));
+        buttonBlock(ModBlocks.LINDEN_BUTTON.get(), blockTexture(ModBlocks.LINDEN_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.LINDEN_PRESSURE_PLATE.get(), blockTexture(ModBlocks.LINDEN_PLANKS.get()));
+        fenceBlock(ModBlocks.LINDEN_FENCE.get(), blockTexture(ModBlocks.LINDEN_PLANKS.get()));
+        fenceGateBlock(ModBlocks.LINDEN_FENCE_GATE.get(), blockTexture(ModBlocks.LINDEN_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.LINDEN_DOOR.get(), modLoc("block/linden_door_bottom"), modLoc("block/linden_door_top"),"cutout");
+        trapdoorBlockWithRenderType(ModBlocks.LINDEN_TRAPDOOR.get(), modLoc("block/linden_trapdoor"), true,"cutout");
+
+        blockItem(ModBlocks.LINDEN_STAIRS);
+        blockItem(ModBlocks.LINDEN_SLAB);
+        blockItem(ModBlocks.LINDEN_PRESSURE_PLATE);
+        blockItem(ModBlocks.LINDEN_FENCE_GATE);
+        blockItem(ModBlocks.LINDEN_TRAPDOOR,"_bottom");
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

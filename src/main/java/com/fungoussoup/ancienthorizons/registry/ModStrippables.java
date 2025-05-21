@@ -15,6 +15,9 @@ public class ModStrippables {
 
         STRIPPABLES.put(ModBlocks.HORNBEAM_LOG.get(), ModBlocks.STRIPPED_HORNBEAM_LOG);
         STRIPPABLES.put(ModBlocks.HORNBEAM_WOOD.get(), ModBlocks.STRIPPED_HORNBEAM_WOOD);
+
+        STRIPPABLES.put(ModBlocks.LINDEN_LOG.get(), ModBlocks.STRIPPED_LINDEN_LOG);
+        STRIPPABLES.put(ModBlocks.LINDEN_WOOD.get(), ModBlocks.STRIPPED_LINDEN_WOOD);
         // Add more trees here
     }
 }

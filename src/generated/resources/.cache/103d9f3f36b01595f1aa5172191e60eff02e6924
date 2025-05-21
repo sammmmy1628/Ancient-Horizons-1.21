@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-21T18:06:07.0150399	Registries
+// 1.21.1	2025-05-21T18:44:46.4047396	Registries
 53c3aa0aa8078a8d127191962d7fdc26c648acd2 data/ancienthorizons/neoforge/biome_modifier/add_aluminium_ore.json
 d74f1f2fffbb29e9172ca6a11a0dd877fa05be9c data/ancienthorizons/neoforge/biome_modifier/add_cobalt_ore.json
 53ff649f67fd1242d948aab3b49a21889252e3cc data/ancienthorizons/neoforge/biome_modifier/add_platinum_ore.json
@@ -10,6 +10,7 @@ d74f1f2fffbb29e9172ca6a11a0dd877fa05be9c data/ancienthorizons/neoforge/biome_mod
 fc75dd9f76b8e699f26c9eff751cf90e794e1189 data/ancienthorizons/worldgen/configured_feature/aluminium_ore.json
 ce002e2f9fcf364f2208a36439a297dfdad78f5a data/ancienthorizons/worldgen/configured_feature/cobalt_ore.json
 ec685c397974fba7844574bd531c4b15e6dc578b data/ancienthorizons/worldgen/configured_feature/hornbeam.json
+8ffd01e3777de0c44a82ce1092cf9eabf3dcb88a data/ancienthorizons/worldgen/configured_feature/linden.json
 1fe6844eb1395e9f3c78dc1843c35e85df142e59 data/ancienthorizons/worldgen/configured_feature/platinum_ore.json
 1ca2a967ca5c15455bf3c2c6c13d7bcb4e5c64db data/ancienthorizons/worldgen/configured_feature/silver_ore.json
 cb3c94e966691fe69fd1fef6314d37c83ed2bb81 data/ancienthorizons/worldgen/configured_feature/timestone_ore.json

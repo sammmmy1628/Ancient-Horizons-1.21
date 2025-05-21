@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_linden": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:linden_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:linden_planks_l"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_linden"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:linden_planks_l"
+    ]
+  }
+}

@@ -44,6 +44,7 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILLOW_KEY = registerKey("willow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HORNBEAM_KEY = registerKey("hornbeam");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LINDEN_KEY = registerKey("linden");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -105,15 +106,14 @@ public class ModConfiguredFeatures {
 
                 new ThreeLayersFeatureSize(1, 1, 0,1,2,OptionalInt.empty())).build());
 
-        //BlockStateProvider.simple(ModBlocks.HORNBEAM_LOG.get()),
-                //new DarkOakTrunkPlacer(4, 2, 1),
-                //BlockStateProvider.simple(ModBlocks.HORNBEAM_LEAVES.get()),
-                //new DarkOakFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0)),
-                //new ThreeLayersFeatureSize(1, 1, 0, 1, 2, OptionalInt.empty())));
+        register(context, LINDEN_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.LINDEN_LOG.get()),
+                new StraightTrunkPlacer(6,0,1),
+                BlockStateProvider.simple(ModBlocks.LINDEN_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0),5),
 
-        //private static TreeConfiguration.TreeConfigurationBuilder createOak() {
-        //    return createStraightBlobTree(Blocks.OAK_LOG, Blocks.OAK_LEAVES, 4, 2, 0, 2).ignoreVines();
-        //}
+                new TwoLayersFeatureSize(1, 1,1)).build());
+
 
 
     }

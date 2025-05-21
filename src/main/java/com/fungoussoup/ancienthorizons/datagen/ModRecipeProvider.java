@@ -937,6 +937,49 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.HORNBEAM_TRAPDOOR.get(), Ingredient.of(ModBlocks.HORNBEAM_PLANKS.get())).group("hornbeam")
                 .unlockedBy("has_hornbeam_planks",has(ModBlocks.HORNBEAM_PLANKS)).save(recipeOutput);
 
+        // LINDEN
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LINDEN_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.LINDEN_LOG.get())
+                .unlockedBy("has_linden", has(ModBlocks.LINDEN_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_LINDEN_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_LINDEN_LOG.get())
+                .unlockedBy("has_stripped_linden", has(ModBlocks.STRIPPED_LINDEN_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.LINDEN_PLANKS.get(), 4)
+                .requires(ModBlocks.LINDEN_LOG)
+                .unlockedBy("has_linden", has(ModBlocks.LINDEN_LOG)).save(recipeOutput,"linden_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.LINDEN_PLANKS.get(), 4)
+                .requires(ModBlocks.LINDEN_WOOD)
+                .unlockedBy("has_linden_wood", has(ModBlocks.LINDEN_WOOD)).save(recipeOutput,"linden_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.LINDEN_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_LINDEN_LOG)
+                .unlockedBy("has_stripped_linden", has(ModBlocks.STRIPPED_LINDEN_LOG)).save(recipeOutput,"linden_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.LINDEN_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_LINDEN_WOOD)
+                .unlockedBy("has_stripped_linden_wood", has(ModBlocks.STRIPPED_LINDEN_WOOD)).save(recipeOutput,"linden_planks_sw");
+
+        stairBuilder(ModBlocks.LINDEN_STAIRS.get(), Ingredient.of(ModBlocks.LINDEN_PLANKS)).group("linden")
+                .unlockedBy("has_linden_planks", has(ModBlocks.LINDEN_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.LINDEN_SLAB.get(),ModBlocks.LINDEN_PLANKS.get());
+
+        buttonBuilder(ModBlocks.LINDEN_BUTTON.get(), Ingredient.of(ModBlocks.LINDEN_PLANKS)).group("linden")
+                .unlockedBy("has_linden_planks", has(ModBlocks.LINDEN_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.LINDEN_PRESSURE_PLATE.get(),ModBlocks.LINDEN_PLANKS.get());
+
+        fenceBuilder(ModBlocks.LINDEN_FENCE.get(), Ingredient.of(ModBlocks.LINDEN_PLANKS)).group("linden")
+                .unlockedBy("has_linden_planks", has(ModBlocks.LINDEN_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.LINDEN_FENCE_GATE.get(), Ingredient.of(ModBlocks.LINDEN_PLANKS)).group("linden")
+                .unlockedBy("has_linden_planks", has(ModBlocks.LINDEN_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.LINDEN_DOOR.get(), Ingredient.of(ModBlocks.LINDEN_PLANKS.get())).group("linden")
+                .unlockedBy("has_linden_planks",has(ModBlocks.LINDEN_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.LINDEN_TRAPDOOR.get(), Ingredient.of(ModBlocks.LINDEN_PLANKS.get())).group("linden")
+                .unlockedBy("has_linden_planks",has(ModBlocks.LINDEN_PLANKS)).save(recipeOutput);
+
         // misc
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.HEAVY_CORE)
                 .pattern("XX")

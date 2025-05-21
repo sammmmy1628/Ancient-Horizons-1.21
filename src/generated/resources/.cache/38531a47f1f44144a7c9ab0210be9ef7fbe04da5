@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-21T17:35:43.9138444	Item Models: ancienthorizons
+// 1.21.1	2025-05-21T18:32:09.1607758	Item Models: ancienthorizons
 4a7d442bf9bc9643287ae12937f9ecc707338104 assets/ancienthorizons/models/item/aluminium_axe.json
 7e20877ad055f7c56064c0bf852f5258ceb15124 assets/ancienthorizons/models/item/aluminium_boots.json
 4c9bc5e1f2a0d40483e927327653582e7d523e25 assets/ancienthorizons/models/item/aluminium_boots_amethyst_trim.json
@@ -157,6 +157,10 @@ fa24058e276c22e2fe78c2de527674a5f67bfd8a assets/ancienthorizons/models/item/horn
 a8c7730cb263671de0c2fca258ce6a09a87df805 assets/ancienthorizons/models/item/hornbeam_door.json
 8381eba25c6b18ae150c3700fc11e5c0cae0559d assets/ancienthorizons/models/item/hornbeam_fence.json
 1af79fafce5f229732cac1fbb0d1ab9784992bf1 assets/ancienthorizons/models/item/hornbeam_sapling.json
+f3507231f36ab997758b1cf2259d745c0434b188 assets/ancienthorizons/models/item/linden_button.json
+1238e4220436eff92841be224b359932c8973a77 assets/ancienthorizons/models/item/linden_door.json
+1bb89808801c83f7f72c12975d503025f83b7fae assets/ancienthorizons/models/item/linden_fence.json
+3e571ee71b50db58d2563ba456984daa80888012 assets/ancienthorizons/models/item/linden_sapling.json
 7c0301e512ab22819fa27cf3ade483da1cdee0e3 assets/ancienthorizons/models/item/obsidian_shard.json
 3fea3d39ce06ff25266fa7370c9e3df831060c96 assets/ancienthorizons/models/item/platinum_axe.json
 95e45a7f857c22b32ce7f977bd1eddc8034ba171 assets/ancienthorizons/models/item/platinum_boots.json

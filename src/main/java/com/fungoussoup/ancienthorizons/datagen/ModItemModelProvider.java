@@ -174,6 +174,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.HORNBEAM_DOOR.asItem());
 
+        // LINDEN
+        saplingItem(ModBlocks.LINDEN_SAPLING);
+
+        buttonItem(ModBlocks.LINDEN_BUTTON, ModBlocks.LINDEN_PLANKS);
+        fenceItem(ModBlocks.LINDEN_FENCE, ModBlocks.LINDEN_PLANKS);
+
+        basicItem(ModBlocks.LINDEN_DOOR.asItem());
+
         // MISC
         basicItem(ModItems.SPIKED_HEAVY_CORE.get());
         basicItem(ModItems.OBSIDIAN_SHARD.get());

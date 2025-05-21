@@ -177,6 +177,29 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.HORNBEAM_DOOR.get(),
                 block -> createDoorTable(ModBlocks.HORNBEAM_DOOR.get()));
+
+        // LINDEN
+        dropSelf(ModBlocks.LINDEN_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_LINDEN_LOG.get());
+        dropSelf(ModBlocks.LINDEN_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_LINDEN_WOOD.get());
+        dropSelf(ModBlocks.LINDEN_PLANKS.get());
+        dropSelf(ModBlocks.LINDEN_SAPLING.get());
+
+        add(ModBlocks.LINDEN_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.LINDEN_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.LINDEN_STAIRS.get());
+        add(ModBlocks.LINDEN_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LINDEN_SLAB.get()));
+        dropSelf(ModBlocks.LINDEN_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.LINDEN_BUTTON.get());
+        dropSelf(ModBlocks.LINDEN_FENCE.get());
+        dropSelf(ModBlocks.LINDEN_FENCE_GATE.get());
+        dropSelf(ModBlocks.LINDEN_TRAPDOOR.get());
+
+        add(ModBlocks.LINDEN_DOOR.get(),
+                block -> createDoorTable(ModBlocks.LINDEN_DOOR.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

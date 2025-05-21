@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "linden",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:linden_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ancienthorizons:linden_trapdoor"
+  }
+}

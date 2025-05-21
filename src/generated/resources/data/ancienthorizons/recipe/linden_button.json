@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "linden",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:linden_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:linden_button"
+  }
+}

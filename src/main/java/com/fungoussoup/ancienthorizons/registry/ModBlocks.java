@@ -340,7 +340,76 @@ public class ModBlocks {
     public static final DeferredBlock<TrapDoorBlock> HORNBEAM_TRAPDOOR = registerBlock("hornbeam_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
 
+    // LINDEN
+    public static final DeferredBlock<Block> LINDEN_LOG = registerBlock("linden_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> STRIPPED_LINDEN_LOG = registerBlock("stripped_linden_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+    public static final DeferredBlock<Block> LINDEN_WOOD = registerBlock("linden_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> STRIPPED_LINDEN_WOOD = registerBlock("stripped_linden_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
 
+    public static final DeferredBlock<Block> LINDEN_PLANKS = registerBlock("linden_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final DeferredBlock<Block> LINDEN_LEAVES = registerBlock("linden_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final DeferredBlock<Block> LINDEN_SAPLING = registerBlock("linden_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.LINDEN, BlockBehaviour.Properties.ofFullCopy(Blocks.DARK_OAK_SAPLING)));
+
+    public static final DeferredBlock<StairBlock> LINDEN_STAIRS = registerBlock("linden_stairs",
+            () -> new StairBlock(ModBlocks.LINDEN_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
+    public static final DeferredBlock<SlabBlock> LINDEN_SLAB = registerBlock("linden_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
+
+    public static final DeferredBlock<PressurePlateBlock> LINDEN_PRESSURE_PLATE = registerBlock("linden_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.OAK,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
+    public static final DeferredBlock<ButtonBlock> LINDEN_BUTTON = registerBlock("linden_button",
+            () -> new ButtonBlock(BlockSetType.OAK,10, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
+
+    public static final DeferredBlock<FenceBlock> LINDEN_FENCE = registerBlock("linden_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
+    public static final DeferredBlock<FenceGateBlock> LINDEN_FENCE_GATE = registerBlock("linden_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE)));
+
+    public static final DeferredBlock<DoorBlock> LINDEN_DOOR = registerBlock("linden_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
+    public static final DeferredBlock<TrapDoorBlock> LINDEN_TRAPDOOR = registerBlock("linden_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
 
 
 
