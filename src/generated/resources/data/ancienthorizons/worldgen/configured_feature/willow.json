@@ -41,21 +41,9 @@
       "type": "minecraft:cherry_trunk_placer",
       "base_height": 4,
       "branch_count": {
-        "type": "minecraft:weighted_list",
-        "distribution": [
-          {
-            "data": 1,
-            "weight": 1
-          },
-          {
-            "data": 2,
-            "weight": 1
-          },
-          {
-            "data": 3,
-            "weight": 1
-          }
-        ]
+        "type": "minecraft:uniform",
+        "max_inclusive": 3,
+        "min_inclusive": 1
       },
       "branch_end_offset_from_top": {
         "type": "minecraft:uniform",
@@ -71,7 +59,7 @@
         "max_inclusive": -3,
         "min_inclusive": -4
       },
-      "height_rand_a": 4,
+      "height_rand_a": 3,
       "height_rand_b": 3
     },
     "trunk_provider": {

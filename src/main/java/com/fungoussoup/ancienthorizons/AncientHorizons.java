@@ -3,6 +3,7 @@ package com.fungoussoup.ancienthorizons;
 import com.fungoussoup.ancienthorizons.registry.ModBlocks;
 import com.fungoussoup.ancienthorizons.registry.ModCreativeModeTabs;
 import com.fungoussoup.ancienthorizons.registry.ModItems;
+import com.fungoussoup.ancienthorizons.registry.ModStrippables;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -39,11 +40,16 @@ public class AncientHorizons {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {}
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ModStrippables.register(); // This is now safe: block registry is complete
+        });
+    }
 
     
     private void addCreative(BuildCreativeModeTabContentsEvent event) {}

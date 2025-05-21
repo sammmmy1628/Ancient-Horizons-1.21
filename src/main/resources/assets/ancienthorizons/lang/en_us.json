@@ -168,5 +168,31 @@
   "block.ancienthorizons.stripped_willow_wood": "Stripped Willow Wood",
   "block.ancienthorizons.willow_planks": "Willow Planks",
   "block.ancienthorizons.willow_leaves": "Willow Leaves",
-  "block.ancienthorizons.willow_sapling": "Willow Sapling"
+  "block.ancienthorizons.willow_sapling": "Willow Sapling",
+
+  "block.ancienthorizons.willow_stairs": "Willow Stairs",
+  "block.ancienthorizons.willow_slab": "Willow Slab",
+  "block.ancienthorizons.willow_pressure_plate": "Willow Pressure Plate",
+  "block.ancienthorizons.willow_button": "Willow Button",
+  "block.ancienthorizons.willow_fence": "Willow Fence",
+  "block.ancienthorizons.willow_fence_gate": "Willow Fence Gate",
+  "block.ancienthorizons.willow_door": "Willow Door",
+  "block.ancienthorizons.willow_trapdoor": "Willow Trapdoor",
+  
+  "block.ancienthorizons.hornbeam_log": "Hornbeam Log",
+  "block.ancienthorizons.hornbeam_wood": "Hornbeam Wood",
+  "block.ancienthorizons.stripped_hornbeam_log": "Stripped Hornbeam Log",
+  "block.ancienthorizons.stripped_hornbeam_wood": "Stripped Hornbeam Wood",
+  "block.ancienthorizons.hornbeam_planks": "Hornbeam Planks",
+  "block.ancienthorizons.hornbeam_leaves": "Hornbeam Leaves",
+  "block.ancienthorizons.hornbeam_sapling": "Hornbeam Sapling",
+
+  "block.ancienthorizons.hornbeam_stairs": "Hornbeam Stairs",
+  "block.ancienthorizons.hornbeam_slab": "Hornbeam Slab",
+  "block.ancienthorizons.hornbeam_pressure_plate": "Hornbeam Pressure Plate",
+  "block.ancienthorizons.hornbeam_button": "Hornbeam Button",
+  "block.ancienthorizons.hornbeam_fence": "Hornbeam Fence",
+  "block.ancienthorizons.hornbeam_fence_gate": "Hornbeam Fence Gate",
+  "block.ancienthorizons.hornbeam_door": "Hornbeam Door",
+  "block.ancienthorizons.hornbeam_trapdoor": "Hornbeam Trapdoor"
 }

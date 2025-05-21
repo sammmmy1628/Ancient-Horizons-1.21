@@ -120,6 +120,55 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         leavesBlock(ModBlocks.WILLOW_LEAVES);
         saplingBlock(ModBlocks.WILLOW_SAPLING);
+
+        stairsBlock(ModBlocks.WILLOW_STAIRS.get(), blockTexture(ModBlocks.WILLOW_PLANKS.get()));
+        slabBlock(ModBlocks.WILLOW_SLAB.get(), blockTexture(ModBlocks.WILLOW_PLANKS.get()), blockTexture(ModBlocks.WILLOW_PLANKS.get()));
+        buttonBlock(ModBlocks.WILLOW_BUTTON.get(), blockTexture(ModBlocks.WILLOW_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.WILLOW_PRESSURE_PLATE.get(), blockTexture(ModBlocks.WILLOW_PLANKS.get()));
+        fenceBlock(ModBlocks.WILLOW_FENCE.get(), blockTexture(ModBlocks.WILLOW_PLANKS.get()));
+        fenceGateBlock(ModBlocks.WILLOW_FENCE_GATE.get(), blockTexture(ModBlocks.WILLOW_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.WILLOW_DOOR.get(), modLoc("block/willow_door_bottom"), modLoc("block/willow_door_top"),"cutout");
+        trapdoorBlockWithRenderType(ModBlocks.WILLOW_TRAPDOOR.get(), modLoc("block/willow_trapdoor"), true,"cutout");
+
+        blockItem(ModBlocks.WILLOW_STAIRS);
+        blockItem(ModBlocks.WILLOW_SLAB);
+        blockItem(ModBlocks.WILLOW_PRESSURE_PLATE);
+        blockItem(ModBlocks.WILLOW_FENCE_GATE);
+        blockItem(ModBlocks.WILLOW_TRAPDOOR,"_bottom");
+
+        // HORNBEAM
+        logBlock(((RotatedPillarBlock) ModBlocks.HORNBEAM_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.HORNBEAM_WOOD.get()), blockTexture(ModBlocks.HORNBEAM_LOG.get()), blockTexture(ModBlocks.HORNBEAM_LOG.get()));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_HORNBEAM_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_HORNBEAM_WOOD.get()), blockTexture(ModBlocks.STRIPPED_HORNBEAM_LOG.get()), blockTexture(ModBlocks.STRIPPED_HORNBEAM_LOG.get()));
+
+        blockItem(ModBlocks.HORNBEAM_LOG);
+        blockItem(ModBlocks.STRIPPED_HORNBEAM_LOG);
+        blockItem(ModBlocks.HORNBEAM_WOOD);
+        blockItem(ModBlocks.STRIPPED_HORNBEAM_WOOD);
+
+        blockWithItem(ModBlocks.HORNBEAM_PLANKS);
+
+        leavesBlock(ModBlocks.HORNBEAM_LEAVES);
+        saplingBlock(ModBlocks.HORNBEAM_SAPLING);
+
+        stairsBlock(ModBlocks.HORNBEAM_STAIRS.get(), blockTexture(ModBlocks.HORNBEAM_PLANKS.get()));
+        slabBlock(ModBlocks.HORNBEAM_SLAB.get(), blockTexture(ModBlocks.HORNBEAM_PLANKS.get()), blockTexture(ModBlocks.HORNBEAM_PLANKS.get()));
+        buttonBlock(ModBlocks.HORNBEAM_BUTTON.get(), blockTexture(ModBlocks.HORNBEAM_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.HORNBEAM_PRESSURE_PLATE.get(), blockTexture(ModBlocks.HORNBEAM_PLANKS.get()));
+        fenceBlock(ModBlocks.HORNBEAM_FENCE.get(), blockTexture(ModBlocks.HORNBEAM_PLANKS.get()));
+        fenceGateBlock(ModBlocks.HORNBEAM_FENCE_GATE.get(), blockTexture(ModBlocks.HORNBEAM_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.HORNBEAM_DOOR.get(), modLoc("block/hornbeam_door_bottom"), modLoc("block/hornbeam_door_top"),"cutout");
+        trapdoorBlockWithRenderType(ModBlocks.HORNBEAM_TRAPDOOR.get(), modLoc("block/hornbeam_trapdoor"), true,"cutout");
+
+        blockItem(ModBlocks.HORNBEAM_STAIRS);
+        blockItem(ModBlocks.HORNBEAM_SLAB);
+        blockItem(ModBlocks.HORNBEAM_PRESSURE_PLATE);
+        blockItem(ModBlocks.HORNBEAM_FENCE_GATE);
+        blockItem(ModBlocks.HORNBEAM_TRAPDOOR,"_bottom");
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

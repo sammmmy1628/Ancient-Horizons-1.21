@@ -161,6 +161,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         // WILLOW
         saplingItem(ModBlocks.WILLOW_SAPLING);
 
+        buttonItem(ModBlocks.WILLOW_BUTTON, ModBlocks.WILLOW_PLANKS);
+        fenceItem(ModBlocks.WILLOW_FENCE, ModBlocks.WILLOW_PLANKS);
+
+        basicItem(ModBlocks.WILLOW_DOOR.asItem());
+        
+        // HORNBEAM
+        saplingItem(ModBlocks.HORNBEAM_SAPLING);
+
+        buttonItem(ModBlocks.HORNBEAM_BUTTON, ModBlocks.HORNBEAM_PLANKS);
+        fenceItem(ModBlocks.HORNBEAM_FENCE, ModBlocks.HORNBEAM_PLANKS);
+
+        basicItem(ModBlocks.HORNBEAM_DOOR.asItem());
+
         // MISC
         basicItem(ModItems.SPIKED_HEAVY_CORE.get());
         basicItem(ModItems.OBSIDIAN_SHARD.get());

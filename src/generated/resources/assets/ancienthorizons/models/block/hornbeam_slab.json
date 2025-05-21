@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ancienthorizons:block/hornbeam_planks",
+    "side": "ancienthorizons:block/hornbeam_planks",
+    "top": "ancienthorizons:block/hornbeam_planks"
+  }
+}

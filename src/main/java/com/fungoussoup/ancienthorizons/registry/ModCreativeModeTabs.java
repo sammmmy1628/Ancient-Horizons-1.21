@@ -124,6 +124,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.TIME_MATRIX);
 
+                        // WILLOW
                         output.accept(ModBlocks.WILLOW_LOG);
                         output.accept(ModBlocks.WILLOW_WOOD);
                         output.accept(ModBlocks.STRIPPED_WILLOW_LOG);
@@ -131,6 +132,33 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WILLOW_PLANKS);
                         output.accept(ModBlocks.WILLOW_LEAVES);
                         output.accept(ModBlocks.WILLOW_SAPLING);
+
+                        output.accept(ModBlocks.WILLOW_STAIRS);
+                        output.accept(ModBlocks.WILLOW_SLAB);
+                        output.accept(ModBlocks.WILLOW_PRESSURE_PLATE);
+                        output.accept(ModBlocks.WILLOW_BUTTON);
+                        output.accept(ModBlocks.WILLOW_FENCE);
+                        output.accept(ModBlocks.WILLOW_FENCE_GATE);
+                        output.accept(ModBlocks.WILLOW_DOOR);
+                        output.accept(ModBlocks.WILLOW_TRAPDOOR);
+
+                        // HORNBEAM
+                        output.accept(ModBlocks.HORNBEAM_LOG);
+                        output.accept(ModBlocks.HORNBEAM_WOOD);
+                        output.accept(ModBlocks.STRIPPED_HORNBEAM_LOG);
+                        output.accept(ModBlocks.STRIPPED_HORNBEAM_WOOD);
+                        output.accept(ModBlocks.HORNBEAM_PLANKS);
+                        output.accept(ModBlocks.HORNBEAM_LEAVES);
+                        output.accept(ModBlocks.HORNBEAM_SAPLING);
+
+                        output.accept(ModBlocks.HORNBEAM_STAIRS);
+                        output.accept(ModBlocks.HORNBEAM_SLAB);
+                        output.accept(ModBlocks.HORNBEAM_PRESSURE_PLATE);
+                        output.accept(ModBlocks.HORNBEAM_BUTTON);
+                        output.accept(ModBlocks.HORNBEAM_FENCE);
+                        output.accept(ModBlocks.HORNBEAM_FENCE_GATE);
+                        output.accept(ModBlocks.HORNBEAM_DOOR);
+                        output.accept(ModBlocks.HORNBEAM_TRAPDOOR);
                     }).build());
 
     public static final Supplier<CreativeModeTab> ANCIENT_HORIZONS_TAB_TOOLS_AND_ARMOUR = CREATIVE_MODE_TAB.register("ancient_horizons_tab_tools_and_armour",

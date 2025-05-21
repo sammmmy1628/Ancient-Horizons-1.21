@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hornbeam": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:hornbeam_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ancienthorizons:hornbeam_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hornbeam"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancienthorizons:hornbeam_wood"
+    ]
+  }
+}

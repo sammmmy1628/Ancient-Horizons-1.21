@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-20T19:46:49.5932215	Item Models: ancienthorizons
+// 1.21.1	2025-05-21T17:35:43.9138444	Item Models: ancienthorizons
 4a7d442bf9bc9643287ae12937f9ecc707338104 assets/ancienthorizons/models/item/aluminium_axe.json
 7e20877ad055f7c56064c0bf852f5258ceb15124 assets/ancienthorizons/models/item/aluminium_boots.json
 4c9bc5e1f2a0d40483e927327653582e7d523e25 assets/ancienthorizons/models/item/aluminium_boots_amethyst_trim.json
@@ -153,6 +153,10 @@ d670eaf9bc67707817b42f93cc2495338613674c assets/ancienthorizons/models/item/coba
 83defa63017972aea2902eaa0942d26a453e5e07 assets/ancienthorizons/models/item/cobalt_pickaxe.json
 fbf0b9d64483ac2b73bbab9747db353bc10960bd assets/ancienthorizons/models/item/cobalt_shovel.json
 fec81958adc1ebac6f46af23cbf4bb5e6750e13d assets/ancienthorizons/models/item/cobalt_sword.json
+fa24058e276c22e2fe78c2de527674a5f67bfd8a assets/ancienthorizons/models/item/hornbeam_button.json
+a8c7730cb263671de0c2fca258ce6a09a87df805 assets/ancienthorizons/models/item/hornbeam_door.json
+8381eba25c6b18ae150c3700fc11e5c0cae0559d assets/ancienthorizons/models/item/hornbeam_fence.json
+1af79fafce5f229732cac1fbb0d1ab9784992bf1 assets/ancienthorizons/models/item/hornbeam_sapling.json
 7c0301e512ab22819fa27cf3ade483da1cdee0e3 assets/ancienthorizons/models/item/obsidian_shard.json
 3fea3d39ce06ff25266fa7370c9e3df831060c96 assets/ancienthorizons/models/item/platinum_axe.json
 95e45a7f857c22b32ce7f977bd1eddc8034ba171 assets/ancienthorizons/models/item/platinum_boots.json
@@ -322,5 +326,8 @@ e8ba1d6fc20b235078b9e223e2548dbf8fa515be assets/ancienthorizons/models/item/tung
 685e9835e77a2d605550fe3ebaa43af9dec763ce assets/ancienthorizons/models/item/tungsten_pickaxe.json
 d29a1ba225be64734bbc761bc6a396b2c268fd31 assets/ancienthorizons/models/item/tungsten_shovel.json
 679ad97e13d789949d6db32350f6ff9601bd2480 assets/ancienthorizons/models/item/tungsten_sword.json
+820335d72254113512acc476b68fe644f8b19989 assets/ancienthorizons/models/item/willow_button.json
+affbda3c4c4e6cb88b700b60090ffe04e342bdbe assets/ancienthorizons/models/item/willow_door.json
+63201180e6852181dd2dd231aec17b2c822cde66 assets/ancienthorizons/models/item/willow_fence.json
 fd21bb2f84e507692032062ab4408d132e2c8f70 assets/ancienthorizons/models/item/willow_sapling.json
 a56fc9de02095fde26279e72e57994f2368626b2 assets/ancienthorizons/models/item/zircon.json

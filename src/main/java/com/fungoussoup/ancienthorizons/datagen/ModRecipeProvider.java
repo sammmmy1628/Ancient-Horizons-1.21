@@ -851,6 +851,92 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.ZIRCON_BLOCK)
                 .unlockedBy("has_zircon_block", has(ModBlocks.ZIRCON_BLOCK)).save(recipeOutput);
 
+        // WILLOW
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WILLOW_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.WILLOW_LOG.get())
+                .unlockedBy("has_willow", has(ModBlocks.WILLOW_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_WILLOW_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_WILLOW_LOG.get())
+                .unlockedBy("has_stripped_willow", has(ModBlocks.STRIPPED_WILLOW_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WILLOW_PLANKS.get(), 4)
+                .requires(ModBlocks.WILLOW_LOG)
+                .unlockedBy("has_willow", has(ModBlocks.WILLOW_LOG)).save(recipeOutput,"willow_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WILLOW_PLANKS.get(), 4)
+                .requires(ModBlocks.WILLOW_WOOD)
+                .unlockedBy("has_willow_wood", has(ModBlocks.WILLOW_WOOD)).save(recipeOutput,"willow_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WILLOW_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_WILLOW_LOG)
+                .unlockedBy("has_stripped_willow", has(ModBlocks.STRIPPED_WILLOW_LOG)).save(recipeOutput,"willow_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WILLOW_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_WILLOW_WOOD)
+                .unlockedBy("has_stripped_willow_wood", has(ModBlocks.STRIPPED_WILLOW_WOOD)).save(recipeOutput,"willow_planks_sw");
+
+        stairBuilder(ModBlocks.WILLOW_STAIRS.get(), Ingredient.of(ModBlocks.WILLOW_PLANKS)).group("willow")
+                        .unlockedBy("has_willow_planks", has(ModBlocks.WILLOW_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.WILLOW_SLAB.get(),ModBlocks.WILLOW_PLANKS.get());
+
+        buttonBuilder(ModBlocks.WILLOW_BUTTON.get(), Ingredient.of(ModBlocks.WILLOW_PLANKS)).group("willow")
+                .unlockedBy("has_willow_planks", has(ModBlocks.WILLOW_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.WILLOW_PRESSURE_PLATE.get(),ModBlocks.WILLOW_PLANKS.get());
+
+        fenceBuilder(ModBlocks.WILLOW_FENCE.get(), Ingredient.of(ModBlocks.WILLOW_PLANKS)).group("willow")
+                .unlockedBy("has_willow_planks", has(ModBlocks.WILLOW_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.WILLOW_FENCE_GATE.get(), Ingredient.of(ModBlocks.WILLOW_PLANKS)).group("willow")
+                .unlockedBy("has_willow_planks", has(ModBlocks.WILLOW_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.WILLOW_DOOR.get(), Ingredient.of(ModBlocks.WILLOW_PLANKS.get())).group("willow")
+                .unlockedBy("has_willow_planks",has(ModBlocks.WILLOW_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.WILLOW_TRAPDOOR.get(), Ingredient.of(ModBlocks.WILLOW_PLANKS.get())).group("willow")
+                .unlockedBy("has_willow_planks",has(ModBlocks.WILLOW_PLANKS)).save(recipeOutput);
+
+        // HORNBEAM
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.HORNBEAM_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.HORNBEAM_LOG.get())
+                .unlockedBy("has_hornbeam", has(ModBlocks.HORNBEAM_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_HORNBEAM_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_HORNBEAM_LOG.get())
+                .unlockedBy("has_stripped_hornbeam", has(ModBlocks.STRIPPED_HORNBEAM_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.HORNBEAM_PLANKS.get(), 4)
+                .requires(ModBlocks.HORNBEAM_LOG)
+                .unlockedBy("has_hornbeam", has(ModBlocks.HORNBEAM_LOG)).save(recipeOutput,"hornbeam_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.HORNBEAM_PLANKS.get(), 4)
+                .requires(ModBlocks.HORNBEAM_WOOD)
+                .unlockedBy("has_hornbeam_wood", has(ModBlocks.HORNBEAM_WOOD)).save(recipeOutput,"hornbeam_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.HORNBEAM_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_HORNBEAM_LOG)
+                .unlockedBy("has_stripped_hornbeam", has(ModBlocks.STRIPPED_HORNBEAM_LOG)).save(recipeOutput,"hornbeam_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.HORNBEAM_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_HORNBEAM_WOOD)
+                .unlockedBy("has_stripped_hornbeam_wood", has(ModBlocks.STRIPPED_HORNBEAM_WOOD)).save(recipeOutput,"hornbeam_planks_sw");
+
+        stairBuilder(ModBlocks.HORNBEAM_STAIRS.get(), Ingredient.of(ModBlocks.HORNBEAM_PLANKS)).group("hornbeam")
+                .unlockedBy("has_hornbeam_planks", has(ModBlocks.HORNBEAM_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.HORNBEAM_SLAB.get(),ModBlocks.HORNBEAM_PLANKS.get());
+
+        buttonBuilder(ModBlocks.HORNBEAM_BUTTON.get(), Ingredient.of(ModBlocks.HORNBEAM_PLANKS)).group("hornbeam")
+                .unlockedBy("has_hornbeam_planks", has(ModBlocks.HORNBEAM_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.HORNBEAM_PRESSURE_PLATE.get(),ModBlocks.HORNBEAM_PLANKS.get());
+
+        fenceBuilder(ModBlocks.HORNBEAM_FENCE.get(), Ingredient.of(ModBlocks.HORNBEAM_PLANKS)).group("hornbeam")
+                .unlockedBy("has_hornbeam_planks", has(ModBlocks.HORNBEAM_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.HORNBEAM_FENCE_GATE.get(), Ingredient.of(ModBlocks.HORNBEAM_PLANKS)).group("hornbeam")
+                .unlockedBy("has_hornbeam_planks", has(ModBlocks.HORNBEAM_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.HORNBEAM_DOOR.get(), Ingredient.of(ModBlocks.HORNBEAM_PLANKS.get())).group("hornbeam")
+                .unlockedBy("has_hornbeam_planks",has(ModBlocks.HORNBEAM_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.HORNBEAM_TRAPDOOR.get(), Ingredient.of(ModBlocks.HORNBEAM_PLANKS.get())).group("hornbeam")
+                .unlockedBy("has_hornbeam_planks",has(ModBlocks.HORNBEAM_PLANKS)).save(recipeOutput);
+
         // misc
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.HEAVY_CORE)
                 .pattern("XX")

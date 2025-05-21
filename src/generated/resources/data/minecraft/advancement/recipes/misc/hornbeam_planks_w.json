@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_hornbeam": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:stripped_hornbeam_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hornbeam_planks_w"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_hornbeam"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hornbeam_planks_w"
+    ]
+  }
+}

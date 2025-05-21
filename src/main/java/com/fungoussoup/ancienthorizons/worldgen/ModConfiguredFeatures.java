@@ -12,21 +12,24 @@ import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.WeightedListInt;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.ThreeLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.CherryTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.*;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
 import java.util.List;
+import java.util.OptionalInt;
 
 public class ModConfiguredFeatures {
 
@@ -40,6 +43,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ZIRCON_ORE_KEY = registerKey("zircon_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILLOW_KEY = registerKey("willow");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HORNBEAM_KEY = registerKey("hornbeam");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -82,11 +86,8 @@ public class ModConfiguredFeatures {
 
         register(context, WILLOW_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.WILLOW_LOG.get()),
-                //  int baseHeight, int heightRandA, int heightRandB, IntProvider branchCount, IntProvider branchHorizontalLength, UniformInt branchStartOffsetFromTop, IntProvider branchEndOffsetFromTop
-                new CherryTrunkPlacer(4, 4, 3,
-                        new WeightedListInt(
-                                SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 1).add(ConstantInt.of(2), 1).add(ConstantInt.of(3), 1).build()
-                        ),
+                new CherryTrunkPlacer(4, 3, 3,
+                        UniformInt.of(1, 3),
                         UniformInt.of(2, 4),
                         UniformInt.of(-4, -3),
                         UniformInt.of(-1, 0)),
@@ -95,6 +96,24 @@ public class ModConfiguredFeatures {
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, HORNBEAM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.HORNBEAM_LOG.get()),
+                new DarkOakTrunkPlacer(4,2,1),
+                BlockStateProvider.simple(ModBlocks.HORNBEAM_LEAVES.get()),
+                new DarkOakFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0)),
+
+                new ThreeLayersFeatureSize(1, 1, 0,1,2,OptionalInt.empty())).build());
+
+        //BlockStateProvider.simple(ModBlocks.HORNBEAM_LOG.get()),
+                //new DarkOakTrunkPlacer(4, 2, 1),
+                //BlockStateProvider.simple(ModBlocks.HORNBEAM_LEAVES.get()),
+                //new DarkOakFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0)),
+                //new ThreeLayersFeatureSize(1, 1, 0, 1, 2, OptionalInt.empty())));
+
+        //private static TreeConfiguration.TreeConfigurationBuilder createOak() {
+        //    return createStraightBlobTree(Blocks.OAK_LOG, Blocks.OAK_LEAVES, 4, 2, 0, 2).ignoreVines();
+        //}
 
 
     }

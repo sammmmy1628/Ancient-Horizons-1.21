@@ -142,6 +142,41 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.WILLOW_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.WILLOW_STAIRS.get());
+        add(ModBlocks.WILLOW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.WILLOW_SLAB.get()));
+        dropSelf(ModBlocks.WILLOW_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.WILLOW_BUTTON.get());
+        dropSelf(ModBlocks.WILLOW_FENCE.get());
+        dropSelf(ModBlocks.WILLOW_FENCE_GATE.get());
+        dropSelf(ModBlocks.WILLOW_TRAPDOOR.get());
+
+        add(ModBlocks.WILLOW_DOOR.get(),
+                block -> createDoorTable(ModBlocks.WILLOW_DOOR.get()));
+
+        // HORNBEAM
+        dropSelf(ModBlocks.HORNBEAM_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_HORNBEAM_LOG.get());
+        dropSelf(ModBlocks.HORNBEAM_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_HORNBEAM_WOOD.get());
+        dropSelf(ModBlocks.HORNBEAM_PLANKS.get());
+        dropSelf(ModBlocks.HORNBEAM_SAPLING.get());
+
+        add(ModBlocks.HORNBEAM_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.HORNBEAM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.HORNBEAM_STAIRS.get());
+        add(ModBlocks.HORNBEAM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.HORNBEAM_SLAB.get()));
+        dropSelf(ModBlocks.HORNBEAM_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.HORNBEAM_BUTTON.get());
+        dropSelf(ModBlocks.HORNBEAM_FENCE.get());
+        dropSelf(ModBlocks.HORNBEAM_FENCE_GATE.get());
+        dropSelf(ModBlocks.HORNBEAM_TRAPDOOR.get());
+
+        add(ModBlocks.HORNBEAM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.HORNBEAM_DOOR.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
