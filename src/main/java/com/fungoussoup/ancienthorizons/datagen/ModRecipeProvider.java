@@ -979,7 +979,566 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_linden_planks",has(ModBlocks.LINDEN_PLANKS)).save(recipeOutput);
         trapdoorBuilder(ModBlocks.LINDEN_TRAPDOOR.get(), Ingredient.of(ModBlocks.LINDEN_PLANKS.get())).group("linden")
                 .unlockedBy("has_linden_planks",has(ModBlocks.LINDEN_PLANKS)).save(recipeOutput);
+        
+        // GINKGO
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GINKGO_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.GINKGO_LOG.get())
+                .unlockedBy("has_ginkgo", has(ModBlocks.GINKGO_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_GINKGO_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_GINKGO_LOG.get())
+                .unlockedBy("has_stripped_ginkgo", has(ModBlocks.STRIPPED_GINKGO_LOG)).save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GINKGO_PLANKS.get(), 4)
+                .requires(ModBlocks.GINKGO_LOG)
+                .unlockedBy("has_ginkgo", has(ModBlocks.GINKGO_LOG)).save(recipeOutput,"ginkgo_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GINKGO_PLANKS.get(), 4)
+                .requires(ModBlocks.GINKGO_WOOD)
+                .unlockedBy("has_ginkgo_wood", has(ModBlocks.GINKGO_WOOD)).save(recipeOutput,"ginkgo_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GINKGO_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_GINKGO_LOG)
+                .unlockedBy("has_stripped_ginkgo", has(ModBlocks.STRIPPED_GINKGO_LOG)).save(recipeOutput,"ginkgo_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GINKGO_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_GINKGO_WOOD)
+                .unlockedBy("has_stripped_ginkgo_wood", has(ModBlocks.STRIPPED_GINKGO_WOOD)).save(recipeOutput,"ginkgo_planks_sw");
+
+        stairBuilder(ModBlocks.GINKGO_STAIRS.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS)).group("ginkgo")
+                .unlockedBy("has_ginkgo_planks", has(ModBlocks.GINKGO_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.GINKGO_SLAB.get(),ModBlocks.GINKGO_PLANKS.get());
+
+        buttonBuilder(ModBlocks.GINKGO_BUTTON.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS)).group("ginkgo")
+                .unlockedBy("has_ginkgo_planks", has(ModBlocks.GINKGO_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.GINKGO_PRESSURE_PLATE.get(),ModBlocks.GINKGO_PLANKS.get());
+
+        fenceBuilder(ModBlocks.GINKGO_FENCE.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS)).group("ginkgo")
+                .unlockedBy("has_ginkgo_planks", has(ModBlocks.GINKGO_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.GINKGO_FENCE_GATE.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS)).group("ginkgo")
+                .unlockedBy("has_ginkgo_planks", has(ModBlocks.GINKGO_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.GINKGO_DOOR.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("ginkgo")
+                .unlockedBy("has_ginkgo_planks",has(ModBlocks.GINKGO_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.GINKGO_TRAPDOOR.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("ginkgo")
+                .unlockedBy("has_ginkgo_planks",has(ModBlocks.GINKGO_PLANKS)).save(recipeOutput);
+
+        // POPLAR
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POPLAR_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.POPLAR_LOG.get())
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_POPLAR_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_POPLAR_LOG.get())
+                .unlockedBy("has_stripped_poplar", has(ModBlocks.STRIPPED_POPLAR_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.POPLAR_PLANKS.get(), 4)
+                .requires(ModBlocks.POPLAR_LOG)
+                .unlockedBy("has_poplar", has(ModBlocks.POPLAR_LOG)).save(recipeOutput,"poplar_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.POPLAR_PLANKS.get(), 4)
+                .requires(ModBlocks.POPLAR_WOOD)
+                .unlockedBy("has_poplar_wood", has(ModBlocks.POPLAR_WOOD)).save(recipeOutput,"poplar_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.POPLAR_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_POPLAR_LOG)
+                .unlockedBy("has_stripped_poplar", has(ModBlocks.STRIPPED_POPLAR_LOG)).save(recipeOutput,"poplar_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.POPLAR_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_POPLAR_WOOD)
+                .unlockedBy("has_stripped_poplar_wood", has(ModBlocks.STRIPPED_POPLAR_WOOD)).save(recipeOutput,"poplar_planks_sw");
+
+        stairBuilder(ModBlocks.POPLAR_STAIRS.get(), Ingredient.of(ModBlocks.POPLAR_PLANKS)).group("poplar")
+                .unlockedBy("has_poplar_planks", has(ModBlocks.POPLAR_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.POPLAR_SLAB.get(),ModBlocks.POPLAR_PLANKS.get());
+
+        buttonBuilder(ModBlocks.POPLAR_BUTTON.get(), Ingredient.of(ModBlocks.POPLAR_PLANKS)).group("poplar")
+                .unlockedBy("has_poplar_planks", has(ModBlocks.POPLAR_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.POPLAR_PRESSURE_PLATE.get(),ModBlocks.POPLAR_PLANKS.get());
+
+        fenceBuilder(ModBlocks.POPLAR_FENCE.get(), Ingredient.of(ModBlocks.POPLAR_PLANKS)).group("poplar")
+                .unlockedBy("has_poplar_planks", has(ModBlocks.POPLAR_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.POPLAR_FENCE_GATE.get(), Ingredient.of(ModBlocks.POPLAR_PLANKS)).group("poplar")
+                .unlockedBy("has_poplar_planks", has(ModBlocks.POPLAR_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.POPLAR_DOOR.get(), Ingredient.of(ModBlocks.POPLAR_PLANKS.get())).group("poplar")
+                .unlockedBy("has_poplar_planks",has(ModBlocks.POPLAR_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.POPLAR_TRAPDOOR.get(), Ingredient.of(ModBlocks.POPLAR_PLANKS.get())).group("poplar")
+                .unlockedBy("has_poplar_planks",has(ModBlocks.POPLAR_PLANKS)).save(recipeOutput);
+        
+        // MAPLE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MAPLE_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.MAPLE_LOG.get())
+                .unlockedBy("has_maple", has(ModBlocks.MAPLE_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_MAPLE_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_MAPLE_LOG.get())
+                .unlockedBy("has_stripped_maple", has(ModBlocks.STRIPPED_MAPLE_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MAPLE_PLANKS.get(), 4)
+                .requires(ModBlocks.MAPLE_LOG)
+                .unlockedBy("has_maple", has(ModBlocks.MAPLE_LOG)).save(recipeOutput,"maple_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MAPLE_PLANKS.get(), 4)
+                .requires(ModBlocks.MAPLE_WOOD)
+                .unlockedBy("has_maple_wood", has(ModBlocks.MAPLE_WOOD)).save(recipeOutput,"maple_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MAPLE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_MAPLE_LOG)
+                .unlockedBy("has_stripped_maple", has(ModBlocks.STRIPPED_MAPLE_LOG)).save(recipeOutput,"maple_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MAPLE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_MAPLE_WOOD)
+                .unlockedBy("has_stripped_maple_wood", has(ModBlocks.STRIPPED_MAPLE_WOOD)).save(recipeOutput,"maple_planks_sw");
+
+        stairBuilder(ModBlocks.MAPLE_STAIRS.get(), Ingredient.of(ModBlocks.MAPLE_PLANKS)).group("maple")
+                .unlockedBy("has_maple_planks", has(ModBlocks.MAPLE_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.MAPLE_SLAB.get(),ModBlocks.MAPLE_PLANKS.get());
+
+        buttonBuilder(ModBlocks.MAPLE_BUTTON.get(), Ingredient.of(ModBlocks.MAPLE_PLANKS)).group("maple")
+                .unlockedBy("has_maple_planks", has(ModBlocks.MAPLE_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.MAPLE_PRESSURE_PLATE.get(),ModBlocks.MAPLE_PLANKS.get());
+
+        fenceBuilder(ModBlocks.MAPLE_FENCE.get(), Ingredient.of(ModBlocks.MAPLE_PLANKS)).group("maple")
+                .unlockedBy("has_maple_planks", has(ModBlocks.MAPLE_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.MAPLE_FENCE_GATE.get(), Ingredient.of(ModBlocks.MAPLE_PLANKS)).group("maple")
+                .unlockedBy("has_maple_planks", has(ModBlocks.MAPLE_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.MAPLE_DOOR.get(), Ingredient.of(ModBlocks.MAPLE_PLANKS.get())).group("maple")
+                .unlockedBy("has_maple_planks",has(ModBlocks.MAPLE_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.MAPLE_TRAPDOOR.get(), Ingredient.of(ModBlocks.MAPLE_PLANKS.get())).group("maple")
+                .unlockedBy("has_maple_planks",has(ModBlocks.MAPLE_PLANKS)).save(recipeOutput);
+
+        // BAOBAB
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BAOBAB_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.BAOBAB_LOG.get())
+                .unlockedBy("has_baobab", has(ModBlocks.BAOBAB_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_BAOBAB_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_BAOBAB_LOG.get())
+                .unlockedBy("has_stripped_baobab", has(ModBlocks.STRIPPED_BAOBAB_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BAOBAB_PLANKS.get(), 4)
+                .requires(ModBlocks.BAOBAB_LOG)
+                .unlockedBy("has_baobab", has(ModBlocks.BAOBAB_LOG)).save(recipeOutput,"baobab_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BAOBAB_PLANKS.get(), 4)
+                .requires(ModBlocks.BAOBAB_WOOD)
+                .unlockedBy("has_baobab_wood", has(ModBlocks.BAOBAB_WOOD)).save(recipeOutput,"baobab_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BAOBAB_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_BAOBAB_LOG)
+                .unlockedBy("has_stripped_baobab", has(ModBlocks.STRIPPED_BAOBAB_LOG)).save(recipeOutput,"baobab_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BAOBAB_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_BAOBAB_WOOD)
+                .unlockedBy("has_stripped_baobab_wood", has(ModBlocks.STRIPPED_BAOBAB_WOOD)).save(recipeOutput,"baobab_planks_sw");
+
+        stairBuilder(ModBlocks.BAOBAB_STAIRS.get(), Ingredient.of(ModBlocks.BAOBAB_PLANKS)).group("baobab")
+                .unlockedBy("has_baobab_planks", has(ModBlocks.BAOBAB_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.BAOBAB_SLAB.get(),ModBlocks.BAOBAB_PLANKS.get());
+
+        buttonBuilder(ModBlocks.BAOBAB_BUTTON.get(), Ingredient.of(ModBlocks.BAOBAB_PLANKS)).group("baobab")
+                .unlockedBy("has_baobab_planks", has(ModBlocks.BAOBAB_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.BAOBAB_PRESSURE_PLATE.get(),ModBlocks.BAOBAB_PLANKS.get());
+
+        fenceBuilder(ModBlocks.BAOBAB_FENCE.get(), Ingredient.of(ModBlocks.BAOBAB_PLANKS)).group("baobab")
+                .unlockedBy("has_baobab_planks", has(ModBlocks.BAOBAB_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.BAOBAB_FENCE_GATE.get(), Ingredient.of(ModBlocks.BAOBAB_PLANKS)).group("baobab")
+                .unlockedBy("has_baobab_planks", has(ModBlocks.BAOBAB_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.BAOBAB_DOOR.get(), Ingredient.of(ModBlocks.BAOBAB_PLANKS.get())).group("baobab")
+                .unlockedBy("has_baobab_planks",has(ModBlocks.BAOBAB_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.BAOBAB_TRAPDOOR.get(), Ingredient.of(ModBlocks.BAOBAB_PLANKS.get())).group("baobab")
+                .unlockedBy("has_baobab_planks",has(ModBlocks.BAOBAB_PLANKS)).save(recipeOutput);
+
+        // PALM
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PALM_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.PALM_LOG.get())
+                .unlockedBy("has_palm", has(ModBlocks.PALM_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_PALM_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_PALM_LOG.get())
+                .unlockedBy("has_stripped_palm", has(ModBlocks.STRIPPED_PALM_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PALM_PLANKS.get(), 4)
+                .requires(ModBlocks.PALM_LOG)
+                .unlockedBy("has_palm", has(ModBlocks.PALM_LOG)).save(recipeOutput,"palm_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PALM_PLANKS.get(), 4)
+                .requires(ModBlocks.PALM_WOOD)
+                .unlockedBy("has_palm_wood", has(ModBlocks.PALM_WOOD)).save(recipeOutput,"palm_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PALM_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_PALM_LOG)
+                .unlockedBy("has_stripped_palm", has(ModBlocks.STRIPPED_PALM_LOG)).save(recipeOutput,"palm_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PALM_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_PALM_WOOD)
+                .unlockedBy("has_stripped_palm_wood", has(ModBlocks.STRIPPED_PALM_WOOD)).save(recipeOutput,"palm_planks_sw");
+
+        stairBuilder(ModBlocks.PALM_STAIRS.get(), Ingredient.of(ModBlocks.PALM_PLANKS)).group("palm")
+                .unlockedBy("has_palm_planks", has(ModBlocks.PALM_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.PALM_SLAB.get(),ModBlocks.PALM_PLANKS.get());
+
+        buttonBuilder(ModBlocks.PALM_BUTTON.get(), Ingredient.of(ModBlocks.PALM_PLANKS)).group("palm")
+                .unlockedBy("has_palm_planks", has(ModBlocks.PALM_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.PALM_PRESSURE_PLATE.get(),ModBlocks.PALM_PLANKS.get());
+
+        fenceBuilder(ModBlocks.PALM_FENCE.get(), Ingredient.of(ModBlocks.PALM_PLANKS)).group("palm")
+                .unlockedBy("has_palm_planks", has(ModBlocks.PALM_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.PALM_FENCE_GATE.get(), Ingredient.of(ModBlocks.PALM_PLANKS)).group("palm")
+                .unlockedBy("has_palm_planks", has(ModBlocks.PALM_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.PALM_DOOR.get(), Ingredient.of(ModBlocks.PALM_PLANKS.get())).group("palm")
+                .unlockedBy("has_palm_planks",has(ModBlocks.PALM_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.PALM_TRAPDOOR.get(), Ingredient.of(ModBlocks.PALM_PLANKS.get())).group("palm")
+                .unlockedBy("has_palm_planks",has(ModBlocks.PALM_PLANKS)).save(recipeOutput);
+
+        // ASPEN
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ASPEN_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.ASPEN_LOG.get())
+                .unlockedBy("has_aspen", has(ModBlocks.ASPEN_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_ASPEN_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_ASPEN_LOG.get())
+                .unlockedBy("has_stripped_aspen", has(ModBlocks.STRIPPED_ASPEN_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS.get(), 4)
+                .requires(ModBlocks.ASPEN_LOG)
+                .unlockedBy("has_aspen", has(ModBlocks.ASPEN_LOG)).save(recipeOutput,"aspen_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS.get(), 4)
+                .requires(ModBlocks.ASPEN_WOOD)
+                .unlockedBy("has_aspen_wood", has(ModBlocks.ASPEN_WOOD)).save(recipeOutput,"aspen_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_ASPEN_LOG)
+                .unlockedBy("has_stripped_aspen", has(ModBlocks.STRIPPED_ASPEN_LOG)).save(recipeOutput,"aspen_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_ASPEN_WOOD)
+                .unlockedBy("has_stripped_aspen_wood", has(ModBlocks.STRIPPED_ASPEN_WOOD)).save(recipeOutput,"aspen_planks_sw");
+
+        stairBuilder(ModBlocks.ASPEN_STAIRS.get(), Ingredient.of(ModBlocks.ASPEN_PLANKS)).group("aspen")
+                .unlockedBy("has_aspen_planks", has(ModBlocks.ASPEN_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.ASPEN_SLAB.get(),ModBlocks.ASPEN_PLANKS.get());
+
+        buttonBuilder(ModBlocks.ASPEN_BUTTON.get(), Ingredient.of(ModBlocks.ASPEN_PLANKS)).group("aspen")
+                .unlockedBy("has_aspen_planks", has(ModBlocks.ASPEN_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.ASPEN_PRESSURE_PLATE.get(),ModBlocks.ASPEN_PLANKS.get());
+
+        fenceBuilder(ModBlocks.ASPEN_FENCE.get(), Ingredient.of(ModBlocks.ASPEN_PLANKS)).group("aspen")
+                .unlockedBy("has_aspen_planks", has(ModBlocks.ASPEN_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.ASPEN_FENCE_GATE.get(), Ingredient.of(ModBlocks.ASPEN_PLANKS)).group("aspen")
+                .unlockedBy("has_aspen_planks", has(ModBlocks.ASPEN_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.ASPEN_DOOR.get(), Ingredient.of(ModBlocks.ASPEN_PLANKS.get())).group("aspen")
+                .unlockedBy("has_aspen_planks",has(ModBlocks.ASPEN_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.ASPEN_TRAPDOOR.get(), Ingredient.of(ModBlocks.ASPEN_PLANKS.get())).group("aspen")
+                .unlockedBy("has_aspen_planks",has(ModBlocks.ASPEN_PLANKS)).save(recipeOutput);
+
+        // ASH
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ASH_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.ASH_LOG.get())
+                .unlockedBy("has_ash", has(ModBlocks.ASH_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_ASH_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_ASH_LOG.get())
+                .unlockedBy("has_stripped_ash", has(ModBlocks.STRIPPED_ASH_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASH_PLANKS.get(), 4)
+                .requires(ModBlocks.ASH_LOG)
+                .unlockedBy("has_ash", has(ModBlocks.ASH_LOG)).save(recipeOutput,"ash_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASH_PLANKS.get(), 4)
+                .requires(ModBlocks.ASH_WOOD)
+                .unlockedBy("has_ash_wood", has(ModBlocks.ASH_WOOD)).save(recipeOutput,"ash_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASH_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_ASH_LOG)
+                .unlockedBy("has_stripped_ash", has(ModBlocks.STRIPPED_ASH_LOG)).save(recipeOutput,"ash_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASH_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_ASH_WOOD)
+                .unlockedBy("has_stripped_ash_wood", has(ModBlocks.STRIPPED_ASH_WOOD)).save(recipeOutput,"ash_planks_sw");
+
+        stairBuilder(ModBlocks.ASH_STAIRS.get(), Ingredient.of(ModBlocks.ASH_PLANKS)).group("ash")
+                .unlockedBy("has_ash_planks", has(ModBlocks.ASH_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.ASH_SLAB.get(),ModBlocks.ASH_PLANKS.get());
+
+        buttonBuilder(ModBlocks.ASH_BUTTON.get(), Ingredient.of(ModBlocks.ASH_PLANKS)).group("ash")
+                .unlockedBy("has_ash_planks", has(ModBlocks.ASH_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.ASH_PRESSURE_PLATE.get(),ModBlocks.ASH_PLANKS.get());
+
+        fenceBuilder(ModBlocks.ASH_FENCE.get(), Ingredient.of(ModBlocks.ASH_PLANKS)).group("ash")
+                .unlockedBy("has_ash_planks", has(ModBlocks.ASH_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.ASH_FENCE_GATE.get(), Ingredient.of(ModBlocks.ASH_PLANKS)).group("ash")
+                .unlockedBy("has_ash_planks", has(ModBlocks.ASH_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.ASH_DOOR.get(), Ingredient.of(ModBlocks.ASH_PLANKS.get())).group("ash")
+                .unlockedBy("has_ash_planks",has(ModBlocks.ASH_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.ASH_TRAPDOOR.get(), Ingredient.of(ModBlocks.ASH_PLANKS.get())).group("ash")
+                .unlockedBy("has_ash_planks",has(ModBlocks.ASH_PLANKS)).save(recipeOutput);
+
+        // BEECH
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BEECH_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.BEECH_LOG.get())
+                .unlockedBy("has_beech", has(ModBlocks.BEECH_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_BEECH_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_BEECH_LOG.get())
+                .unlockedBy("has_stripped_beech", has(ModBlocks.STRIPPED_BEECH_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BEECH_PLANKS.get(), 4)
+                .requires(ModBlocks.BEECH_LOG)
+                .unlockedBy("has_beech", has(ModBlocks.BEECH_LOG)).save(recipeOutput,"beech_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BEECH_PLANKS.get(), 4)
+                .requires(ModBlocks.BEECH_WOOD)
+                .unlockedBy("has_beech_wood", has(ModBlocks.BEECH_WOOD)).save(recipeOutput,"beech_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BEECH_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_BEECH_LOG)
+                .unlockedBy("has_stripped_beech", has(ModBlocks.STRIPPED_BEECH_LOG)).save(recipeOutput,"beech_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BEECH_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_BEECH_WOOD)
+                .unlockedBy("has_stripped_beech_wood", has(ModBlocks.STRIPPED_BEECH_WOOD)).save(recipeOutput,"beech_planks_sw");
+
+        stairBuilder(ModBlocks.BEECH_STAIRS.get(), Ingredient.of(ModBlocks.BEECH_PLANKS)).group("beech")
+                .unlockedBy("has_beech_planks", has(ModBlocks.BEECH_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.BEECH_SLAB.get(),ModBlocks.BEECH_PLANKS.get());
+
+        buttonBuilder(ModBlocks.BEECH_BUTTON.get(), Ingredient.of(ModBlocks.BEECH_PLANKS)).group("beech")
+                .unlockedBy("has_beech_planks", has(ModBlocks.BEECH_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.BEECH_PRESSURE_PLATE.get(),ModBlocks.BEECH_PLANKS.get());
+
+        fenceBuilder(ModBlocks.BEECH_FENCE.get(), Ingredient.of(ModBlocks.BEECH_PLANKS)).group("beech")
+                .unlockedBy("has_beech_planks", has(ModBlocks.BEECH_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.BEECH_FENCE_GATE.get(), Ingredient.of(ModBlocks.BEECH_PLANKS)).group("beech")
+                .unlockedBy("has_beech_planks", has(ModBlocks.BEECH_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.BEECH_DOOR.get(), Ingredient.of(ModBlocks.BEECH_PLANKS.get())).group("beech")
+                .unlockedBy("has_beech_planks",has(ModBlocks.BEECH_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.BEECH_TRAPDOOR.get(), Ingredient.of(ModBlocks.BEECH_PLANKS.get())).group("beech")
+                .unlockedBy("has_beech_planks",has(ModBlocks.BEECH_PLANKS)).save(recipeOutput);
+
+        // EUCALYPTUS
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EUCALYPTUS_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.EUCALYPTUS_LOG.get())
+                .unlockedBy("has_eucalyptus", has(ModBlocks.EUCALYPTUS_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_EUCALYPTUS_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_EUCALYPTUS_LOG.get())
+                .unlockedBy("has_stripped_eucalyptus", has(ModBlocks.STRIPPED_EUCALYPTUS_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.EUCALYPTUS_PLANKS.get(), 4)
+                .requires(ModBlocks.EUCALYPTUS_LOG)
+                .unlockedBy("has_eucalyptus", has(ModBlocks.EUCALYPTUS_LOG)).save(recipeOutput,"eucalyptus_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.EUCALYPTUS_PLANKS.get(), 4)
+                .requires(ModBlocks.EUCALYPTUS_WOOD)
+                .unlockedBy("has_eucalyptus_wood", has(ModBlocks.EUCALYPTUS_WOOD)).save(recipeOutput,"eucalyptus_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.EUCALYPTUS_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_EUCALYPTUS_LOG)
+                .unlockedBy("has_stripped_eucalyptus", has(ModBlocks.STRIPPED_EUCALYPTUS_LOG)).save(recipeOutput,"eucalyptus_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.EUCALYPTUS_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_EUCALYPTUS_WOOD)
+                .unlockedBy("has_stripped_eucalyptus_wood", has(ModBlocks.STRIPPED_EUCALYPTUS_WOOD)).save(recipeOutput,"eucalyptus_planks_sw");
+
+        stairBuilder(ModBlocks.EUCALYPTUS_STAIRS.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS)).group("eucalyptus")
+                .unlockedBy("has_eucalyptus_planks", has(ModBlocks.EUCALYPTUS_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.EUCALYPTUS_SLAB.get(),ModBlocks.EUCALYPTUS_PLANKS.get());
+
+        buttonBuilder(ModBlocks.EUCALYPTUS_BUTTON.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS)).group("eucalyptus")
+                .unlockedBy("has_eucalyptus_planks", has(ModBlocks.EUCALYPTUS_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.EUCALYPTUS_PRESSURE_PLATE.get(),ModBlocks.EUCALYPTUS_PLANKS.get());
+
+        fenceBuilder(ModBlocks.EUCALYPTUS_FENCE.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS)).group("eucalyptus")
+                .unlockedBy("has_eucalyptus_planks", has(ModBlocks.EUCALYPTUS_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.EUCALYPTUS_FENCE_GATE.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS)).group("eucalyptus")
+                .unlockedBy("has_eucalyptus_planks", has(ModBlocks.EUCALYPTUS_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.EUCALYPTUS_DOOR.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS.get())).group("eucalyptus")
+                .unlockedBy("has_eucalyptus_planks",has(ModBlocks.EUCALYPTUS_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.EUCALYPTUS_TRAPDOOR.get(), Ingredient.of(ModBlocks.EUCALYPTUS_PLANKS.get())).group("eucalyptus")
+                .unlockedBy("has_eucalyptus_planks",has(ModBlocks.EUCALYPTUS_PLANKS)).save(recipeOutput);
+
+        // SYCAMORE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SYCAMORE_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.SYCAMORE_LOG.get())
+                .unlockedBy("has_sycamore", has(ModBlocks.SYCAMORE_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_SYCAMORE_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_SYCAMORE_LOG.get())
+                .unlockedBy("has_stripped_sycamore", has(ModBlocks.STRIPPED_SYCAMORE_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SYCAMORE_PLANKS.get(), 4)
+                .requires(ModBlocks.SYCAMORE_LOG)
+                .unlockedBy("has_sycamore", has(ModBlocks.SYCAMORE_LOG)).save(recipeOutput,"sycamore_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SYCAMORE_PLANKS.get(), 4)
+                .requires(ModBlocks.SYCAMORE_WOOD)
+                .unlockedBy("has_sycamore_wood", has(ModBlocks.SYCAMORE_WOOD)).save(recipeOutput,"sycamore_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SYCAMORE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_SYCAMORE_LOG)
+                .unlockedBy("has_stripped_sycamore", has(ModBlocks.STRIPPED_SYCAMORE_LOG)).save(recipeOutput,"sycamore_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SYCAMORE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_SYCAMORE_WOOD)
+                .unlockedBy("has_stripped_sycamore_wood", has(ModBlocks.STRIPPED_SYCAMORE_WOOD)).save(recipeOutput,"sycamore_planks_sw");
+
+        stairBuilder(ModBlocks.SYCAMORE_STAIRS.get(), Ingredient.of(ModBlocks.SYCAMORE_PLANKS)).group("sycamore")
+                .unlockedBy("has_sycamore_planks", has(ModBlocks.SYCAMORE_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.SYCAMORE_SLAB.get(),ModBlocks.SYCAMORE_PLANKS.get());
+
+        buttonBuilder(ModBlocks.SYCAMORE_BUTTON.get(), Ingredient.of(ModBlocks.SYCAMORE_PLANKS)).group("sycamore")
+                .unlockedBy("has_sycamore_planks", has(ModBlocks.SYCAMORE_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.SYCAMORE_PRESSURE_PLATE.get(),ModBlocks.SYCAMORE_PLANKS.get());
+
+        fenceBuilder(ModBlocks.SYCAMORE_FENCE.get(), Ingredient.of(ModBlocks.SYCAMORE_PLANKS)).group("sycamore")
+                .unlockedBy("has_sycamore_planks", has(ModBlocks.SYCAMORE_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.SYCAMORE_FENCE_GATE.get(), Ingredient.of(ModBlocks.SYCAMORE_PLANKS)).group("sycamore")
+                .unlockedBy("has_sycamore_planks", has(ModBlocks.SYCAMORE_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.SYCAMORE_DOOR.get(), Ingredient.of(ModBlocks.SYCAMORE_PLANKS.get())).group("sycamore")
+                .unlockedBy("has_sycamore_planks",has(ModBlocks.SYCAMORE_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.SYCAMORE_TRAPDOOR.get(), Ingredient.of(ModBlocks.SYCAMORE_PLANKS.get())).group("sycamore")
+                .unlockedBy("has_sycamore_planks",has(ModBlocks.SYCAMORE_PLANKS)).save(recipeOutput);
+
+        // REDWOOD
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REDWOOD_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.REDWOOD_LOG.get())
+                .unlockedBy("has_redwood", has(ModBlocks.REDWOOD_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_REDWOOD_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_REDWOOD_LOG.get())
+                .unlockedBy("has_stripped_redwood", has(ModBlocks.STRIPPED_REDWOOD_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REDWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.REDWOOD_LOG)
+                .unlockedBy("has_redwood", has(ModBlocks.REDWOOD_LOG)).save(recipeOutput,"redwood_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REDWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.REDWOOD_WOOD)
+                .unlockedBy("has_redwood_wood", has(ModBlocks.REDWOOD_WOOD)).save(recipeOutput,"redwood_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REDWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_REDWOOD_LOG)
+                .unlockedBy("has_stripped_redwood", has(ModBlocks.STRIPPED_REDWOOD_LOG)).save(recipeOutput,"redwood_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REDWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_REDWOOD_WOOD)
+                .unlockedBy("has_stripped_redwood_wood", has(ModBlocks.STRIPPED_REDWOOD_WOOD)).save(recipeOutput,"redwood_planks_sw");
+
+        stairBuilder(ModBlocks.REDWOOD_STAIRS.get(), Ingredient.of(ModBlocks.REDWOOD_PLANKS)).group("redwood")
+                .unlockedBy("has_redwood_planks", has(ModBlocks.REDWOOD_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.REDWOOD_SLAB.get(),ModBlocks.REDWOOD_PLANKS.get());
+
+        buttonBuilder(ModBlocks.REDWOOD_BUTTON.get(), Ingredient.of(ModBlocks.REDWOOD_PLANKS)).group("redwood")
+                .unlockedBy("has_redwood_planks", has(ModBlocks.REDWOOD_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.REDWOOD_PRESSURE_PLATE.get(),ModBlocks.REDWOOD_PLANKS.get());
+
+        fenceBuilder(ModBlocks.REDWOOD_FENCE.get(), Ingredient.of(ModBlocks.REDWOOD_PLANKS)).group("redwood")
+                .unlockedBy("has_redwood_planks", has(ModBlocks.REDWOOD_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.REDWOOD_FENCE_GATE.get(), Ingredient.of(ModBlocks.REDWOOD_PLANKS)).group("redwood")
+                .unlockedBy("has_redwood_planks", has(ModBlocks.REDWOOD_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.REDWOOD_DOOR.get(), Ingredient.of(ModBlocks.REDWOOD_PLANKS.get())).group("redwood")
+                .unlockedBy("has_redwood_planks",has(ModBlocks.REDWOOD_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.REDWOOD_TRAPDOOR.get(), Ingredient.of(ModBlocks.REDWOOD_PLANKS.get())).group("redwood")
+                .unlockedBy("has_redwood_planks",has(ModBlocks.REDWOOD_PLANKS)).save(recipeOutput);
+
+        // MONKEY_PUZZLE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MONKEY_PUZZLE_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.MONKEY_PUZZLE_LOG.get())
+                .unlockedBy("has_monkey_puzzle", has(ModBlocks.MONKEY_PUZZLE_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_MONKEY_PUZZLE_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_MONKEY_PUZZLE_LOG.get())
+                .unlockedBy("has_stripped_monkey_puzzle", has(ModBlocks.STRIPPED_MONKEY_PUZZLE_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MONKEY_PUZZLE_PLANKS.get(), 4)
+                .requires(ModBlocks.MONKEY_PUZZLE_LOG)
+                .unlockedBy("has_monkey_puzzle", has(ModBlocks.MONKEY_PUZZLE_LOG)).save(recipeOutput,"monkey_puzzle_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MONKEY_PUZZLE_PLANKS.get(), 4)
+                .requires(ModBlocks.MONKEY_PUZZLE_WOOD)
+                .unlockedBy("has_monkey_puzzle_wood", has(ModBlocks.MONKEY_PUZZLE_WOOD)).save(recipeOutput,"monkey_puzzle_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MONKEY_PUZZLE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_MONKEY_PUZZLE_LOG)
+                .unlockedBy("has_stripped_monkey_puzzle", has(ModBlocks.STRIPPED_MONKEY_PUZZLE_LOG)).save(recipeOutput,"monkey_puzzle_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MONKEY_PUZZLE_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_MONKEY_PUZZLE_WOOD)
+                .unlockedBy("has_stripped_monkey_puzzle_wood", has(ModBlocks.STRIPPED_MONKEY_PUZZLE_WOOD)).save(recipeOutput,"monkey_puzzle_planks_sw");
+
+        stairBuilder(ModBlocks.MONKEY_PUZZLE_STAIRS.get(), Ingredient.of(ModBlocks.MONKEY_PUZZLE_PLANKS)).group("monkey_puzzle")
+                .unlockedBy("has_monkey_puzzle_planks", has(ModBlocks.MONKEY_PUZZLE_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.MONKEY_PUZZLE_SLAB.get(),ModBlocks.MONKEY_PUZZLE_PLANKS.get());
+
+        buttonBuilder(ModBlocks.MONKEY_PUZZLE_BUTTON.get(), Ingredient.of(ModBlocks.MONKEY_PUZZLE_PLANKS)).group("monkey_puzzle")
+                .unlockedBy("has_monkey_puzzle_planks", has(ModBlocks.MONKEY_PUZZLE_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.MONKEY_PUZZLE_PRESSURE_PLATE.get(),ModBlocks.MONKEY_PUZZLE_PLANKS.get());
+
+        fenceBuilder(ModBlocks.MONKEY_PUZZLE_FENCE.get(), Ingredient.of(ModBlocks.MONKEY_PUZZLE_PLANKS)).group("monkey_puzzle")
+                .unlockedBy("has_monkey_puzzle_planks", has(ModBlocks.MONKEY_PUZZLE_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.MONKEY_PUZZLE_FENCE_GATE.get(), Ingredient.of(ModBlocks.MONKEY_PUZZLE_PLANKS)).group("monkey_puzzle")
+                .unlockedBy("has_monkey_puzzle_planks", has(ModBlocks.MONKEY_PUZZLE_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.MONKEY_PUZZLE_DOOR.get(), Ingredient.of(ModBlocks.MONKEY_PUZZLE_PLANKS.get())).group("monkey_puzzle")
+                .unlockedBy("has_monkey_puzzle_planks",has(ModBlocks.MONKEY_PUZZLE_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.MONKEY_PUZZLE_TRAPDOOR.get(), Ingredient.of(ModBlocks.MONKEY_PUZZLE_PLANKS.get())).group("monkey_puzzle")
+                .unlockedBy("has_monkey_puzzle_planks",has(ModBlocks.MONKEY_PUZZLE_PLANKS)).save(recipeOutput);
+
+        // YEW
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.YEW_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.YEW_LOG.get())
+                .unlockedBy("has_yew", has(ModBlocks.YEW_LOG)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_YEW_WOOD.get(),3)
+                .pattern("XX")
+                .pattern("XX")
+                .define('X', ModBlocks.STRIPPED_YEW_LOG.get())
+                .unlockedBy("has_stripped_yew", has(ModBlocks.STRIPPED_YEW_LOG)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YEW_PLANKS.get(), 4)
+                .requires(ModBlocks.YEW_LOG)
+                .unlockedBy("has_yew", has(ModBlocks.YEW_LOG)).save(recipeOutput,"yew_planks_l");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YEW_PLANKS.get(), 4)
+                .requires(ModBlocks.YEW_WOOD)
+                .unlockedBy("has_yew_wood", has(ModBlocks.YEW_WOOD)).save(recipeOutput,"yew_planks_sl");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YEW_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_YEW_LOG)
+                .unlockedBy("has_stripped_yew", has(ModBlocks.STRIPPED_YEW_LOG)).save(recipeOutput,"yew_planks_w");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YEW_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_YEW_WOOD)
+                .unlockedBy("has_stripped_yew_wood", has(ModBlocks.STRIPPED_YEW_WOOD)).save(recipeOutput,"yew_planks_sw");
+
+        stairBuilder(ModBlocks.YEW_STAIRS.get(), Ingredient.of(ModBlocks.YEW_PLANKS)).group("yew")
+                .unlockedBy("has_yew_planks", has(ModBlocks.YEW_PLANKS)).save(recipeOutput);
+        slab(recipeOutput,RecipeCategory.MISC,ModBlocks.YEW_SLAB.get(),ModBlocks.YEW_PLANKS.get());
+
+        buttonBuilder(ModBlocks.YEW_BUTTON.get(), Ingredient.of(ModBlocks.YEW_PLANKS)).group("yew")
+                .unlockedBy("has_yew_planks", has(ModBlocks.YEW_PLANKS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.YEW_PRESSURE_PLATE.get(),ModBlocks.YEW_PLANKS.get());
+
+        fenceBuilder(ModBlocks.YEW_FENCE.get(), Ingredient.of(ModBlocks.YEW_PLANKS)).group("yew")
+                .unlockedBy("has_yew_planks", has(ModBlocks.YEW_PLANKS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.YEW_FENCE_GATE.get(), Ingredient.of(ModBlocks.YEW_PLANKS)).group("yew")
+                .unlockedBy("has_yew_planks", has(ModBlocks.YEW_PLANKS)).save(recipeOutput);
+
+        doorBuilder(ModBlocks.YEW_DOOR.get(), Ingredient.of(ModBlocks.YEW_PLANKS.get())).group("yew")
+                .unlockedBy("has_yew_planks",has(ModBlocks.YEW_PLANKS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.YEW_TRAPDOOR.get(), Ingredient.of(ModBlocks.YEW_PLANKS.get())).group("yew")
+                .unlockedBy("has_yew_planks",has(ModBlocks.YEW_PLANKS)).save(recipeOutput);
+        
         // misc
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.HEAVY_CORE)
                 .pattern("XX")

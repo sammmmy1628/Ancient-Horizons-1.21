@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "monkey_puzzle",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:monkey_puzzle_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ancienthorizons:monkey_puzzle_trapdoor"
+  }
+}

@@ -199,16 +199,109 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LINDEN_LOG.get())
                 .add(ModBlocks.STRIPPED_LINDEN_LOG.get())
                 .add(ModBlocks.LINDEN_WOOD.get())
-                .add(ModBlocks.STRIPPED_LINDEN_WOOD.get());
+                .add(ModBlocks.STRIPPED_LINDEN_WOOD.get())
+        
+                .add(ModBlocks.GINKGO_LOG.get())
+                .add(ModBlocks.STRIPPED_GINKGO_LOG.get())
+                .add(ModBlocks.GINKGO_WOOD.get())
+                .add(ModBlocks.STRIPPED_GINKGO_WOOD.get())
+                
+                .add(ModBlocks.POPLAR_LOG.get())
+                .add(ModBlocks.STRIPPED_POPLAR_LOG.get())
+                .add(ModBlocks.POPLAR_WOOD.get())
+                .add(ModBlocks.STRIPPED_POPLAR_WOOD.get())
+                
+                .add(ModBlocks.MAPLE_LOG.get())
+                .add(ModBlocks.STRIPPED_MAPLE_LOG.get())
+                .add(ModBlocks.MAPLE_WOOD.get())
+                .add(ModBlocks.STRIPPED_MAPLE_WOOD.get())
+        
+                .add(ModBlocks.BAOBAB_LOG.get())
+                .add(ModBlocks.STRIPPED_BAOBAB_LOG.get())
+                .add(ModBlocks.BAOBAB_WOOD.get())
+                .add(ModBlocks.STRIPPED_BAOBAB_WOOD.get())
+                
+                .add(ModBlocks.PALM_LOG.get())
+                .add(ModBlocks.STRIPPED_PALM_LOG.get())
+                .add(ModBlocks.PALM_WOOD.get())
+                .add(ModBlocks.STRIPPED_PALM_WOOD.get())
+        
+                .add(ModBlocks.ASPEN_LOG.get())
+                .add(ModBlocks.STRIPPED_ASPEN_LOG.get())
+                .add(ModBlocks.ASPEN_WOOD.get())
+                .add(ModBlocks.STRIPPED_ASPEN_WOOD.get())
+                
+                .add(ModBlocks.ASH_LOG.get())
+                .add(ModBlocks.STRIPPED_ASH_LOG.get())
+                .add(ModBlocks.ASH_WOOD.get())
+                .add(ModBlocks.STRIPPED_ASH_WOOD.get())
+                
+                .add(ModBlocks.BEECH_LOG.get())
+                .add(ModBlocks.STRIPPED_BEECH_LOG.get())
+                .add(ModBlocks.BEECH_WOOD.get())
+                .add(ModBlocks.STRIPPED_BEECH_WOOD.get())
+                
+                .add(ModBlocks.EUCALYPTUS_LOG.get())
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_LOG.get())
+                .add(ModBlocks.EUCALYPTUS_WOOD.get())
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_WOOD.get())
+                
+                .add(ModBlocks.SYCAMORE_LOG.get())
+                .add(ModBlocks.STRIPPED_SYCAMORE_LOG.get())
+                .add(ModBlocks.SYCAMORE_WOOD.get())
+                .add(ModBlocks.STRIPPED_SYCAMORE_WOOD.get())
+                
+                .add(ModBlocks.REDWOOD_LOG.get())
+                .add(ModBlocks.STRIPPED_REDWOOD_LOG.get())
+                .add(ModBlocks.REDWOOD_WOOD.get())
+                .add(ModBlocks.STRIPPED_REDWOOD_WOOD.get())
+                
+                .add(ModBlocks.MONKEY_PUZZLE_LOG.get())
+                .add(ModBlocks.STRIPPED_MONKEY_PUZZLE_LOG.get())
+                .add(ModBlocks.MONKEY_PUZZLE_WOOD.get())
+                .add(ModBlocks.STRIPPED_MONKEY_PUZZLE_WOOD.get())
+                
+                .add(ModBlocks.YEW_LOG.get())
+                .add(ModBlocks.STRIPPED_YEW_LOG.get())
+                .add(ModBlocks.YEW_WOOD.get())
+                .add(ModBlocks.STRIPPED_YEW_WOOD.get());
 
         tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.WILLOW_FENCE.get())
                 .add(ModBlocks.HORNBEAM_FENCE.get())
-                .add(ModBlocks.LINDEN_FENCE.get());
+                .add(ModBlocks.LINDEN_FENCE.get())
+                .add(ModBlocks.GINKGO_FENCE.get())
+                .add(ModBlocks.POPLAR_FENCE.get())
+                .add(ModBlocks.MAPLE_FENCE.get())
+                .add(ModBlocks.BAOBAB_FENCE.get())
+                .add(ModBlocks.PALM_FENCE.get())
+                .add(ModBlocks.ASPEN_FENCE.get())
+                .add(ModBlocks.ASH_FENCE.get())
+                .add(ModBlocks.BEECH_FENCE.get())
+                .add(ModBlocks.EUCALYPTUS_FENCE.get())
+                .add(ModBlocks.SYCAMORE_FENCE.get())
+                .add(ModBlocks.REDWOOD_FENCE.get())
+                .add(ModBlocks.MONKEY_PUZZLE_FENCE.get())
+                .add(ModBlocks.YEW_FENCE.get());
 
         tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.WILLOW_FENCE_GATE.get())
                 .add(ModBlocks.HORNBEAM_FENCE_GATE.get())
-                .add(ModBlocks.LINDEN_FENCE_GATE.get());
+                .add(ModBlocks.LINDEN_FENCE_GATE.get())
+                .add(ModBlocks.GINKGO_FENCE_GATE.get())
+                .add(ModBlocks.POPLAR_FENCE_GATE.get())
+                .add(ModBlocks.MAPLE_FENCE_GATE.get())
+                .add(ModBlocks.BAOBAB_FENCE_GATE.get())
+                .add(ModBlocks.PALM_FENCE_GATE.get())
+                .add(ModBlocks.ASPEN_FENCE_GATE.get())
+                .add(ModBlocks.ASH_FENCE_GATE.get())
+                .add(ModBlocks.BEECH_FENCE_GATE.get())
+                .add(ModBlocks.EUCALYPTUS_FENCE_GATE.get())
+                .add(ModBlocks.SYCAMORE_FENCE_GATE.get())
+                .add(ModBlocks.REDWOOD_FENCE_GATE.get())
+                .add(ModBlocks.MONKEY_PUZZLE_FENCE_GATE.get())
+                .add(ModBlocks.YEW_FENCE_GATE.get());
+
+        
     }
 }

@@ -2,6 +2,19 @@
   "values": [
     "ancienthorizons:willow_fence_gate",
     "ancienthorizons:hornbeam_fence_gate",
-    "ancienthorizons:linden_fence_gate"
+    "ancienthorizons:linden_fence_gate",
+    "ancienthorizons:ginkgo_fence_gate",
+    "ancienthorizons:poplar_fence_gate",
+    "ancienthorizons:maple_fence_gate",
+    "ancienthorizons:baobab_fence_gate",
+    "ancienthorizons:palm_fence_gate",
+    "ancienthorizons:aspen_fence_gate",
+    "ancienthorizons:ash_fence_gate",
+    "ancienthorizons:beech_fence_gate",
+    "ancienthorizons:eucalyptus_fence_gate",
+    "ancienthorizons:sycamore_fence_gate",
+    "ancienthorizons:redwood_fence_gate",
+    "ancienthorizons:monkey_puzzle_fence_gate",
+    "ancienthorizons:yew_fence_gate"
   ]
 }

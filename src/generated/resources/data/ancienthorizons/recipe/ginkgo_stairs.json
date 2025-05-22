@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ginkgo",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:ginkgo_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:ginkgo_stairs"
+  }
+}

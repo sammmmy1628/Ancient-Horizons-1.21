@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "ancienthorizons:block/sycamore_door_bottom",
+    "top": "ancienthorizons:block/sycamore_door_top"
+  }
+}

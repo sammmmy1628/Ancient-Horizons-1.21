@@ -2,6 +2,19 @@
   "values": [
     "ancienthorizons:willow_planks",
     "ancienthorizons:hornbeam_planks",
-    "ancienthorizons:linden_planks"
+    "ancienthorizons:linden_planks",
+    "ancienthorizons:ginkgo_planks",
+    "ancienthorizons:poplar_planks",
+    "ancienthorizons:maple_planks",
+    "ancienthorizons:baobab_planks",
+    "ancienthorizons:palm_planks",
+    "ancienthorizons:aspen_planks",
+    "ancienthorizons:ash_planks",
+    "ancienthorizons:beech_planks",
+    "ancienthorizons:eucalyptus_planks",
+    "ancienthorizons:sycamore_planks",
+    "ancienthorizons:redwood_planks",
+    "ancienthorizons:monkey_puzzle_planks",
+    "ancienthorizons:yew_planks"
   ]
 }

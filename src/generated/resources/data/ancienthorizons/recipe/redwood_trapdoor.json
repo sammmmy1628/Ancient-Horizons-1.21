@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "redwood",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:redwood_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ancienthorizons:redwood_trapdoor"
+  }
+}

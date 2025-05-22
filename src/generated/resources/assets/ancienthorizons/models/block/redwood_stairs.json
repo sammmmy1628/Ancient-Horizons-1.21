@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ancienthorizons:block/redwood_planks",
+    "side": "ancienthorizons:block/redwood_planks",
+    "top": "ancienthorizons:block/redwood_planks"
+  }
+}

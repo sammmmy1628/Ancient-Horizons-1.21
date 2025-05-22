@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "redwood",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:redwood_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:redwood_stairs"
+  }
+}

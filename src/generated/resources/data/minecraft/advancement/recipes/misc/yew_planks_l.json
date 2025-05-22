@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:yew_planks_l"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yew": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:yew_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yew"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:yew_planks_l"
+    ]
+  }
+}

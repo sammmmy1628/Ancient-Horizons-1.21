@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_ginkgo_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:stripped_ginkgo_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ginkgo_planks_sw"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_ginkgo_wood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ginkgo_planks_sw"
+    ]
+  }
+}

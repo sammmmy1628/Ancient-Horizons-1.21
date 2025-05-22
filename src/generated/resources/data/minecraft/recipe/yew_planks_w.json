@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:stripped_yew_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:yew_planks"
+  }
+}

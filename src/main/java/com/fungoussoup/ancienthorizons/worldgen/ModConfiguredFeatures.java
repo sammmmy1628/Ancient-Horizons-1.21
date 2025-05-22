@@ -20,9 +20,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.ThreeLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.DarkOakFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.*;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
@@ -45,6 +43,19 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILLOW_KEY = registerKey("willow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HORNBEAM_KEY = registerKey("hornbeam");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LINDEN_KEY = registerKey("linden");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GINKGO_KEY = registerKey("ginkgo");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> POPLAR_KEY = registerKey("poplar");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MAPLE_KEY = registerKey("maple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BAOBAB_KEY = registerKey("baobab");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PALM_KEY = registerKey("palm");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ASPEN_KEY = registerKey("aspen");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ASH_KEY = registerKey("ash");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BEECH_KEY = registerKey("beech");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> EUCALYPTUS_KEY = registerKey("eucalyptus");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SYCAMORE_KEY = registerKey("sycamore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> REDWOOD_KEY = registerKey("redwood");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MONKEY_PUZZLE_KEY = registerKey("monkey_puzzle");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> YEW_KEY = registerKey("yew");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -92,7 +103,6 @@ public class ModConfiguredFeatures {
                         UniformInt.of(2, 4),
                         UniformInt.of(-4, -3),
                         UniformInt.of(-1, 0)),
-
                 BlockStateProvider.simple(ModBlocks.WILLOW_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
 
@@ -114,8 +124,109 @@ public class ModConfiguredFeatures {
 
                 new TwoLayersFeatureSize(1, 1,1)).build());
 
+        register(context, GINKGO_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
+                new StraightTrunkPlacer(6,1,1),
+                BlockStateProvider.simple(ModBlocks.GINKGO_LEAVES.get()),
+                new SpruceFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0),UniformInt.of(6,8)),
 
+                new TwoLayersFeatureSize(1, 1,1)).build());
 
+        register(context, POPLAR_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.POPLAR_LOG.get()),
+                new StraightTrunkPlacer(10,3,3),
+                BlockStateProvider.simple(ModBlocks.POPLAR_LEAVES.get()),
+                new SpruceFoliagePlacer(ConstantInt.of(1), ConstantInt.of(1), UniformInt.of(1,3)),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+        
+        register(context, MAPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.MAPLE_LOG.get()),
+                new CherryTrunkPlacer(5, 3, 3, ConstantInt.of(3), UniformInt.of(2, 4), UniformInt.of(-4, -3), UniformInt.of(-1, 0)),
+                BlockStateProvider.simple(ModBlocks.MAPLE_LEAVES.get()),
+                new FancyFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(1), 4),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+        
+        register(context, BAOBAB_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.BAOBAB_LOG.get()),
+                new DarkOakTrunkPlacer(3, 1, 1),
+                BlockStateProvider.simple(ModBlocks.BAOBAB_LEAVES.get()),
+                new AcaciaFoliagePlacer(UniformInt.of(3,3), ConstantInt.of(1)),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+        
+        register(context, PALM_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PALM_LOG.get()),
+                new StraightTrunkPlacer(2, 3, 3),
+                BlockStateProvider.simple(ModBlocks.PALM_LEAVES.get()),
+                new MegaJungleFoliagePlacer(ConstantInt.of(1), ConstantInt.of(0), 0),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+        
+        register(context, ASPEN_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.ASPEN_LOG.get()),
+                new StraightTrunkPlacer(4, 3, 3),
+                BlockStateProvider.simple(ModBlocks.ASPEN_LEAVES.get()),
+                new BlobFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(0), 3),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+
+        register(context, ASH_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.ASH_LOG.get()),
+                new StraightTrunkPlacer(4, 3, 3),
+                BlockStateProvider.simple(ModBlocks.ASH_LEAVES.get()),
+                new BlobFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(0), 3),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+
+        register(context, BEECH_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.BEECH_LOG.get()),
+                new StraightTrunkPlacer(4, 3, 3),
+                BlockStateProvider.simple(ModBlocks.BEECH_LEAVES.get()),
+                new BlobFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(0), 3),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+
+        register(context, EUCALYPTUS_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.EUCALYPTUS_LOG.get()),
+                new ForkingTrunkPlacer(4, 4, 4),
+                BlockStateProvider.simple(ModBlocks.EUCALYPTUS_LEAVES.get()),
+                new AcaciaFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(0)),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+
+        register(context, SYCAMORE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.SYCAMORE_LOG.get()),
+                new StraightTrunkPlacer(4, 3, 3),
+                BlockStateProvider.simple(ModBlocks.SYCAMORE_LEAVES.get()),
+                new BlobFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(0),3),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+
+        register(context, REDWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.REDWOOD_LOG.get()),
+                new GiantTrunkPlacer(17, 6, 6),
+                BlockStateProvider.simple(ModBlocks.REDWOOD_LEAVES.get()),
+                new SpruceFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(0),UniformInt.of(5, 12)),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+
+        register(context, MONKEY_PUZZLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.MONKEY_PUZZLE_LOG.get()),
+                new StraightTrunkPlacer(4, 3, 3),
+                BlockStateProvider.simple(ModBlocks.MONKEY_PUZZLE_LEAVES.get()),
+                new SpruceFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(0),UniformInt.of(1,3)),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
+
+        register(context, YEW_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.YEW_LOG.get()),
+                new DarkOakTrunkPlacer(4, 3, 3),
+                BlockStateProvider.simple(ModBlocks.YEW_LEAVES.get()),
+                new BlobFoliagePlacer(UniformInt.of(2,3), ConstantInt.of(0),3),
+
+                new TwoLayersFeatureSize(1, 0,1)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

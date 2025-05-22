@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_yew_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:stripped_yew_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:yew_planks_sw"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_yew_wood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:yew_planks_sw"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "beech",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:beech_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:beech_button"
+  }
+}

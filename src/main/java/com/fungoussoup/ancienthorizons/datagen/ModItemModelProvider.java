@@ -181,6 +181,110 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.LINDEN_FENCE, ModBlocks.LINDEN_PLANKS);
 
         basicItem(ModBlocks.LINDEN_DOOR.asItem());
+        
+        // GINKGO
+        saplingItem(ModBlocks.GINKGO_SAPLING);
+
+        buttonItem(ModBlocks.GINKGO_BUTTON, ModBlocks.GINKGO_PLANKS);
+        fenceItem(ModBlocks.GINKGO_FENCE, ModBlocks.GINKGO_PLANKS);
+
+        basicItem(ModBlocks.GINKGO_DOOR.asItem());
+        
+        // POPLAR
+        saplingItem(ModBlocks.POPLAR_SAPLING);
+
+        buttonItem(ModBlocks.POPLAR_BUTTON, ModBlocks.POPLAR_PLANKS);
+        fenceItem(ModBlocks.POPLAR_FENCE, ModBlocks.POPLAR_PLANKS);
+
+        basicItem(ModBlocks.POPLAR_DOOR.asItem());
+        
+        // MAPLE
+        saplingItem(ModBlocks.MAPLE_SAPLING);
+
+        buttonItem(ModBlocks.MAPLE_BUTTON, ModBlocks.MAPLE_PLANKS);
+        fenceItem(ModBlocks.MAPLE_FENCE, ModBlocks.MAPLE_PLANKS);
+
+        basicItem(ModBlocks.MAPLE_DOOR.asItem());
+
+        // BAOBAB
+        saplingItem(ModBlocks.BAOBAB_SAPLING);
+
+        buttonItem(ModBlocks.BAOBAB_BUTTON, ModBlocks.BAOBAB_PLANKS);
+        fenceItem(ModBlocks.BAOBAB_FENCE, ModBlocks.BAOBAB_PLANKS);
+
+        basicItem(ModBlocks.BAOBAB_DOOR.asItem());
+
+        // PALM
+        saplingItem(ModBlocks.PALM_SAPLING);
+
+        buttonItem(ModBlocks.PALM_BUTTON, ModBlocks.PALM_PLANKS);
+        fenceItem(ModBlocks.PALM_FENCE, ModBlocks.PALM_PLANKS);
+
+        basicItem(ModBlocks.PALM_DOOR.asItem());
+
+        // ASPEN
+        saplingItem(ModBlocks.ASPEN_SAPLING);
+
+        buttonItem(ModBlocks.ASPEN_BUTTON, ModBlocks.ASPEN_PLANKS);
+        fenceItem(ModBlocks.ASPEN_FENCE, ModBlocks.ASPEN_PLANKS);
+
+        basicItem(ModBlocks.ASPEN_DOOR.asItem());
+
+        // ASH
+        saplingItem(ModBlocks.ASH_SAPLING);
+
+        buttonItem(ModBlocks.ASH_BUTTON, ModBlocks.ASH_PLANKS);
+        fenceItem(ModBlocks.ASH_FENCE, ModBlocks.ASH_PLANKS);
+
+        basicItem(ModBlocks.ASH_DOOR.asItem());
+
+        // BEECH
+        saplingItem(ModBlocks.BEECH_SAPLING);
+
+        buttonItem(ModBlocks.BEECH_BUTTON, ModBlocks.BEECH_PLANKS);
+        fenceItem(ModBlocks.BEECH_FENCE, ModBlocks.BEECH_PLANKS);
+
+        basicItem(ModBlocks.BEECH_DOOR.asItem());
+
+        // EUCALYPTUS
+        saplingItem(ModBlocks.EUCALYPTUS_SAPLING);
+
+        buttonItem(ModBlocks.EUCALYPTUS_BUTTON, ModBlocks.EUCALYPTUS_PLANKS);
+        fenceItem(ModBlocks.EUCALYPTUS_FENCE, ModBlocks.EUCALYPTUS_PLANKS);
+
+        basicItem(ModBlocks.EUCALYPTUS_DOOR.asItem());
+
+        // SYCAMORE
+        saplingItem(ModBlocks.SYCAMORE_SAPLING);
+
+        buttonItem(ModBlocks.SYCAMORE_BUTTON, ModBlocks.SYCAMORE_PLANKS);
+        fenceItem(ModBlocks.SYCAMORE_FENCE, ModBlocks.SYCAMORE_PLANKS);
+
+        basicItem(ModBlocks.SYCAMORE_DOOR.asItem());
+
+        // REDWOOD
+        saplingItem(ModBlocks.REDWOOD_SAPLING);
+
+        buttonItem(ModBlocks.REDWOOD_BUTTON, ModBlocks.REDWOOD_PLANKS);
+        fenceItem(ModBlocks.REDWOOD_FENCE, ModBlocks.REDWOOD_PLANKS);
+
+        basicItem(ModBlocks.REDWOOD_DOOR.asItem());
+
+        // MONKEY_PUZZLE
+        saplingItem(ModBlocks.MONKEY_PUZZLE_SAPLING);
+
+        buttonItem(ModBlocks.MONKEY_PUZZLE_BUTTON, ModBlocks.MONKEY_PUZZLE_PLANKS);
+        fenceItem(ModBlocks.MONKEY_PUZZLE_FENCE, ModBlocks.MONKEY_PUZZLE_PLANKS);
+
+        basicItem(ModBlocks.MONKEY_PUZZLE_DOOR.asItem());
+
+        // YEW
+        saplingItem(ModBlocks.YEW_SAPLING);
+
+        buttonItem(ModBlocks.YEW_BUTTON, ModBlocks.YEW_PLANKS);
+        fenceItem(ModBlocks.YEW_FENCE, ModBlocks.YEW_PLANKS);
+
+        basicItem(ModBlocks.YEW_DOOR.asItem());
 
         // MISC
         basicItem(ModItems.SPIKED_HEAVY_CORE.get());

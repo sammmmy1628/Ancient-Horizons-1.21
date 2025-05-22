@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_monkey_puzzle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:monkey_puzzle_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ancienthorizons:monkey_puzzle_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_monkey_puzzle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancienthorizons:monkey_puzzle_wood"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ash",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:ash_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:ash_stairs"
+  }
+}

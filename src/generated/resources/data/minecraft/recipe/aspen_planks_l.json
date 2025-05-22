@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:aspen_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:aspen_planks"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_poplar_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:poplar_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ancienthorizons:poplar_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_poplar_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancienthorizons:poplar_pressure_plate"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ancienthorizons:block/baobab_planks",
+    "side": "ancienthorizons:block/baobab_planks",
+    "top": "ancienthorizons:block/baobab_planks"
+  }
+}

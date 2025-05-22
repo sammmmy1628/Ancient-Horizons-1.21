@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "yew",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:yew_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:yew_stairs"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "ancienthorizons:block/beech_planks"
+  }
+}

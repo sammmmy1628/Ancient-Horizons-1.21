@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "monkey_puzzle",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:monkey_puzzle_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:monkey_puzzle_stairs"
+  }
+}

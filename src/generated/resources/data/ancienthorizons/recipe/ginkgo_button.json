@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "ginkgo",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:ginkgo_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:ginkgo_button"
+  }
+}

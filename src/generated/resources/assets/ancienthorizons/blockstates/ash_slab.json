@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/ash_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/ash_planks"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/ash_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/sycamore_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/sycamore_planks"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/sycamore_slab_top"
+    }
+  }
+}

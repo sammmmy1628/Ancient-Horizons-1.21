@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/yew_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/yew_planks"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/yew_slab_top"
+    }
+  }
+}

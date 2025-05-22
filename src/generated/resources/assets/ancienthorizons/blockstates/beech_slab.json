@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/beech_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/beech_planks"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/beech_slab_top"
+    }
+  }
+}

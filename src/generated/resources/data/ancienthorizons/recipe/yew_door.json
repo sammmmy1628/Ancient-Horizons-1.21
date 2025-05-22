@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "yew",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:yew_planks"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ancienthorizons:yew_door"
+  }
+}

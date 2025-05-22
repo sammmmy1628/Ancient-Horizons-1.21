@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "eucalyptus",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:eucalyptus_planks"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ancienthorizons:eucalyptus_door"
+  }
+}

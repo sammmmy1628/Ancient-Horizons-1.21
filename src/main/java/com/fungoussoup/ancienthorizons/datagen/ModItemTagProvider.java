@@ -100,11 +100,99 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.WILLOW_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_WILLOW_LOG.get().asItem())
                 .add(ModBlocks.WILLOW_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_WILLOW_WOOD.get().asItem())
+        
+                .add(ModBlocks.HORNBEAM_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_HORNBEAM_LOG.get().asItem())
+                .add(ModBlocks.HORNBEAM_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_HORNBEAM_WOOD.get().asItem())
+                
+                .add(ModBlocks.LINDEN_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_LINDEN_LOG.get().asItem())
+                .add(ModBlocks.LINDEN_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_LINDEN_WOOD.get().asItem())
+                
+                .add(ModBlocks.GINKGO_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_GINKGO_LOG.get().asItem())
+                .add(ModBlocks.GINKGO_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_GINKGO_WOOD.get().asItem())
+        
+                .add(ModBlocks.POPLAR_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_POPLAR_LOG.get().asItem())
+                .add(ModBlocks.POPLAR_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_POPLAR_WOOD.get().asItem())
+        
+                .add(ModBlocks.MAPLE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_MAPLE_LOG.get().asItem())
+                .add(ModBlocks.MAPLE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_MAPLE_WOOD.get().asItem())
+                
+                .add(ModBlocks.BAOBAB_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_BAOBAB_LOG.get().asItem())
+                .add(ModBlocks.BAOBAB_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_BAOBAB_WOOD.get().asItem())
+                
+                .add(ModBlocks.PALM_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PALM_LOG.get().asItem())
+                .add(ModBlocks.PALM_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PALM_WOOD.get().asItem())
+                
+                .add(ModBlocks.ASPEN_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_ASPEN_LOG.get().asItem())
+                .add(ModBlocks.ASPEN_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_ASPEN_WOOD.get().asItem())
+                
+                .add(ModBlocks.ASH_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_ASH_LOG.get().asItem())
+                .add(ModBlocks.ASH_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_ASH_WOOD.get().asItem())
+
+                .add(ModBlocks.BEECH_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_BEECH_LOG.get().asItem())
+                .add(ModBlocks.BEECH_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_BEECH_WOOD.get().asItem())
+
+                .add(ModBlocks.EUCALYPTUS_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_LOG.get().asItem())
+                .add(ModBlocks.EUCALYPTUS_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_EUCALYPTUS_WOOD.get().asItem())
+
+                .add(ModBlocks.SYCAMORE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_SYCAMORE_LOG.get().asItem())
+                .add(ModBlocks.SYCAMORE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_SYCAMORE_WOOD.get().asItem())
+
+                .add(ModBlocks.REDWOOD_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_REDWOOD_LOG.get().asItem())
+                .add(ModBlocks.REDWOOD_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_REDWOOD_WOOD.get().asItem())
+
+                .add(ModBlocks.MONKEY_PUZZLE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_MONKEY_PUZZLE_LOG.get().asItem())
+                .add(ModBlocks.MONKEY_PUZZLE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_MONKEY_PUZZLE_WOOD.get().asItem())
+
+                .add(ModBlocks.YEW_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_YEW_LOG.get().asItem())
+                .add(ModBlocks.YEW_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_YEW_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.WILLOW_PLANKS.asItem())
                 .add(ModBlocks.HORNBEAM_PLANKS.asItem())
-                .add(ModBlocks.LINDEN_PLANKS.asItem());
+                .add(ModBlocks.LINDEN_PLANKS.asItem())
+                .add(ModBlocks.GINKGO_PLANKS.asItem())
+                .add(ModBlocks.POPLAR_PLANKS.asItem())
+                .add(ModBlocks.MAPLE_PLANKS.asItem())
+                .add(ModBlocks.BAOBAB_PLANKS.asItem())
+                .add(ModBlocks.PALM_PLANKS.asItem())
+                .add(ModBlocks.ASPEN_PLANKS.asItem())
+                .add(ModBlocks.ASH_PLANKS.asItem())
+                .add(ModBlocks.BEECH_PLANKS.asItem())
+                .add(ModBlocks.EUCALYPTUS_PLANKS.asItem())
+                .add(ModBlocks.SYCAMORE_PLANKS.asItem())
+                .add(ModBlocks.REDWOOD_PLANKS.asItem())
+                .add(ModBlocks.MONKEY_PUZZLE_PLANKS.asItem())
+                .add(ModBlocks.YEW_PLANKS.asItem());
     }
 }

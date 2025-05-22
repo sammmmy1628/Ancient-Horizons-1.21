@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:baobab_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:baobab_planks"
+  }
+}
