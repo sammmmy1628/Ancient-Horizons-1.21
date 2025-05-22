@@ -100,11 +100,51 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.WILLOW_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_WILLOW_LOG.get().asItem())
                 .add(ModBlocks.WILLOW_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_WILLOW_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_WILLOW_WOOD.get().asItem())
+        
+                .add(ModBlocks.HORNBEAM_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_HORNBEAM_LOG.get().asItem())
+                .add(ModBlocks.HORNBEAM_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_HORNBEAM_WOOD.get().asItem())
+                
+                .add(ModBlocks.LINDEN_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_LINDEN_LOG.get().asItem())
+                .add(ModBlocks.LINDEN_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_LINDEN_WOOD.get().asItem())
+                
+                .add(ModBlocks.GINKGO_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_GINKGO_LOG.get().asItem())
+                .add(ModBlocks.GINKGO_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_GINKGO_WOOD.get().asItem())
+        
+                .add(ModBlocks.POPLAR_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_POPLAR_LOG.get().asItem())
+                .add(ModBlocks.POPLAR_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_POPLAR_WOOD.get().asItem())
+        
+                .add(ModBlocks.MAPLE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_MAPLE_LOG.get().asItem())
+                .add(ModBlocks.MAPLE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_MAPLE_WOOD.get().asItem())
+                
+                .add(ModBlocks.BAOBAB_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_BAOBAB_LOG.get().asItem())
+                .add(ModBlocks.BAOBAB_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_BAOBAB_WOOD.get().asItem())
+                
+                .add(ModBlocks.PALM_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PALM_LOG.get().asItem())
+                .add(ModBlocks.PALM_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PALM_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.WILLOW_PLANKS.asItem())
                 .add(ModBlocks.HORNBEAM_PLANKS.asItem())
-                .add(ModBlocks.LINDEN_PLANKS.asItem());
+                .add(ModBlocks.LINDEN_PLANKS.asItem())
+                .add(ModBlocks.GINKGO_PLANKS.asItem())
+                .add(ModBlocks.POPLAR_PLANKS.asItem())
+                .add(ModBlocks.MAPLE_PLANKS.asItem())
+                .add(ModBlocks.BAOBAB_PLANKS.asItem())
+                .add(ModBlocks.PALM_PLANKS.asItem());
     }
 }

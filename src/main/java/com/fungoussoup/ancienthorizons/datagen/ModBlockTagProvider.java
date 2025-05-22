@@ -199,16 +199,51 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LINDEN_LOG.get())
                 .add(ModBlocks.STRIPPED_LINDEN_LOG.get())
                 .add(ModBlocks.LINDEN_WOOD.get())
-                .add(ModBlocks.STRIPPED_LINDEN_WOOD.get());
+                .add(ModBlocks.STRIPPED_LINDEN_WOOD.get())
+        
+                .add(ModBlocks.GINKGO_LOG.get())
+                .add(ModBlocks.STRIPPED_GINKGO_LOG.get())
+                .add(ModBlocks.GINKGO_WOOD.get())
+                .add(ModBlocks.STRIPPED_GINKGO_WOOD.get())
+                
+                .add(ModBlocks.POPLAR_LOG.get())
+                .add(ModBlocks.STRIPPED_POPLAR_LOG.get())
+                .add(ModBlocks.POPLAR_WOOD.get())
+                .add(ModBlocks.STRIPPED_POPLAR_WOOD.get())
+                
+                .add(ModBlocks.MAPLE_LOG.get())
+                .add(ModBlocks.STRIPPED_MAPLE_LOG.get())
+                .add(ModBlocks.MAPLE_WOOD.get())
+                .add(ModBlocks.STRIPPED_MAPLE_WOOD.get())
+        
+                .add(ModBlocks.BAOBAB_LOG.get())
+                .add(ModBlocks.STRIPPED_BAOBAB_LOG.get())
+                .add(ModBlocks.BAOBAB_WOOD.get())
+                .add(ModBlocks.STRIPPED_BAOBAB_WOOD.get())
+                
+                .add(ModBlocks.PALM_LOG.get())
+                .add(ModBlocks.STRIPPED_PALM_LOG.get())
+                .add(ModBlocks.PALM_WOOD.get())
+                .add(ModBlocks.STRIPPED_PALM_WOOD.get());
 
         tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.WILLOW_FENCE.get())
                 .add(ModBlocks.HORNBEAM_FENCE.get())
-                .add(ModBlocks.LINDEN_FENCE.get());
+                .add(ModBlocks.LINDEN_FENCE.get())
+                .add(ModBlocks.GINKGO_FENCE.get())
+                .add(ModBlocks.POPLAR_FENCE.get())
+                .add(ModBlocks.MAPLE_FENCE.get())
+                .add(ModBlocks.BAOBAB_FENCE.get())
+                .add(ModBlocks.PALM_FENCE.get());
 
         tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.WILLOW_FENCE_GATE.get())
                 .add(ModBlocks.HORNBEAM_FENCE_GATE.get())
-                .add(ModBlocks.LINDEN_FENCE_GATE.get());
+                .add(ModBlocks.LINDEN_FENCE_GATE.get())
+                .add(ModBlocks.GINKGO_FENCE_GATE.get())
+                .add(ModBlocks.POPLAR_FENCE_GATE.get())
+                .add(ModBlocks.MAPLE_FENCE_GATE.get())
+                .add(ModBlocks.BAOBAB_FENCE_GATE.get())
+                .add(ModBlocks.PALM_FENCE_GATE.get());
     }
 }

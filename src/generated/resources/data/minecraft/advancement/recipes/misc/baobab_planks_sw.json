@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_baobab_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:stripped_baobab_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:baobab_planks_sw"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_baobab_wood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:baobab_planks_sw"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:palm_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "ancienthorizons:palm_planks"
+  }
+}

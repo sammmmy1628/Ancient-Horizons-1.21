@@ -202,6 +202,170 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.LINDEN_PRESSURE_PLATE);
         blockItem(ModBlocks.LINDEN_FENCE_GATE);
         blockItem(ModBlocks.LINDEN_TRAPDOOR,"_bottom");
+        
+        // GINKGO
+        logBlock(((RotatedPillarBlock) ModBlocks.GINKGO_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GINKGO_WOOD.get()), blockTexture(ModBlocks.GINKGO_LOG.get()), blockTexture(ModBlocks.GINKGO_LOG.get()));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_GINKGO_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_GINKGO_WOOD.get()), blockTexture(ModBlocks.STRIPPED_GINKGO_LOG.get()), blockTexture(ModBlocks.STRIPPED_GINKGO_LOG.get()));
+
+        blockItem(ModBlocks.GINKGO_LOG);
+        blockItem(ModBlocks.STRIPPED_GINKGO_LOG);
+        blockItem(ModBlocks.GINKGO_WOOD);
+        blockItem(ModBlocks.STRIPPED_GINKGO_WOOD);
+
+        blockWithItem(ModBlocks.GINKGO_PLANKS);
+
+        leavesBlock(ModBlocks.GINKGO_LEAVES);
+        saplingBlock(ModBlocks.GINKGO_SAPLING);
+
+        stairsBlock(ModBlocks.GINKGO_STAIRS.get(), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+        slabBlock(ModBlocks.GINKGO_SLAB.get(), blockTexture(ModBlocks.GINKGO_PLANKS.get()), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+        buttonBlock(ModBlocks.GINKGO_BUTTON.get(), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.GINKGO_PRESSURE_PLATE.get(), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+        fenceBlock(ModBlocks.GINKGO_FENCE.get(), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+        fenceGateBlock(ModBlocks.GINKGO_FENCE_GATE.get(), blockTexture(ModBlocks.GINKGO_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.GINKGO_DOOR.get(), modLoc("block/ginkgo_door_bottom"), modLoc("block/ginkgo_door_top"),"cutout");
+        trapdoorBlockWithRenderType(ModBlocks.GINKGO_TRAPDOOR.get(), modLoc("block/ginkgo_trapdoor"), true,"cutout");
+
+        blockItem(ModBlocks.GINKGO_STAIRS);
+        blockItem(ModBlocks.GINKGO_SLAB);
+        blockItem(ModBlocks.GINKGO_PRESSURE_PLATE);
+        blockItem(ModBlocks.GINKGO_FENCE_GATE);
+        blockItem(ModBlocks.GINKGO_TRAPDOOR,"_bottom");
+        
+        // POPLAR
+        logBlock(((RotatedPillarBlock) ModBlocks.POPLAR_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.POPLAR_WOOD.get()), blockTexture(ModBlocks.POPLAR_LOG.get()), blockTexture(ModBlocks.POPLAR_LOG.get()));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_POPLAR_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_POPLAR_WOOD.get()), blockTexture(ModBlocks.STRIPPED_POPLAR_LOG.get()), blockTexture(ModBlocks.STRIPPED_POPLAR_LOG.get()));
+
+        blockItem(ModBlocks.POPLAR_LOG);
+        blockItem(ModBlocks.STRIPPED_POPLAR_LOG);
+        blockItem(ModBlocks.POPLAR_WOOD);
+        blockItem(ModBlocks.STRIPPED_POPLAR_WOOD);
+
+        blockWithItem(ModBlocks.POPLAR_PLANKS);
+
+        leavesBlock(ModBlocks.POPLAR_LEAVES);
+        saplingBlock(ModBlocks.POPLAR_SAPLING);
+
+        stairsBlock(ModBlocks.POPLAR_STAIRS.get(), blockTexture(ModBlocks.POPLAR_PLANKS.get()));
+        slabBlock(ModBlocks.POPLAR_SLAB.get(), blockTexture(ModBlocks.POPLAR_PLANKS.get()), blockTexture(ModBlocks.POPLAR_PLANKS.get()));
+        buttonBlock(ModBlocks.POPLAR_BUTTON.get(), blockTexture(ModBlocks.POPLAR_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.POPLAR_PRESSURE_PLATE.get(), blockTexture(ModBlocks.POPLAR_PLANKS.get()));
+        fenceBlock(ModBlocks.POPLAR_FENCE.get(), blockTexture(ModBlocks.POPLAR_PLANKS.get()));
+        fenceGateBlock(ModBlocks.POPLAR_FENCE_GATE.get(), blockTexture(ModBlocks.POPLAR_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.POPLAR_DOOR.get(), modLoc("block/poplar_door_bottom"), modLoc("block/poplar_door_top"),"cutout");
+        trapdoorBlockWithRenderType(ModBlocks.POPLAR_TRAPDOOR.get(), modLoc("block/poplar_trapdoor"), true,"cutout");
+
+        blockItem(ModBlocks.POPLAR_STAIRS);
+        blockItem(ModBlocks.POPLAR_SLAB);
+        blockItem(ModBlocks.POPLAR_PRESSURE_PLATE);
+        blockItem(ModBlocks.POPLAR_FENCE_GATE);
+        blockItem(ModBlocks.POPLAR_TRAPDOOR,"_bottom");
+        
+        // MAPLE
+        logBlock(((RotatedPillarBlock) ModBlocks.MAPLE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.MAPLE_WOOD.get()), blockTexture(ModBlocks.MAPLE_LOG.get()), blockTexture(ModBlocks.MAPLE_LOG.get()));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_MAPLE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_MAPLE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_MAPLE_LOG.get()), blockTexture(ModBlocks.STRIPPED_MAPLE_LOG.get()));
+
+        blockItem(ModBlocks.MAPLE_LOG);
+        blockItem(ModBlocks.STRIPPED_MAPLE_LOG);
+        blockItem(ModBlocks.MAPLE_WOOD);
+        blockItem(ModBlocks.STRIPPED_MAPLE_WOOD);
+
+        blockWithItem(ModBlocks.MAPLE_PLANKS);
+
+        leavesBlock(ModBlocks.MAPLE_LEAVES);
+        saplingBlock(ModBlocks.MAPLE_SAPLING);
+
+        stairsBlock(ModBlocks.MAPLE_STAIRS.get(), blockTexture(ModBlocks.MAPLE_PLANKS.get()));
+        slabBlock(ModBlocks.MAPLE_SLAB.get(), blockTexture(ModBlocks.MAPLE_PLANKS.get()), blockTexture(ModBlocks.MAPLE_PLANKS.get()));
+        buttonBlock(ModBlocks.MAPLE_BUTTON.get(), blockTexture(ModBlocks.MAPLE_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.MAPLE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.MAPLE_PLANKS.get()));
+        fenceBlock(ModBlocks.MAPLE_FENCE.get(), blockTexture(ModBlocks.MAPLE_PLANKS.get()));
+        fenceGateBlock(ModBlocks.MAPLE_FENCE_GATE.get(), blockTexture(ModBlocks.MAPLE_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.MAPLE_DOOR.get(), modLoc("block/maple_door_bottom"), modLoc("block/maple_door_top"),"cutout");
+        trapdoorBlockWithRenderType(ModBlocks.MAPLE_TRAPDOOR.get(), modLoc("block/maple_trapdoor"), true,"cutout");
+
+        blockItem(ModBlocks.MAPLE_STAIRS);
+        blockItem(ModBlocks.MAPLE_SLAB);
+        blockItem(ModBlocks.MAPLE_PRESSURE_PLATE);
+        blockItem(ModBlocks.MAPLE_FENCE_GATE);
+        blockItem(ModBlocks.MAPLE_TRAPDOOR,"_bottom");
+
+        // BAOBAB
+        logBlock(((RotatedPillarBlock) ModBlocks.BAOBAB_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.BAOBAB_WOOD.get()), blockTexture(ModBlocks.BAOBAB_LOG.get()), blockTexture(ModBlocks.BAOBAB_LOG.get()));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_BAOBAB_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_BAOBAB_WOOD.get()), blockTexture(ModBlocks.STRIPPED_BAOBAB_LOG.get()), blockTexture(ModBlocks.STRIPPED_BAOBAB_LOG.get()));
+
+        blockItem(ModBlocks.BAOBAB_LOG);
+        blockItem(ModBlocks.STRIPPED_BAOBAB_LOG);
+        blockItem(ModBlocks.BAOBAB_WOOD);
+        blockItem(ModBlocks.STRIPPED_BAOBAB_WOOD);
+
+        blockWithItem(ModBlocks.BAOBAB_PLANKS);
+
+        leavesBlock(ModBlocks.BAOBAB_LEAVES);
+        saplingBlock(ModBlocks.BAOBAB_SAPLING);
+
+        stairsBlock(ModBlocks.BAOBAB_STAIRS.get(), blockTexture(ModBlocks.BAOBAB_PLANKS.get()));
+        slabBlock(ModBlocks.BAOBAB_SLAB.get(), blockTexture(ModBlocks.BAOBAB_PLANKS.get()), blockTexture(ModBlocks.BAOBAB_PLANKS.get()));
+        buttonBlock(ModBlocks.BAOBAB_BUTTON.get(), blockTexture(ModBlocks.BAOBAB_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.BAOBAB_PRESSURE_PLATE.get(), blockTexture(ModBlocks.BAOBAB_PLANKS.get()));
+        fenceBlock(ModBlocks.BAOBAB_FENCE.get(), blockTexture(ModBlocks.BAOBAB_PLANKS.get()));
+        fenceGateBlock(ModBlocks.BAOBAB_FENCE_GATE.get(), blockTexture(ModBlocks.BAOBAB_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.BAOBAB_DOOR.get(), modLoc("block/baobab_door_bottom"), modLoc("block/baobab_door_top"),"cutout");
+        trapdoorBlockWithRenderType(ModBlocks.BAOBAB_TRAPDOOR.get(), modLoc("block/baobab_trapdoor"), true,"cutout");
+
+        blockItem(ModBlocks.BAOBAB_STAIRS);
+        blockItem(ModBlocks.BAOBAB_SLAB);
+        blockItem(ModBlocks.BAOBAB_PRESSURE_PLATE);
+        blockItem(ModBlocks.BAOBAB_FENCE_GATE);
+        blockItem(ModBlocks.BAOBAB_TRAPDOOR,"_bottom");
+        // PALM
+        logBlock(((RotatedPillarBlock) ModBlocks.PALM_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PALM_WOOD.get()), blockTexture(ModBlocks.PALM_LOG.get()), blockTexture(ModBlocks.PALM_LOG.get()));
+
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PALM_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PALM_WOOD.get()), blockTexture(ModBlocks.STRIPPED_PALM_LOG.get()), blockTexture(ModBlocks.STRIPPED_PALM_LOG.get()));
+
+        blockItem(ModBlocks.PALM_LOG);
+        blockItem(ModBlocks.STRIPPED_PALM_LOG);
+        blockItem(ModBlocks.PALM_WOOD);
+        blockItem(ModBlocks.STRIPPED_PALM_WOOD);
+
+        blockWithItem(ModBlocks.PALM_PLANKS);
+
+        leavesBlock(ModBlocks.PALM_LEAVES);
+        saplingBlock(ModBlocks.PALM_SAPLING);
+
+        stairsBlock(ModBlocks.PALM_STAIRS.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
+        slabBlock(ModBlocks.PALM_SLAB.get(), blockTexture(ModBlocks.PALM_PLANKS.get()), blockTexture(ModBlocks.PALM_PLANKS.get()));
+        buttonBlock(ModBlocks.PALM_BUTTON.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.PALM_PRESSURE_PLATE.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
+        fenceBlock(ModBlocks.PALM_FENCE.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
+        fenceGateBlock(ModBlocks.PALM_FENCE_GATE.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.PALM_DOOR.get(), modLoc("block/palm_door_bottom"), modLoc("block/palm_door_top"),"cutout");
+        trapdoorBlockWithRenderType(ModBlocks.PALM_TRAPDOOR.get(), modLoc("block/palm_trapdoor"), true,"cutout");
+
+        blockItem(ModBlocks.PALM_STAIRS);
+        blockItem(ModBlocks.PALM_SLAB);
+        blockItem(ModBlocks.PALM_PRESSURE_PLATE);
+        blockItem(ModBlocks.PALM_FENCE_GATE);
+        blockItem(ModBlocks.PALM_TRAPDOOR,"_bottom");
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

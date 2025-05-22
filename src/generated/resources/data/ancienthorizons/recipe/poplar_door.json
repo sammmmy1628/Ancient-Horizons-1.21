@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "poplar",
+  "key": {
+    "#": {
+      "item": "ancienthorizons:poplar_planks"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "ancienthorizons:poplar_door"
+  }
+}

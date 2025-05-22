@@ -200,6 +200,121 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.LINDEN_DOOR.get(),
                 block -> createDoorTable(ModBlocks.LINDEN_DOOR.get()));
+        
+        // GINGKO
+        dropSelf(ModBlocks.GINKGO_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_GINKGO_LOG.get());
+        dropSelf(ModBlocks.GINKGO_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_GINKGO_WOOD.get());
+        dropSelf(ModBlocks.GINKGO_PLANKS.get());
+        dropSelf(ModBlocks.GINKGO_SAPLING.get());
+
+        add(ModBlocks.GINKGO_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GINKGO_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.GINKGO_STAIRS.get());
+        add(ModBlocks.GINKGO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.GINKGO_SLAB.get()));
+        dropSelf(ModBlocks.GINKGO_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.GINKGO_BUTTON.get());
+        dropSelf(ModBlocks.GINKGO_FENCE.get());
+        dropSelf(ModBlocks.GINKGO_FENCE_GATE.get());
+        dropSelf(ModBlocks.GINKGO_TRAPDOOR.get());
+
+        add(ModBlocks.GINKGO_DOOR.get(),
+                block -> createDoorTable(ModBlocks.GINKGO_DOOR.get()));
+        
+        // POPLAR
+        dropSelf(ModBlocks.POPLAR_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_POPLAR_LOG.get());
+        dropSelf(ModBlocks.POPLAR_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_POPLAR_WOOD.get());
+        dropSelf(ModBlocks.POPLAR_PLANKS.get());
+        dropSelf(ModBlocks.POPLAR_SAPLING.get());
+
+        add(ModBlocks.POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.POPLAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.POPLAR_STAIRS.get());
+        add(ModBlocks.POPLAR_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.POPLAR_SLAB.get()));
+        dropSelf(ModBlocks.POPLAR_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.POPLAR_BUTTON.get());
+        dropSelf(ModBlocks.POPLAR_FENCE.get());
+        dropSelf(ModBlocks.POPLAR_FENCE_GATE.get());
+        dropSelf(ModBlocks.POPLAR_TRAPDOOR.get());
+
+        add(ModBlocks.POPLAR_DOOR.get(),
+                block -> createDoorTable(ModBlocks.POPLAR_DOOR.get()));
+        
+        // MAPLE
+        dropSelf(ModBlocks.MAPLE_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_MAPLE_LOG.get());
+        dropSelf(ModBlocks.MAPLE_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_MAPLE_WOOD.get());
+        dropSelf(ModBlocks.MAPLE_PLANKS.get());
+        dropSelf(ModBlocks.MAPLE_SAPLING.get());
+
+        add(ModBlocks.MAPLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.MAPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.MAPLE_STAIRS.get());
+        add(ModBlocks.MAPLE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MAPLE_SLAB.get()));
+        dropSelf(ModBlocks.MAPLE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.MAPLE_BUTTON.get());
+        dropSelf(ModBlocks.MAPLE_FENCE.get());
+        dropSelf(ModBlocks.MAPLE_FENCE_GATE.get());
+        dropSelf(ModBlocks.MAPLE_TRAPDOOR.get());
+
+        add(ModBlocks.MAPLE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.MAPLE_DOOR.get()));
+        
+        // BAOBAB
+        dropSelf(ModBlocks.BAOBAB_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_BAOBAB_LOG.get());
+        dropSelf(ModBlocks.BAOBAB_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_BAOBAB_WOOD.get());
+        dropSelf(ModBlocks.BAOBAB_PLANKS.get());
+        dropSelf(ModBlocks.BAOBAB_SAPLING.get());
+
+        add(ModBlocks.BAOBAB_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.BAOBAB_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.BAOBAB_STAIRS.get());
+        add(ModBlocks.BAOBAB_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.BAOBAB_SLAB.get()));
+        dropSelf(ModBlocks.BAOBAB_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.BAOBAB_BUTTON.get());
+        dropSelf(ModBlocks.BAOBAB_FENCE.get());
+        dropSelf(ModBlocks.BAOBAB_FENCE_GATE.get());
+        dropSelf(ModBlocks.BAOBAB_TRAPDOOR.get());
+
+        add(ModBlocks.BAOBAB_DOOR.get(),
+                block -> createDoorTable(ModBlocks.BAOBAB_DOOR.get()));
+
+        // PALM
+        dropSelf(ModBlocks.PALM_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_PALM_LOG.get());
+        dropSelf(ModBlocks.PALM_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_PALM_WOOD.get());
+        dropSelf(ModBlocks.PALM_PLANKS.get());
+        dropSelf(ModBlocks.PALM_SAPLING.get());
+
+        add(ModBlocks.PALM_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PALM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.PALM_STAIRS.get());
+        add(ModBlocks.PALM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PALM_SLAB.get()));
+        dropSelf(ModBlocks.PALM_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.PALM_BUTTON.get());
+        dropSelf(ModBlocks.PALM_FENCE.get());
+        dropSelf(ModBlocks.PALM_FENCE_GATE.get());
+        dropSelf(ModBlocks.PALM_TRAPDOOR.get());
+
+        add(ModBlocks.PALM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.PALM_DOOR.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

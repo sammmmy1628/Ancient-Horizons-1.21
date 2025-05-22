@@ -2,6 +2,11 @@
   "values": [
     "ancienthorizons:willow_fence",
     "ancienthorizons:hornbeam_fence",
-    "ancienthorizons:linden_fence"
+    "ancienthorizons:linden_fence",
+    "ancienthorizons:ginkgo_fence",
+    "ancienthorizons:poplar_fence",
+    "ancienthorizons:maple_fence",
+    "ancienthorizons:baobab_fence",
+    "ancienthorizons:palm_fence"
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "poplar",
+  "ingredients": [
+    {
+      "item": "ancienthorizons:poplar_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ancienthorizons:poplar_button"
+  }
+}

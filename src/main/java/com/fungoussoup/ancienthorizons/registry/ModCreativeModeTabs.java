@@ -177,6 +177,96 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LINDEN_FENCE_GATE);
                         output.accept(ModBlocks.LINDEN_DOOR);
                         output.accept(ModBlocks.LINDEN_TRAPDOOR);
+
+                        // GINKGO
+                        output.accept(ModBlocks.GINKGO_LOG);
+                        output.accept(ModBlocks.GINKGO_WOOD);
+                        output.accept(ModBlocks.STRIPPED_GINKGO_LOG);
+                        output.accept(ModBlocks.STRIPPED_GINKGO_WOOD);
+                        output.accept(ModBlocks.GINKGO_PLANKS);
+                        output.accept(ModBlocks.GINKGO_LEAVES);
+                        output.accept(ModBlocks.GINKGO_SAPLING);
+
+                        output.accept(ModBlocks.GINKGO_STAIRS);
+                        output.accept(ModBlocks.GINKGO_SLAB);
+                        output.accept(ModBlocks.GINKGO_PRESSURE_PLATE);
+                        output.accept(ModBlocks.GINKGO_BUTTON);
+                        output.accept(ModBlocks.GINKGO_FENCE);
+                        output.accept(ModBlocks.GINKGO_FENCE_GATE);
+                        output.accept(ModBlocks.GINKGO_DOOR);
+                        output.accept(ModBlocks.GINKGO_TRAPDOOR);
+                        
+                        // POPLAR
+                        output.accept(ModBlocks.POPLAR_LOG);
+                        output.accept(ModBlocks.POPLAR_WOOD);
+                        output.accept(ModBlocks.STRIPPED_POPLAR_LOG);
+                        output.accept(ModBlocks.STRIPPED_POPLAR_WOOD);
+                        output.accept(ModBlocks.POPLAR_PLANKS);
+                        output.accept(ModBlocks.POPLAR_LEAVES);
+                        output.accept(ModBlocks.POPLAR_SAPLING);
+
+                        output.accept(ModBlocks.POPLAR_STAIRS);
+                        output.accept(ModBlocks.POPLAR_SLAB);
+                        output.accept(ModBlocks.POPLAR_PRESSURE_PLATE);
+                        output.accept(ModBlocks.POPLAR_BUTTON);
+                        output.accept(ModBlocks.POPLAR_FENCE);
+                        output.accept(ModBlocks.POPLAR_FENCE_GATE);
+                        output.accept(ModBlocks.POPLAR_DOOR);
+                        output.accept(ModBlocks.POPLAR_TRAPDOOR);                        
+                        
+                        // MAPLE
+                        output.accept(ModBlocks.MAPLE_LOG);
+                        output.accept(ModBlocks.MAPLE_WOOD);
+                        output.accept(ModBlocks.STRIPPED_MAPLE_LOG);
+                        output.accept(ModBlocks.STRIPPED_MAPLE_WOOD);
+                        output.accept(ModBlocks.MAPLE_PLANKS);
+                        output.accept(ModBlocks.MAPLE_LEAVES);
+                        output.accept(ModBlocks.MAPLE_SAPLING);
+
+                        output.accept(ModBlocks.MAPLE_STAIRS);
+                        output.accept(ModBlocks.MAPLE_SLAB);
+                        output.accept(ModBlocks.MAPLE_PRESSURE_PLATE);
+                        output.accept(ModBlocks.MAPLE_BUTTON);
+                        output.accept(ModBlocks.MAPLE_FENCE);
+                        output.accept(ModBlocks.MAPLE_FENCE_GATE);
+                        output.accept(ModBlocks.MAPLE_DOOR);
+                        output.accept(ModBlocks.MAPLE_TRAPDOOR);
+
+                        // BAOBAB
+                        output.accept(ModBlocks.BAOBAB_LOG);
+                        output.accept(ModBlocks.BAOBAB_WOOD);
+                        output.accept(ModBlocks.STRIPPED_BAOBAB_LOG);
+                        output.accept(ModBlocks.STRIPPED_BAOBAB_WOOD);
+                        output.accept(ModBlocks.BAOBAB_PLANKS);
+                        output.accept(ModBlocks.BAOBAB_LEAVES);
+                        output.accept(ModBlocks.BAOBAB_SAPLING);
+
+                        output.accept(ModBlocks.BAOBAB_STAIRS);
+                        output.accept(ModBlocks.BAOBAB_SLAB);
+                        output.accept(ModBlocks.BAOBAB_PRESSURE_PLATE);
+                        output.accept(ModBlocks.BAOBAB_BUTTON);
+                        output.accept(ModBlocks.BAOBAB_FENCE);
+                        output.accept(ModBlocks.BAOBAB_FENCE_GATE);
+                        output.accept(ModBlocks.BAOBAB_DOOR);
+                        output.accept(ModBlocks.BAOBAB_TRAPDOOR);
+                        
+                        // PALM
+                        output.accept(ModBlocks.PALM_LOG);
+                        output.accept(ModBlocks.PALM_WOOD);
+                        output.accept(ModBlocks.STRIPPED_PALM_LOG);
+                        output.accept(ModBlocks.STRIPPED_PALM_WOOD);
+                        output.accept(ModBlocks.PALM_PLANKS);
+                        output.accept(ModBlocks.PALM_LEAVES);
+                        output.accept(ModBlocks.PALM_SAPLING);
+
+                        output.accept(ModBlocks.PALM_STAIRS);
+                        output.accept(ModBlocks.PALM_SLAB);
+                        output.accept(ModBlocks.PALM_PRESSURE_PLATE);
+                        output.accept(ModBlocks.PALM_BUTTON);
+                        output.accept(ModBlocks.PALM_FENCE);
+                        output.accept(ModBlocks.PALM_FENCE_GATE);
+                        output.accept(ModBlocks.PALM_DOOR);
+                        output.accept(ModBlocks.PALM_TRAPDOOR);
                     }).build());
 
     public static final Supplier<CreativeModeTab> ANCIENT_HORIZONS_TAB_TOOLS_AND_ARMOUR = CREATIVE_MODE_TAB.register("ancient_horizons_tab_tools_and_armour",

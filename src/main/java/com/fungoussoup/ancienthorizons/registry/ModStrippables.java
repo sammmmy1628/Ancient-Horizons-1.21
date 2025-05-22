@@ -18,6 +18,21 @@ public class ModStrippables {
 
         STRIPPABLES.put(ModBlocks.LINDEN_LOG.get(), ModBlocks.STRIPPED_LINDEN_LOG);
         STRIPPABLES.put(ModBlocks.LINDEN_WOOD.get(), ModBlocks.STRIPPED_LINDEN_WOOD);
+        
+        STRIPPABLES.put(ModBlocks.GINKGO_LOG.get(), ModBlocks.STRIPPED_GINKGO_LOG);
+        STRIPPABLES.put(ModBlocks.GINKGO_WOOD.get(), ModBlocks.STRIPPED_GINKGO_WOOD);
+        
+        STRIPPABLES.put(ModBlocks.POPLAR_LOG.get(), ModBlocks.STRIPPED_POPLAR_LOG);
+        STRIPPABLES.put(ModBlocks.POPLAR_WOOD.get(), ModBlocks.STRIPPED_POPLAR_WOOD);
+        
+        STRIPPABLES.put(ModBlocks.MAPLE_LOG.get(), ModBlocks.STRIPPED_MAPLE_LOG);
+        STRIPPABLES.put(ModBlocks.MAPLE_WOOD.get(), ModBlocks.STRIPPED_MAPLE_WOOD);
+        
+        STRIPPABLES.put(ModBlocks.BAOBAB_LOG.get(), ModBlocks.STRIPPED_BAOBAB_LOG);
+        STRIPPABLES.put(ModBlocks.BAOBAB_WOOD.get(), ModBlocks.STRIPPED_BAOBAB_WOOD);
+        
+        STRIPPABLES.put(ModBlocks.PALM_LOG.get(), ModBlocks.STRIPPED_PALM_LOG);
+        STRIPPABLES.put(ModBlocks.PALM_WOOD.get(), ModBlocks.STRIPPED_PALM_WOOD);
         // Add more trees here
     }
 }

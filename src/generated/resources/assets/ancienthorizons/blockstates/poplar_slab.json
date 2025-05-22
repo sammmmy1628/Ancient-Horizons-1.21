@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/poplar_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/poplar_planks"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/poplar_slab_top"
+    }
+  }
+}

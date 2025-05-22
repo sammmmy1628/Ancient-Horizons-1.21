@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ancienthorizons:block/maple_slab"
+    },
+    "type=double": {
+      "model": "ancienthorizons:block/maple_planks"
+    },
+    "type=top": {
+      "model": "ancienthorizons:block/maple_slab_top"
+    }
+  }
+}

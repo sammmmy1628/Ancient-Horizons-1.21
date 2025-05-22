@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stripped_poplar": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ancienthorizons:stripped_poplar_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ancienthorizons:stripped_poplar_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stripped_poplar"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ancienthorizons:stripped_poplar_wood"
+    ]
+  }
+}
