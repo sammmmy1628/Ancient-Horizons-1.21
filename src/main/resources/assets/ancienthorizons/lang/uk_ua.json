@@ -432,11 +432,7 @@
     "block.ancienthorizons.yew_fence_gate": "Тисова хвіртка",
     "block.ancienthorizons.yew_door": "Тисові двері",
     "block.ancienthorizons.yew_trapdoor": "Тисовий люк",
-    
-    "entity.ancienthorizons.tiger": "Тигр",
-    "entity.ancienthorizons.lion": "Лев",
-    "entity.ancienthorizons.liger": "Лігр",
 
-    "entity.ancienthorizons.velociraptor": "Велоцираптор",
-    "entity.ancienthorizons.diplodocus": "Диплодок",
+    "item.ancienthorizons.tiger_spawn_egg": "Яйце виклику тигра",
+    "entity.ancienthorizons.tiger": "Тигр"
 }
