@@ -13,6 +13,7 @@
   "creativetab.ancienthorizons.ancient_horizons_minerals": "Ancient Horizons: Minerals",
   "creativetab.ancienthorizons.ancient_horizons_building_blocks": "Ancient Horizons: Building Blocks",
   "creativetab.ancienthorizons.ancient_horizons_tools_and_armour": "Ancient Horizons: Tools & Armor",
+  "creativetab.ancienthorizons.ancient_horizons_spawn_eggs": "Ancient Horizons: Spawn Eggs",
 
   "item.ancienthorizons.raw_aluminium": "Raw Aluminium",
   "block.ancienthorizons.aluminium_ore": "Aluminium Ore",
@@ -432,5 +433,8 @@
   "block.ancienthorizons.yew_fence": "Yew Fence",
   "block.ancienthorizons.yew_fence_gate": "Yew Fence Gate",
   "block.ancienthorizons.yew_door": "Yew Door",
-  "block.ancienthorizons.yew_trapdoor": "Yew Trapdoor"
+  "block.ancienthorizons.yew_trapdoor": "Yew Trapdoor",
+
+  "item.ancienthorizons.tiger_spawn_egg": "Tiger Spawn Egg",
+  "entity.mccourse.tiger": "Tiger"
 }

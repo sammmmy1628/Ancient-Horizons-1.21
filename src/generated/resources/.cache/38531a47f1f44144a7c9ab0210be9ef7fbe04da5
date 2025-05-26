@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-23T17:24:16.4618699	Item Models: ancienthorizons
+// 1.21.1	2025-05-23T20:10:24.1534804	Item Models: ancienthorizons
 4a7d442bf9bc9643287ae12937f9ecc707338104 assets/ancienthorizons/models/item/aluminium_axe.json
 7e20877ad055f7c56064c0bf852f5258ceb15124 assets/ancienthorizons/models/item/aluminium_boots.json
 4c9bc5e1f2a0d40483e927327653582e7d523e25 assets/ancienthorizons/models/item/aluminium_boots_amethyst_trim.json
@@ -321,6 +321,7 @@ ce234226b0453a904a5539636655f87dfbee3807 assets/ancienthorizons/models/item/syca
 8bd22f18ce80c25ea749e495fc093102a6ecb188 assets/ancienthorizons/models/item/sycamore_door.json
 6e90c90e37c1bc942768ff1c5a9daf63b6026c81 assets/ancienthorizons/models/item/sycamore_fence.json
 635a11065e4837889e318b7ed5377dc88fe9ef29 assets/ancienthorizons/models/item/sycamore_sapling.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/ancienthorizons/models/item/tiger_spawn_egg.json
 4dc6333ebf7eba084c67b70fa9c3eeb658a90fa0 assets/ancienthorizons/models/item/time_stone.json
 6cdbcc5cc63889957b1bc5932abcde3112ae987b assets/ancienthorizons/models/item/tin_door.json
 b35ff039863d2b17d2805b53fbca19f928951327 assets/ancienthorizons/models/item/tin_ingot.json

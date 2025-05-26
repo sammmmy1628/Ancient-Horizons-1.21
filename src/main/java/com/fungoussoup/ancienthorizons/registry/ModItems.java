@@ -1,9 +1,11 @@
 package com.fungoussoup.ancienthorizons.registry;
 
 import com.fungoussoup.ancienthorizons.AncientHorizons;
+import com.fungoussoup.ancienthorizons.entity.ModEntities;
 import com.fungoussoup.ancienthorizons.item.*;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -268,12 +270,18 @@ public class ModItems {
     public static final DeferredItem<Item> ZIRCON = ITEMS.register("zircon",
             () -> new Item(new Item.Properties()));
 
+    // TIGER
+    public static final DeferredItem<Item> TIGER_SPAWN_EGG = ITEMS.register("tiger_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.TIGER, 0xed7211,0x000000,
+                    new Item.Properties()));
+
     // MISC
     public static final DeferredItem<Item> SPIKED_HEAVY_CORE = ITEMS.register("spiked_heavy_core",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> OBSIDIAN_SHARD = ITEMS.register("obsidian_shard",
             () -> new Item(new Item.Properties()));
+
 
 
 

@@ -1,9 +1,12 @@
 package com.fungoussoup.ancienthorizons;
 
+import com.fungoussoup.ancienthorizons.entity.ModEntities;
+import com.fungoussoup.ancienthorizons.entity.client.TigerRenderer;
 import com.fungoussoup.ancienthorizons.registry.ModBlocks;
 import com.fungoussoup.ancienthorizons.registry.ModCreativeModeTabs;
 import com.fungoussoup.ancienthorizons.registry.ModItems;
 import com.fungoussoup.ancienthorizons.registry.ModStrippables;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -40,6 +43,8 @@ public class AncientHorizons {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModEntities.register(modEventBus);
+
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -57,4 +62,13 @@ public class AncientHorizons {
     
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {}
+
+    @EventBusSubscriber(modid = AncientHorizons.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            
+            EntityRenderers.register(ModEntities.TIGER.get(), TigerRenderer::new);
+        }
+    }
 }

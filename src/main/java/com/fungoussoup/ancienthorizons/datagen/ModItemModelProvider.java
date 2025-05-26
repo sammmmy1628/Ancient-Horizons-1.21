@@ -286,6 +286,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.YEW_DOOR.asItem());
 
+        // TIGER
+        withExistingParent(ModItems.TIGER_SPAWN_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
+
         // MISC
         basicItem(ModItems.SPIKED_HEAVY_CORE.get());
         basicItem(ModItems.OBSIDIAN_SHARD.get());

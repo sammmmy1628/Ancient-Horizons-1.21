@@ -499,6 +499,16 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final Supplier<CreativeModeTab> ANCIENT_HORIZONS_TAB_SPAWN_EGGS = CREATIVE_MODE_TAB.register("ancient_horizons_tab_spawn_eggs",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TIGER_SPAWN_EGG.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(AncientHorizons.MOD_ID, "ancient_horizons_tab_tools_and_armour"))
+                    .title(Component.translatable("creativetab.ancienthorizons.ancient_horizons_spawn_eggs"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.TIGER_SPAWN_EGG);
+                    }).build());
+
+
 
 
     public static void register(IEventBus eventBus) {
