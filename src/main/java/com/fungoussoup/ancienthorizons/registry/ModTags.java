@@ -38,9 +38,9 @@ public class ModTags {
     }
 
     public static class EntityTypes {
-        public static final TagKey<EntityType<?>> TIGER_PREY = createTag("tiger_prey");
+        public static final TagKey<EntityType> TIGER_PREY = createTag("tiger_prey");
 
-        private static TagKey<EntityType<?>> createTag(String name) {
+        private static TagKey<EntityType> createTag(String name) {
             return EntityTypeTags.create(ResourceLocation.fromNamespaceAndPath(AncientHorizons.MOD_ID, name));
         }
     }
