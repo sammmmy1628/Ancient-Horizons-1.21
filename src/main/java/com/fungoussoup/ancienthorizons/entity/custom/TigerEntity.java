@@ -72,7 +72,7 @@ public class TigerEntity extends Animal implements NeutralMob {
         this.targetSelector.addGoal(1, new TigerHurtByTargetGoal());
         this.targetSelector.addGoal(2, new TigerAttackPlayersGoal());
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Player.class, 10, true, false, this::isAngryAt));
-        this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, prey -> prey.is(ModTags.TIGER_PREY), 10, false, false, null));
+        this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, ModTags.TIGER_PREY, 10, false, false, null));
         this.targetSelector.addGoal(5, new ResetUniversalAngerTargetGoal<>(this, false));
 
     }
