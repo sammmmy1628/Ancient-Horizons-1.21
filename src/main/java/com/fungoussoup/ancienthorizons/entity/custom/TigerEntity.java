@@ -56,7 +56,7 @@ public class TigerEntity extends Animal implements NeutralMob {
      */
     @Override
     public boolean isFood(ItemStack stack) {
-        return stack.is(Items.PORKCHOP);
+        return stack.is(ItemTags.MEAT);
     }
 
     @Override
