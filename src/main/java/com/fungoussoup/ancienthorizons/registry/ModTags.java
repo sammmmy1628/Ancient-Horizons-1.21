@@ -34,4 +34,12 @@ public class ModTags {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(AncientHorizons.MOD_ID, name));
         }
     }
+
+    public static class Entities {
+        public static final TagKey<Entity> TIGER_PREY = createTag("tiger_prey");
+
+        private static TagKey<Entity> createTag(String name) {
+            return EntityTags.create(ResourceLocation.fromNamespaceAndPath(AncientHorizons.MOD_ID, name));
+        }
+    }
 }
