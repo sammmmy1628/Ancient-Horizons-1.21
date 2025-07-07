@@ -8,7 +8,7 @@ import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 
 public class ModTags {
     public static class Blocks {
@@ -38,9 +38,9 @@ public class ModTags {
     }
 
     public static class Entities {
-        public static final TagKey<Entity> TIGER_PREY = createTag("tiger_prey");
+        public static final TagKey<EntityType<?>> TIGER_PREY = createTag("tiger_prey");
 
-        private static TagKey<Entity> createTag(String name) {
+        private static TagKey<EntityType<?>> createTag(String name) {
             return EntityTypeTags.create(ResourceLocation.fromNamespaceAndPath(AncientHorizons.MOD_ID, name));
         }
     }
