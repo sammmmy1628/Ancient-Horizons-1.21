@@ -8,6 +8,7 @@ import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.entity.Entity;
 
 public class ModTags {
     public static class Blocks {
