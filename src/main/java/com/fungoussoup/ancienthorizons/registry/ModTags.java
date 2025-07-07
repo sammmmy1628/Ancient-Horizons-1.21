@@ -4,7 +4,7 @@ import com.fungoussoup.ancienthorizons.AncientHorizons;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.EntityTags;
+import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -40,7 +40,7 @@ public class ModTags {
         public static final TagKey<Entity> TIGER_PREY = createTag("tiger_prey");
 
         private static TagKey<Entity> createTag(String name) {
-            return EntityTags.create(ResourceLocation.fromNamespaceAndPath(AncientHorizons.MOD_ID, name));
+            return EntityTypeTags.create(ResourceLocation.fromNamespaceAndPath(AncientHorizons.MOD_ID, name));
         }
     }
 }
