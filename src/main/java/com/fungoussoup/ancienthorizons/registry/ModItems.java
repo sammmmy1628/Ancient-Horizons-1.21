@@ -282,6 +282,11 @@ public class ModItems {
     public static final DeferredItem<Item> OBSIDIAN_SHARD = ITEMS.register("obsidian_shard",
             () -> new Item(new Item.Properties()));
 
+    //SNOW LEOPARD
+    public static final DeferredItem<Item> SNOW_LEOPARD_SPAWN_EGG = ITEMS.register("snow_leopard_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.SNOW_LEOPARD, 0xffffff,0x000000,
+                    new Item.Properties()));
+
 
 
 
