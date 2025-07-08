@@ -18,6 +18,10 @@ public class ModEntities {
             ENTITY_TYPES.register("tiger", () -> EntityType.Builder.of(TigerEntity::new, MobCategory.CREATURE)
                     .sized(2f,1.5f).build("tiger"));
 
+    public static final Supplier<EntityType<TigerEntity>> SNOW_LEOPARD =
+            ENTITY_TYPES.register("snow_leopard", () -> EntityType.Builder.of(TigerEntity::new, MobCategory.CREATURE)
+                    .sized(2f,1.5f).build("snow_leopard"));
+
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
