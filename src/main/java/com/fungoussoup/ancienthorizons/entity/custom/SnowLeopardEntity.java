@@ -32,7 +32,7 @@ import com.fungoussoup.ancienthorizons.registry.ModTags;
 import javax.annotation.Nullable;
 import java.util.UUID;
 
-public class SnowLeopardEntity extends TameableAnimal {
+public class SnowLeopardEntity extends TamableAnimal {
 
     private static final EntityDataAccessor<Boolean> DATA_TAMED_ID = SynchedEntityData.defineId(SnowLeopardEntity.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Boolean> DATA_SITTING_ID = SynchedEntityData.defineId(SnowLeopardEntity.class, EntityDataSerializers.BOOLEAN);
@@ -67,7 +67,7 @@ public class SnowLeopardEntity extends TameableAnimal {
 
     @Override
     public boolean isFood(ItemStack stack) {
-        return stack.is(ItemTags.MEAT) || stack.is(Items.FISH);
+        return stack.is(ItemTags.MEAT);
     }
 
     @Override
